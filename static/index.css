@@ -1,73 +1,73 @@
 @font-face {
   font-family: 'Libertinus Serif';
-  src: url('/fonts/LibertinusSerif-Regular.woff') format('woff');
+  src: url('/electoral/fonts/LibertinusSerif-Regular.woff') format('woff');
   font-weight: normal;
 }
 @font-face {
   font-family: 'Libertinus Serif';
-  src: url('/fonts/LibertinusSerif-Bold.woff') format('woff');
+  src: url('/electoral/fonts/LibertinusSerif-Bold.woff') format('woff');
   font-weight: bold;
 }
 @font-face {
   font-family: 'Libertinus Serif';
-  src: url('/fonts/LibertinusSerif-Italic.woff') format('woff');
+  src: url('/electoral/fonts/LibertinusSerif-Italic.woff') format('woff');
   font-style: italic;
 }
 @font-face {
   font-family: 'Libertinus Serif';
-  src: url('/fonts/LibertinusSerif-BoldItalic.woff') format('woff');
+  src: url('/electoral/fonts/LibertinusSerif-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: 'Libertinus Sans';
-  src: url('/fonts/LibertinusSans-Regular.woff') format('woff');
+  src: url('/electoral/fonts/LibertinusSans-Regular.woff') format('woff');
   font-style: normal;
 }
 @font-face {
   font-family: 'Libertinus Sans';
-  src: url('/fonts/LibertinusSans-Bold.woff') format('woff');
+  src: url('/electoral/fonts/LibertinusSans-Bold.woff') format('woff');
   font-weight: bold;
 }
 @font-face {
   font-family: 'Libertinus Sans';
-  src: url('/fonts/LibertinusSans-Italic.woff') format('woff');
+  src: url('/electoral/fonts/LibertinusSans-Italic.woff') format('woff');
   font-style: italic;
 }
 @font-face {
   font-family: 'Libertinus Keyboard';
-  src: url('/fonts/LibertinusKeyboard-Regular.woff') format('woff');
+  src: url('/electoral/fonts/LibertinusKeyboard-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'Libertinus Keyboard';
-  src: url('/fonts/LibertinusKeyboard-Regular.woff') format('woff');
+  src: url('/electoral/fonts/LibertinusKeyboard-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'Libertinus Serif Display';
-  src: url('/fonts/LibertinusSerifDisplay-Regular.woff') format('woff');
+  src: url('/electoral/fonts/LibertinusSerifDisplay-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'Libertinus Serif Initials';
-  src: url('/fonts/LibertinusSerifInitials-Regular.woff') format('woff');
+  src: url('/electoral/fonts/LibertinusSerifInitials-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('/fonts/IBMPlexMono-Regular.woff') format('woff');
+  src: url('/electoral/fonts/IBMPlexMono-Regular.woff') format('woff');
   font-style: normal;
 }
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('/fonts/IBMPlexMono-Bold.woff') format('woff');
+  src: url('/electoral/fonts/IBMPlexMono-Bold.woff') format('woff');
   font-weight: bold;
 }
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('/fonts/IBMPlexMono-Italic.woff') format('woff');
+  src: url('/electoral/fonts/IBMPlexMono-Italic.woff') format('woff');
   font-style: italic;
 }
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('/fonts/IBMPlexMono-BoldItalic.woff') format('woff');
+  src: url('/electoral/fonts/IBMPlexMono-BoldItalic.woff') format('woff');
   font-style: italic;
   font-weight: bold;
 }
