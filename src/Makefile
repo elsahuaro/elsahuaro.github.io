@@ -11,10 +11,6 @@ GIF_TGT = $(GIF_SRC:pages/%.gif=static/%.gif)
 
 .PHONY: serve build build_html lib fonts deploy
 
-dummy:
-	@echo "JS_SRC = $(JS_SRC)"
-	@echo "JS_TGT = $(JS_TGT)"
-
 serve:
 	sbcl --load serve.lisp
 
@@ -50,9 +46,6 @@ fonts:
 lib:
 	mkdir -p static/lib
 	cp ./pages/lib/* ./static/lib
-
-deploy:
-	scp -r ./static elsahuaro@elsahuaro.org:/var/www/html
 
 pyfreeze:
 	source pyenv/bin/activate
