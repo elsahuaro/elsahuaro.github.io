@@ -51,3 +51,6 @@ pyfreeze:
 	source pyenv/bin/activate
 	pip freeze > requirements.txt
 	deactivate
+
+deploy:
+	git subtree push --prefix static origin gh-pages
