@@ -1,0 +1,496 @@
+@font-face {
+  font-family: 'Libertinus Serif';
+  src: url('/fonts/LibertinusSerif-Regular.woff') format('woff');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Libertinus Serif';
+  src: url('/fonts/LibertinusSerif-Bold.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Libertinus Serif';
+  src: url('/fonts/LibertinusSerif-Italic.woff') format('woff');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Libertinus Serif';
+  src: url('/fonts/LibertinusSerif-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Libertinus Sans';
+  src: url('/fonts/LibertinusSans-Regular.woff') format('woff');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libertinus Sans';
+  src: url('/fonts/LibertinusSans-Bold.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Libertinus Sans';
+  src: url('/fonts/LibertinusSans-Italic.woff') format('woff');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Libertinus Keyboard';
+  src: url('/fonts/LibertinusKeyboard-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Libertinus Keyboard';
+  src: url('/fonts/LibertinusKeyboard-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Libertinus Serif Display';
+  src: url('/fonts/LibertinusSerifDisplay-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Libertinus Serif Initials';
+  src: url('/fonts/LibertinusSerifInitials-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/fonts/IBMPlexMono-Regular.woff') format('woff');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/fonts/IBMPlexMono-Bold.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/fonts/IBMPlexMono-Italic.woff') format('woff');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/fonts/IBMPlexMono-BoldItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* RESET */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* DOCUMENT STYLE */
+
+body {
+  font-family: 'Libertinus Serif', sans-serif;
+  line-height: 1.46;
+}
+
+html {
+  font-size: 24px;
+  height: 100%;
+}
+@media all and (max-width:920px) { html { font-size: 24px; } }
+@media all and (max-width:620px) { html { font-size: 22px; } }
+@media all and (max-width:470px) { html { font-size: 18px; } }
+
+body {
+  width: 100vw;
+  min-height: 100%;
+  position: relative;
+  z-index: -10000;
+  /*   overflow-x: hidden; */
+}
+
+section {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  position: relative;
+  margin: 0 240px;
+}
+
+header {
+  position: relative;
+  margin: 0 240px 1em 240px;
+  border-width: 1px;
+  border-color: #263238;
+  border-bottom-style: solid;
+  padding: 1em 0;
+}
+
+aside {
+  position: absolute;
+  width: 220px;
+  color: #263238;
+}
+
+aside.left {
+  float: left;
+  left: -240px;
+  padding-right: 0.75em;
+  border-right: 3px solid #cfd8dc;
+}
+
+aside.right {
+  float: right;
+  right: -240px;
+  padding-left: 0.75em;
+  border-left: 3px solid #cfd8dc;
+}
+
+@media all and (max-width:1400px) {
+  section { width: 620px; }
+  main { margin: 0 20px; }
+  header { margin: 0 20px 1em 20px; }
+  aside { width: 200px; }
+  aside.left { left: -210px; padding-right: 10px; }
+  aside.right { right: -210px; padding-left: 10px; }
+}
+
+@media all and (max-width:1000px) {
+  section { width: 620px; }
+  main { margin: 0 10px; }
+  header { margin: 0 10px 1em 10px; }
+  aside { width: 90%; }
+  aside {
+    position: inherit;
+    margin: 0 auto;
+    background: #fafafa;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #cfd8dc;
+    margin-bottom: 1em;
+  }
+  aside.left {
+    float: inherit;
+    left: inherit;
+    border-left: 3px solid #cfd8dc;
+    border-right: 1px solid #cfd8dc;
+  }
+  aside.right {
+    float: inherit;
+    right: inherit;
+    border-right: 3px solid #cfd8dc;
+    border-left: 1px solid #cfd8dc;
+  }
+}
+
+@media all and (max-width:620px) {
+  section { width: 470px; }
+  main { margin: 0 5px; }
+  header { margin: 0 5px 1em 5px; }
+  aside { width: 95%; }
+}
+
+@media all and (max-width:470px) {
+  section { width: 100%; }
+  main { margin: 0 2px; }
+  header { margin: 0 2px 1em 2px; }
+  aside { width: 97.5%; }
+}
+
+hgroup > h1, hgroup > h2, hgroup > h3 {
+  font-family: "Libertinus Serif Display";
+  font-weight: normal;
+}
+
+hgroup > h1 {
+  font-size: 2.0rem;
+  color: #000000;
+}
+
+hgroup > h2 {
+  font-size: 1.5rem;
+  color: #37474f;
+}
+
+hgroup > h3 {
+  font-size: 1.25rem;
+  color: #455a64;
+  line-height: 1.25rem;
+}
+
+main > h1 {
+  font-family: "Libertinus Sans";
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  color: #000;
+}
+
+main > h2 {
+  font-family: "Libertinus Sans";
+  font-weight: normal;
+  font-size: 1.25rem;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  color: #37474f;
+}
+
+main > h3 {
+  font-family: "Libertinus Sans";
+  font-weight: normal;
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  color: #455a64;
+}
+
+p, ul, ol {
+  margin-bottom: 1em;
+}
+
+code {
+  font-family: "IBM Plex Mono";
+  font-size: 0.9rem;
+}
+
+pre code {
+  font-size: 0.64rem;
+}
+
+aside > p {
+  font-family: "Libertinus Sans";
+  font-weight: normal;
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+aside > p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  transition-property: background;
+  transition-duration: 0.2s;
+}
+
+a:link {
+  color: #0288d1;
+}
+
+a:visited {
+  color: #512da8;
+}
+
+a:active {
+  color: #0277bd;
+}
+
+a:hover {
+  background: #eceff1;
+  transition-property: background;
+  transition-duration: 0.2s;
+
+  border-radius: 2px;
+}
+
+ol li, ul li {
+  margin-left: 1.5rem;
+}
+
+ol {
+  counter-reset: foobar;
+}
+
+ol li:before {
+  font-family: "Libertinus Sans";
+  counter-increment: foobar;
+  content: counter(foobar);
+  position: absolute;
+  margin-left: -1.25rem;
+}
+
+ul li:before {
+  content: "•";
+  position: absolute;
+  margin-left: -1.25rem;
+}
+
+table {
+  margin-bottom: 1.5em;
+  border-collapse: collapse;
+  width: 95%;
+  padding-left: 5%;
+}
+
+table tr + tr {
+  border-top: 2px solid #eceff1;
+}
+
+table td + td {
+  border-left: 2px solid #eceff1;
+}
+
+table td {
+  padding: 0.2em;
+  /*   text-align: center; */
+  font-family: "Libertinus Sans";
+  font-weight: normal;
+  color: #263238;
+}
+
+table th {
+  font-family: "Libertinus Sans";
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.4rem 0.5rem ;
+  line-height: 1.05;
+  color: #263238;
+  background:#eceff1;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 0em 1.5em;
+  text-align: center;
+  color: #263238;
+}
+
+ul.checklist li:before {
+  content: "";
+}
+
+ul.checklist li {
+  margin-left: 0;
+}
+
+ul.checklist li input {
+  margin-right: 0.5rem;
+}
+
+/* CUSTOM CLASSES */
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  text-align: center;
+}
+
+.full-width img {
+  width: 100%;
+}
+
+.center-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  text-align: center;
+}
+
+@media all and (max-width:1000px) {
+  .center-width img {
+    width: 100%;
+  }
+}
+
+.codehilite {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+pre {
+  width: max-content;
+  min-width: 100%;
+  padding: 5px;
+  background: #F2F5F7;
+}
+
+p img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*  */
+
+.codehilite .hll { background-color: #ffffcc }
+.codehilite .c { font-style: italic } /* Comment */
+.codehilite .err { border: 1px solid #FF0000 } /* Error */
+.codehilite .k { font-weight: bold } /* Keyword */
+.codehilite .ch { font-style: italic } /* Comment.Hashbang */
+.codehilite .cm { font-style: italic } /* Comment.Multiline */
+.codehilite .cpf { font-style: italic } /* Comment.PreprocFile */
+.codehilite .c1 { font-style: italic } /* Comment.Single */
+.codehilite .cs { font-style: italic } /* Comment.Special */
+.codehilite .ge { font-style: italic } /* Generic.Emph */
+.codehilite .gh { font-weight: bold } /* Generic.Heading */
+.codehilite .gp { font-weight: bold } /* Generic.Prompt */
+.codehilite .gs { font-weight: bold } /* Generic.Strong */
+.codehilite .gu { font-weight: bold } /* Generic.Subheading */
+.codehilite .kc { font-weight: bold } /* Keyword.Constant */
+.codehilite .kd { font-weight: bold } /* Keyword.Declaration */
+.codehilite .kn { font-weight: bold } /* Keyword.Namespace */
+.codehilite .kr { font-weight: bold } /* Keyword.Reserved */
+.codehilite .s { font-style: italic } /* Literal.String */
+.codehilite .nc { font-weight: bold } /* Name.Class */
+.codehilite .ni { font-weight: bold } /* Name.Entity */
+.codehilite .ne { font-weight: bold } /* Name.Exception */
+.codehilite .nn { font-weight: bold } /* Name.Namespace */
+.codehilite .nt { font-weight: bold } /* Name.Tag */
+.codehilite .ow { font-weight: bold } /* Operator.Word */
+.codehilite .sa { font-style: italic } /* Literal.String.Affix */
+.codehilite .sb { font-style: italic } /* Literal.String.Backtick */
+.codehilite .sc { font-style: italic } /* Literal.String.Char */
+.codehilite .dl { font-style: italic } /* Literal.String.Delimiter */
+.codehilite .sd { font-style: italic } /* Literal.String.Doc */
+.codehilite .s2 { font-style: italic } /* Literal.String.Double */
+.codehilite .se { font-weight: bold; font-style: italic } /* Literal.String.Escape */
+.codehilite .sh { font-style: italic } /* Literal.String.Heredoc */
+.codehilite .si { font-weight: bold; font-style: italic } /* Literal.String.Interpol */
+.codehilite .sx { font-style: italic } /* Literal.String.Other */
+.codehilite .sr { font-style: italic } /* Literal.String.Regex */
+.codehilite .s1 { font-style: italic } /* Literal.String.Single */
+.codehilite .ss { font-style: italic } /* Literal.String.Symbol */
+.codehilite .kt { color: #37474f }
+.codehilite .nb { font-style: italic; font-weight: bold; }
