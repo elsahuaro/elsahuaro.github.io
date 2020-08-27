@@ -7,4 +7,4 @@ México.
 
 # Enlaces
 
-- [Entrenamiento para Representantes de Casilla 🔗](/conteo-votos/)
+- [Entrenamiento para Representantes de Casilla 🔗](/electoral/conteo-votos/)
