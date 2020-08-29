@@ -14,7 +14,7 @@ GIF_TGT = $(GIF_SRC:pages/%.gif=static/%.gif)
 serve:
 	sbcl --load serve.lisp
 
-build: build_html $(JS_TGT) $(CSS_TGT) $(PNG_TGT) $(GIF_TGT) lib fonts
+build: build_html $(JS_TGT) $(CSS_TGT) $(PNG_TGT) $(GIF_TGT) lib fonts docs
 
 build_html:
 	source pyenv/bin/activate
@@ -46,6 +46,10 @@ fonts:
 lib:
 	mkdir -p static/lib
 	cp ./pages/lib/* ./static/lib
+
+docs:
+	mkdir -p static/docs
+	cp -r ./pages/docs ./static/docs
 
 pyfreeze:
 	source pyenv/bin/activate
