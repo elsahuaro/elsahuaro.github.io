@@ -1,13 +1,13 @@
 .ONESHELL:
 
 JS_SRC = $(shell find pages/ -type f -name '*.js' -not -path "pages/lib/*")
-JS_TGT = $(JS_SRC:pages/%.js=static/%.js)
+JS_TGT = $(JS_SRC:pages/%.js=static/electoral/%.js)
 CSS_SRC = $(shell find pages/ -type f -name '*.css')
-CSS_TGT = $(CSS_SRC:pages/%.css=static/%.css)
+CSS_TGT = $(CSS_SRC:pages/%.css=static/electoral/%.css)
 PNG_SRC = $(shell find pages/ -type f -name '*.png' -not -path "pages/lib/*")
-PNG_TGT = $(PNG_SRC:pages/%.png=static/%.png)
+PNG_TGT = $(PNG_SRC:pages/%.png=static/electoral/%.png)
 GIF_SRC = $(shell find pages/ -type f -name '*.gif' -not -path "pages/lib/*")
-GIF_TGT = $(GIF_SRC:pages/%.gif=static/%.gif)
+GIF_TGT = $(GIF_SRC:pages/%.gif=static/electoral/%.gif)
 
 .PHONY: serve build build_html lib fonts deploy
 
@@ -20,36 +20,36 @@ build_html:
 	source pyenv/bin/activate
 	python gensite.py
 	deactivate
-	cp ./pages/favicon.ico ./static/favicon.ico
+	cp ./pages/favicon.ico ./static/electoral/favicon.ico
 
-static/%.js: pages/%.js .babelrc
+static/electoral/%.js: pages/%.js .babelrc
 	mkdir -p $(@D)
 	./node_modules/.bin/babel $< -o $@
 
-static/%.css: pages/%.css
+static/electoral/%.css: pages/%.css
 	mkdir -p $(@D)
 	cp $< $@
 
-static/%.png: pages/%.png
+static/electoral/%.png: pages/%.png
 	mkdir -p $(@D)
 	cp $< $@
 
-static/%.gif: pages/%.gif
+static/electoral/%.gif: pages/%.gif
 	mkdir -p $(@D)
 	cp $< $@
 
 fonts:
-	mkdir -p static/fonts
+	mkdir -p static/electoral/fonts
 	find ./pages/fonts -type f -name '*.otf' -exec sfnt2woff {} \;
-	cp ./pages/fonts/*.woff ./static/fonts
+	cp ./pages/fonts/*.woff ./static/electoral/fonts
 
 lib:
-	mkdir -p static/lib
-	cp ./pages/lib/* ./static/lib
+	mkdir -p static/electoral/lib
+	cp ./pages/lib/* ./static/electoral/lib
 
 docs:
-	mkdir -p static/docs
-	cp -r ./pages/docs ./static/docs
+	mkdir -p static/electoral/
+	cp -r ./pages/docs ./static/electoral/
 
 pyfreeze:
 	source pyenv/bin/activate
@@ -57,4 +57,4 @@ pyfreeze:
 	deactivate
 
 deploy:
-	git subtree push --prefix static origin gh-pages
+	git subtree push --prefix static/electoral origin gh-pages

@@ -1,10 +1,10 @@
 pagetitle: Conteo de votos
-title: Entrenamiento para RCs
+title: Conteo de votos para RCs
 subtitle: Jornada electoral 2021
 js_includes: /electoral/lib/phaser.min.js
 css_includes: game.css
 
-Para inicial a usar el prototipo de conteo interactivo de votos, haz clic en la urna.
+Para iniciar a usar el prototipo de conteo interactivo de votos, haz clic en la urna.
 
 <div id="conteo-votos-contenedor">
   <div id="conteo-votos" class="demo" style="font-family: 'Libertinus Sans'">

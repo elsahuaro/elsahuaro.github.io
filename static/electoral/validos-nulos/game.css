@@ -1,0 +1,22 @@
+#validos-nulos-contenedor {
+  height: 600px;
+  width: 200%;
+  margin-bottom: 1em;
+}
+
+#validos-nulos {
+  position: absolute;
+  left: calc((1000px - 100vw)/2 + calc((100vw - 1210px)/2));
+}
+
+@media all and (max-width: 1210px) {
+  #validos-nulos {
+    left: calc((1000px - 100vw)/2);
+  }
+}
+
+@media all and (max-width: 1000px) {
+  #validos-nulos {
+    left: 0;
+  }
+}

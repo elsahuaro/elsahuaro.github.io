@@ -29,7 +29,6 @@ function shuffle(array) {
 }
 
 var nextVote = function() {
-  //return votes[Math.floor(Math.random() * votes.length)];
   var val = stack[stack_idx];
   stack_idx++;
   return val;

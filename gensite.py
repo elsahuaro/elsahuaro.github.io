@@ -158,4 +158,4 @@ def build(src, tgt, tpl=None):
     return True
 
 if __name__ == "__main__":
-    build(Path("pages"), Path("static"))
+    build(Path("pages"), Path("static/electoral"))

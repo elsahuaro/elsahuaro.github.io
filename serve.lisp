@@ -13,6 +13,7 @@
         (resource (hunchentoot:script-name request)))
     (cond
       (path
+       (format t "~&PATH=~S~%RESOURCE=~S~%" path resource)
        (let ((probe (merge-pathnames path (hunchentoot:acceptor-document-root acceptor))))
          (cond ((char= #\/ (elt resource (1- (length resource))))
                 (hunchentoot:handle-static-file

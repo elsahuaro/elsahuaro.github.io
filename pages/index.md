@@ -7,4 +7,5 @@ México.
 
 # Enlaces
 
-- [Entrenamiento para Representantes de Casilla](/electoral/conteo-votos/)
+- [Conteo de votos para Representantes de Casilla](/electoral/conteo-votos/)
+- [Votos válidos y nulos para Representantes de Casilla](validos-nulos/)
