@@ -299,8 +299,8 @@ class CategorizeCaseScene extends StandardScene {
         fill: "black",
         wordWrap: { width: 710-30 }
       });
-      this.msgResol = this.add.text(485+15, this.msgExpl.y + this.msgExpl.height + 30, resolucion, {
-        font: '20px "Libertinus Sans"',
+      this.msgResol = this.add.text(485+15, this.msgExpl.y + this.msgExpl.height + 15, resolucion, {
+        font: '18px "Libertinus Sans"',
         fill: "black",
         wordWrap: { width: 710-30 }
       });
@@ -310,8 +310,8 @@ class CategorizeCaseScene extends StandardScene {
         fill: "black",
         wordWrap: { width: 710-30 }
       });
-      this.msgResol = this.add.text(15+15, this.msgExpl.y + this.msgExpl.height + 30, resolucion, {
-        font: '20px "Libertinus Sans"',
+      this.msgResol = this.add.text(15+15, this.msgExpl.y + this.msgExpl.height + 15, resolucion, {
+        font: '18px "Libertinus Sans"',
         fill: "black",
         wordWrap: { width: 710-30 }
       });
