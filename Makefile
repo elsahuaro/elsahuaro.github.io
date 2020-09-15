@@ -6,6 +6,8 @@ CSS_SRC = $(shell find pages/ -type f -name '*.css')
 CSS_TGT = $(CSS_SRC:pages/%.css=static/electoral/%.css)
 PNG_SRC = $(shell find pages/ -type f -name '*.png' -not -path "pages/lib/*")
 PNG_TGT = $(PNG_SRC:pages/%.png=static/electoral/%.png)
+JPG_SRC = $(shell find pages/ -type f -name '*.jpg' -not -path "pages/lib/*")
+JPG_TGT = $(JPG_SRC:pages/%.jpg=static/electoral/%.jpg)
 GIF_SRC = $(shell find pages/ -type f -name '*.gif' -not -path "pages/lib/*")
 GIF_TGT = $(GIF_SRC:pages/%.gif=static/electoral/%.gif)
 
@@ -14,7 +16,7 @@ GIF_TGT = $(GIF_SRC:pages/%.gif=static/electoral/%.gif)
 serve:
 	sbcl --load serve.lisp
 
-build: build_html $(JS_TGT) $(CSS_TGT) $(PNG_TGT) $(GIF_TGT) lib fonts docs
+build: build_html $(JS_TGT) $(CSS_TGT) $(PNG_TGT) $(JPG_TGT) $(GIF_TGT) lib fonts docs
 
 build_html:
 	source pyenv/bin/activate
@@ -31,6 +33,10 @@ static/electoral/%.css: pages/%.css
 	cp $< $@
 
 static/electoral/%.png: pages/%.png
+	mkdir -p $(@D)
+	cp $< $@
+
+static/electoral/%.jpg: pages/%.jpg
 	mkdir -p $(@D)
 	cp $< $@
 

@@ -7,5 +7,6 @@ México.
 
 # Enlaces
 
-- [Conteo de votos para Representantes de Casilla](/electoral/conteo-votos/)
+- [Conteo de votos para Representantes de Casilla](conteo-votos/)
 - [Votos válidos y nulos para Representantes de Casilla](validos-nulos/)
+- [Escritos de incidencia](escritos-incidencia/)

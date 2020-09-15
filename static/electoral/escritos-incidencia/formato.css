@@ -1,0 +1,103 @@
+#formato {
+  border: #000000 1px solid;
+  padding: 50px;
+  width: 1000px;
+  margin: 0 auto 0 auto;
+  text-align: justify;
+  word-spacing: 0.12rem;
+}
+
+#formato input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: italic;
+  font-weight: bold;
+  color: #B5261E;
+}
+
+#formato textarea {
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: italic;
+  font-weight: bold;
+  color: #B5261E;
+  resize: none;
+  line-height: 2.5ch;
+  background-image: linear-gradient(transparent, transparent calc(2.5ch - 2px), #888888 0px);
+  background-size: 100% 2.5ch;
+  overflow: hidden;
+}
+
+#logo > img {
+  width: 250px;
+}
+
+#asunto {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+#cabecera {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+#creds {
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+#hechos {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#hechos-cabecera {
+  text-align: center;
+}
+#hechos-cabecera > strong {
+  font-size: 0.9rem;
+}
+#hechos-cabecera > em {
+  font-size: 0.8rem;
+}
+
+#hechos-redaccion {
+  margin-top: 20px;
+}
+#hechos-redaccion > textarea {
+  resize: none;
+  min-width: 100%;
+}
+
+#atentamente {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+#firmas {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.firma {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 60px;
+}
