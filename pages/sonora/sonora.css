@@ -1,0 +1,10 @@
+#data-entries {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Libertinus Sans';
+}
+
+.datum {
+  padding-right: 1.5em;
+}
