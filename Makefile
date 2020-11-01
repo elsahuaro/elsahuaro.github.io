@@ -2,6 +2,8 @@
 
 JS_SRC = $(shell find pages/ -type f -name '*.js' -not -path "pages/lib/*")
 JS_TGT = $(JS_SRC:pages/%.js=static/electoral/%.js)
+JSON_SRC = $(shell find pages/ -type f -name '*.json' -not -path "pages/lib/*")
+JSON_TGT = $(JSON_SRC:pages/%.json=static/electoral/%.json)
 CSS_SRC = $(shell find pages/ -type f -name '*.css')
 CSS_TGT = $(CSS_SRC:pages/%.css=static/electoral/%.css)
 PNG_SRC = $(shell find pages/ -type f -name '*.png' -not -path "pages/lib/*")
@@ -16,7 +18,7 @@ GIF_TGT = $(GIF_SRC:pages/%.gif=static/electoral/%.gif)
 serve:
 	sbcl --load serve.lisp
 
-build: build_html $(JS_TGT) $(CSS_TGT) $(PNG_TGT) $(JPG_TGT) $(GIF_TGT) lib fonts docs
+build: build_html $(JS_TGT) $(JSON_TGT) $(CSS_TGT) $(PNG_TGT) $(JPG_TGT) $(GIF_TGT) lib fonts docs
 
 build_html:
 	source pyenv/bin/activate
@@ -27,6 +29,10 @@ build_html:
 static/electoral/%.js: pages/%.js .babelrc
 	mkdir -p $(@D)
 	./node_modules/.bin/babel $< -o $@
+
+static/electoral/%.json: pages/%.json
+	mkdir -p $(@D)
+	cp $< $@
 
 static/electoral/%.css: pages/%.css
 	mkdir -p $(@D)
@@ -51,7 +57,7 @@ fonts:
 
 lib:
 	mkdir -p static/electoral/lib
-	cp ./pages/lib/* ./static/electoral/lib
+	cp -r ./pages/lib/* ./static/electoral/lib
 
 docs:
 	mkdir -p static/electoral/

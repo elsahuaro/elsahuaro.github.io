@@ -1,0 +1,60 @@
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type=text] {
+  padding: 10px;
+  margin: 10px 0;
+  font-family: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  border: none;
+  border-bottom: 1px solid #263238;
+  border-radius: 5%;
+  text-align: center;
+  width: 5rem;
+}
+
+input[type=submit] {
+  padding: 10px;
+  margin: 10px 0;
+  font-family: 'Libertinus Sans';
+  line-height: inherit;
+  font-size: inherit;
+  border: 1px solid #263238;
+  border-radius: 10px;
+  background: #9DCFE8;
+}
+
+input[type=submit]:hover {
+  background: #7BA2B5;
+}
+
+#error {
+  display: none;
+  background: rgba(195, 49, 49, 0.2);
+  border: 2px solid rgba(195, 49, 49, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  text-align: center;
+  font-family: 'Libertinus Sans';
+  font-weight: bold;
+  color: rgb(195, 49, 49);
+}
+
+#resultado {
+  display: none;
+  margin: 10px 0;
+}
+
+#secmap {
+  height: 20rem;
+}
+
+.etiqueta {
+  font-weight: bold;
+  margin-right: 10px;
+}

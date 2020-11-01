@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubica tu sección</title>
+    <link rel="stylesheet" href="/electoral/index.css">
+    
+    <link rel="stylesheet" href="/electoral/lib/leaflet/leaflet.css">
+    
+    <link rel="stylesheet" href="seccion.css">
+    
+    <script type="text/javascript" src="/electoral/index.js"></script>
+    
+    <script type="text/javascript" src="/electoral/lib/leaflet/leaflet.js"></script>
+    
+    <script type="text/javascript" src="seccion.js"></script>
+    
+    <link rel="shortcut icon" href="/electoral/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/electoral/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <section>
+      <header>
+        <hgroup>
+          
+          <h1>Ubica tu sección</h1>
+          
+          
+          
+        </hgroup>
+      </header>
+      
+      <main>
+        <form method="GET" action="" id="form-sec" class="inputs" onsubmit="ubicaSeccion(event, this)">
+    <label for="Sección">Ingresa la sección que deseas ubicar:</label>
+    <input name="Sección" id="Sección" type="text" width=4 placeholder="Sección" />
+    <input type="submit" value="Ubica la sección">
+</form>
+
+<div id="resultado">
+  <div class="renglon">
+    <span class="etiqueta">Distrito Electoral Local:</span> <span id="del" class="distrito">IX</span>
+  </div>
+  <div class="renglon">
+    <span class="etiqueta">Distrito Electoral Federal:</span> <span id="def" class="distrito">3</span>
+  </div>
+  <div id="secmap"></div>
+</div>
+
+<div id="error">No existe la sección 123.</div>
+      </main>
+      
+      <footer>
+      </footer>
+    </section>
+  </body>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</html>
