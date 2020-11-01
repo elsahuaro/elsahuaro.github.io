@@ -1,5 +1,5 @@
-pagetitle: Ubica tu sección
-title: Ubica tu sección
+pagetitle: Ubica tu sección electoral
+title: Ubica tu sección electoral
 css_includes: /electoral/lib/leaflet/leaflet.css
 css_includes: seccion.css
 js_includes: /electoral/lib/leaflet/leaflet.js
@@ -21,4 +21,4 @@ js_includes: seccion.js
   <div id="secmap"></div>
 </div>
 
-<div id="error">No existe la sección 123.</div>
+<div id="error">No existe la sección electoral 123 en Sonora.</div>
