@@ -1557,7 +1557,7 @@ const ubicaSeccion = (e, form) => {
         setupMap(json);
       });
   } else {
-    err.innerText = "No existe la sección " + sec + ".";
+    err.innerText = "No existe la sección electoral " + sec + " en Sonora.";
     err.style.display = "block";
   }
 }
