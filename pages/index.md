@@ -12,3 +12,4 @@ México.
 - [Escritos de incidencia](escritos-incidencia/)
 - [Municipios - Sonora](sonora/)
 - [Ubica tu sección electoral](encuentra-seccion/)
+- [PDFs para taller](pdfs/)

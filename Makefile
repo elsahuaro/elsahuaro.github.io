@@ -12,13 +12,15 @@ JPG_SRC = $(shell find pages/ -type f -name '*.jpg' -not -path "pages/lib/*")
 JPG_TGT = $(JPG_SRC:pages/%.jpg=static/electoral/%.jpg)
 GIF_SRC = $(shell find pages/ -type f -name '*.gif' -not -path "pages/lib/*")
 GIF_TGT = $(GIF_SRC:pages/%.gif=static/electoral/%.gif)
+PDF_SRC = $(shell find pages/ -type f -name '*.pdf' -not -path "pages/lib/*")
+PDF_TGT = $(PDF_SRC:pages/%.pdf=static/electoral/%.pdf)
 
 .PHONY: serve build build_html lib fonts deploy
 
 serve:
 	sbcl --load serve.lisp
 
-build: build_html $(JS_TGT) $(JSON_TGT) $(CSS_TGT) $(PNG_TGT) $(JPG_TGT) $(GIF_TGT) lib fonts docs
+build: build_html $(JS_TGT) $(JSON_TGT) $(CSS_TGT) $(PNG_TGT) $(JPG_TGT) $(GIF_TGT) $(PDF_TGT) lib fonts docs
 
 build_html:
 	source pyenv/bin/activate
@@ -47,6 +49,10 @@ static/electoral/%.jpg: pages/%.jpg
 	cp $< $@
 
 static/electoral/%.gif: pages/%.gif
+	mkdir -p $(@D)
+	cp $< $@
+
+static/electoral/%.pdf: pages/%.pdf
 	mkdir -p $(@D)
 	cp $< $@
 
