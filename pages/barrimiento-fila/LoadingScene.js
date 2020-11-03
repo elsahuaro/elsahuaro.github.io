@@ -49,7 +49,7 @@ class LoadingScene extends Phaser.Scene {
       this.scene.start("start");
     });
 
-    this.load.image("ine", "./imgs/ine-box.png");
+    this.load.image("dvl", "./imgs/defensa-voto-logo.png");
     this.load.image("barrerBtn", "./imgs/barrer.png");
     this.load.image("reiniciarBtn", "./imgs/reiniciar.png");
     for (var m of miembros) {
@@ -58,6 +58,6 @@ class LoadingScene extends Phaser.Scene {
   }
 
   create() {
-    this.ine = this.add.image(this.game.config.width/2, this.game.config.height/2, "ine").setInteractive();
+    this.dvl = this.add.image(this.game.config.width/2, this.game.config.height/2, "dvl").setInteractive();
   }
 }

@@ -3,10 +3,37 @@ class SelectMissingScene extends Phaser.Scene {
     super("select-missing");
   }
 
+  puestoTxt(txt, x, y) {
+    var o = this.add.text(0, 0, txt, {
+      font: '20px "Libertinus Sans"',
+      fill: "black",
+      align: "center",
+      wordWrap: {
+        width: 100
+      }
+    });
+    o.setOrigin(0, 0);
+    o.x = x;
+    o.y = y;
+    return o;
+  }
+
   create() {
     this.miembrosImgs = {}
     this.xFinales = [0, 0, 0, 0, 0, 0, 0, 0, 0];
     this.faltas = [false, false, false, false, false, false, false, false, false];
+    this.puestos = [0, 0, 0, 0, 0, 0];
+    this.mesaDir = this.add.text(0, 50, "Mesa Directiva de la Casilla", {
+      font: '50px "Libertinus Sans"',
+      fill: "black"
+    });
+    this.mesaDir.setOrigin(0, 0);
+    this.mesaDir.x = this.game.config.width/2 - this.mesaDir.width/2;
+    this.mesaDir.alpha = 0;
+    const puestosNombres = [
+      "Presidente", "Primer Secretario", "Segundo Secretario",
+      "Primer Escrutador", "Segundo Escrutador", "Tercer Escrutador"
+    ];
     const goffset = 25;
     for (let i = 0; i < 6; i++) {
       let m = miembros[i];
@@ -16,6 +43,9 @@ class SelectMissingScene extends Phaser.Scene {
       this.xFinales[i] = i*offset+goffset;
       this.miembrosImgs[m].x = i*offset+goffset + this.game.config.width;
       this.miembrosImgs[m].y = this.game.config.height/2 - this.miembrosImgs[m].height*.25 / 2;
+      this.puestos[i] = this.puestoTxt(puestosNombres[i],
+                                       i*offset+goffset+30,
+                                       this.game.config.height/2 + this.miembrosImgs[m].height*.25 / 2);
     }
     for (let i = 6; i < 9; i++) {
       let m = miembros[i];
@@ -31,7 +61,7 @@ class SelectMissingScene extends Phaser.Scene {
       this.miembrosImgs[m] = this.add.image(0, 0, m).setInteractive();
       this.miembrosImgs[m].setOrigin(0, 0);
       this.miembrosImgs[m].scale = 0.25;
-      this.miembrosImgs[m].x = this.game.config.width;
+      this.miembrosImgs[m].x = i*offset+goffset + this.game.config.width;
       this.miembrosImgs[m].y = this.game.config.height/2 - this.miembrosImgs[m].height*.25 / 2;
     }
     for (let i = 0; i < 9; i++) {
@@ -107,11 +137,13 @@ class SelectMissingScene extends Phaser.Scene {
           conteo++;
         }
       }
+
       if (conteo > 3) {
         for (let i = j; i < 6; i++) {
           finales[i] = miembros[i-j+9];
         }
       }
+      
       for (let [i, x] of finales.entries()) {
         if (x) {
           this.tweens.add({
@@ -122,6 +154,29 @@ class SelectMissingScene extends Phaser.Scene {
           });
         }
       }
+
+      setTimeout(() => {
+        this.tweens.add({
+          targets: finales.slice(6).filter(x => x).map(x => this.miembrosImgs[x]),
+          duration: 250,
+          ease: 'Quad.easeInOut',
+          alpha: 0.0,
+          onComplete: () => {
+            this.tweens.add({
+              targets: this.puestos.concat(finales.slice(0, 6).map(x => this.miembrosImgs[x])),
+              duration: 500,
+              ease: 'Quad.easeInOut',
+              x: '+=200'
+            });
+            this.tweens.add({
+              targets: [this.mesaDir],
+              duration: 1000,
+              ease: 'Quad.easeInOut',
+              alpha: 1.0,
+            });
+          }
+        });
+      }, 2000);
     });
 
     this.reiniciarBtn = this.add.image(890, this.game.config.height-100, "reiniciarBtn").setInteractive();

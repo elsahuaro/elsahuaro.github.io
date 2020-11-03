@@ -4,16 +4,16 @@ class StartScene extends Phaser.Scene {
   }
 
   create() {
-    this.ine = this.add.image(this.game.config.width/2, this.game.config.height/2, "ine").setInteractive();
-    this.ine.on("pointerover", pointer => {
-      this.ine.setTint(0xDF2EDB);
+    this.dvl = this.add.image(this.game.config.width/2, this.game.config.height/2, "dvl").setInteractive();
+    this.dvl.on("pointerover", pointer => {
+      this.dvl.setTint(0xDF2EDB);
     });
-    this.ine.on("pointerout", pointer => {
-      this.ine.clearTint();
+    this.dvl.on("pointerout", pointer => {
+      this.dvl.clearTint();
     });
-    this.ine.on("pointerdown", pointer => {
+    this.dvl.on("pointerdown", pointer => {
       this.tweens.add({
-        targets: [this.ine],
+        targets: [this.dvl],
         duration: 500,
         ease: 'Quad.easeInOut',
         alpha: 0.0,
