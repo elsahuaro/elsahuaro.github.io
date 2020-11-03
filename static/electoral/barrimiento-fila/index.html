@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electoral</title>
+    <title>Barrimiento de fila</title>
     <link rel="stylesheet" href="/electoral/index.css">
     
     <script type="text/javascript" src="/electoral/index.js"></script>
+    
+    <script type="text/javascript" src="/electoral/lib/phaser.min.js"></script>
     
     <link rel="shortcut icon" href="/electoral/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/electoral/favicon.ico" type="image/x-icon">
@@ -16,7 +18,7 @@
       <header>
         <hgroup>
           
-          <h1>Jornada electoral 2021</h1>
+          <h1>Barrimiento de fila</h1>
           
           
           
@@ -24,18 +26,15 @@
       </header>
       
       <main>
-        <p>En esta página encontrarás programas interactivos relacionados con las elecciones del 2021 en
-México.</p>
-<h1>Enlaces</h1>
-<ul>
-<li><a href="conteo-votos/">Conteo de votos para Representantes de Casilla</a></li>
-<li><a href="validos-nulos/">Votos válidos y nulos para Representantes de Casilla</a></li>
-<li><a href="escritos-incidencia/">Escritos de incidencia</a></li>
-<li><a href="sonora/">Municipios - Sonora</a></li>
-<li><a href="encuentra-seccion/">Ubica tu sección electoral</a></li>
-<li><a href="pdfs/">PDFs para taller</a></li>
-<li><a href="barrimiento-fila/">Barrimiento de fila</a></li>
-</ul>
+        <p>Haz clic en la urna para comenzar, luego elige los miembros que no están presentes
+haciendo clic en ellos, finalmente haz clic en <em>Barrer fila</em>. Preciona el botón de
+<em>Reiniciar</em> para comenzar de nuevo.</p>
+<div id="barrimiento-fila" class="center-width" style="font-family: 'Libertinus Sans'">
+  <script type="text/javascript" src="LoadingScene.js"></script>
+  <script type="text/javascript" src="StartScene.js"></script>
+  <script type="text/javascript" src="SelectMissingScene.js"></script>
+  <script type="text/javascript" src="game.js"></script>
+</div>
       </main>
       
       <footer>
