@@ -2,7 +2,7 @@ pagetitle: Barrimiento de fila
 title: Barrimiento de fila
 js_includes: /electoral/lib/phaser.min.js
 
-Haz clic en la urna para comenzar, luego elige los miembros que no están presentes
+Haz clic en el logo para comenzar, luego elige los miembros que no están presentes
 haciendo clic en ellos, finalmente haz clic en *Barrer fila*. Preciona el botón de
 *Reiniciar* para comenzar de nuevo.
 

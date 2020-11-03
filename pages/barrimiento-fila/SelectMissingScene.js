@@ -31,8 +31,8 @@ class SelectMissingScene extends Phaser.Scene {
     this.mesaDir.x = this.game.config.width/2 - this.mesaDir.width/2;
     this.mesaDir.alpha = 0;
     const puestosNombres = [
-      "Presidente", "Primer Secretario", "Segundo Secretario",
-      "Primer Escrutador", "Segundo Escrutador", "Tercer Escrutador"
+      "Presidente/a", "1º Secretario/a", "2º Secretario/a",
+      "1º Escrutador/a", "2º Escrutador/a", "3º Escrutador/a"
     ];
     const goffset = 25;
     for (let i = 0; i < 6; i++) {
@@ -44,7 +44,7 @@ class SelectMissingScene extends Phaser.Scene {
       this.miembrosImgs[m].x = i*offset+goffset + this.game.config.width;
       this.miembrosImgs[m].y = this.game.config.height/2 - this.miembrosImgs[m].height*.25 / 2;
       this.puestos[i] = this.puestoTxt(puestosNombres[i],
-                                       i*offset+goffset+30,
+                                       i*offset+goffset+20,
                                        this.game.config.height/2 + this.miembrosImgs[m].height*.25 / 2);
     }
     for (let i = 6; i < 9; i++) {

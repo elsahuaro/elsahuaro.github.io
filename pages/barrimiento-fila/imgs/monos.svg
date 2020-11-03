@@ -46,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -355,14 +355,25 @@
        d="m 105.8261,25.611865 a 50.413552,50.413552 0 0 0 -50.413469,50.413464 50.413552,50.413552 0 0 0 0.978236,9.88311 c -1.382064,-0.1166 -3.378451,0.62343 -2.978113,6.09214 0.46721,6.38218 8.446958,11.975581 12.001852,14.165031 a 50.413552,50.413552 0 0 0 1.488282,1.89859 c -0.333214,1.90567 -0.524881,6.56202 4.092254,11.17916 5.998913,5.99891 18.697563,10.66292 18.697563,10.66292 v 12.81421 c 0,9.7836 -3.13675,10.00197 -3.13676,10.00197 0,0 -7.2203,1.93458 -31.523134,8.44651 -24.302836,6.51193 -25.709025,29.24266 -25.709025,29.24266 v 99.58824 h 75.864104 75.86359 v -99.58824 c 0,0 -1.40619,-22.73073 -25.70903,-29.24266 -24.30283,-6.51193 -31.52313,-8.44651 -31.52313,-8.44651 0,0 -3.13676,-0.21837 -3.13676,-10.00197 v -12.81421 c 0,0 12.69865,-4.66401 18.69756,-10.66292 3.75262,-3.75262 4.32857,-7.53843 4.23385,-9.84798 a 50.413552,50.413552 0 0 0 5.59449,-7.69049 c 3.89465,-2.751751 9.18538,-7.400101 9.56273,-12.554781 0.40489,-5.53091 -1.64191,-6.22464 -3.02514,-6.08749 a 50.413552,50.413552 0 0 0 0.49351,-7.03729 50.413552,50.413552 0 0 0 -50.41346,-50.413464 z" />
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:35.2778px;line-height:1;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold';letter-spacing:0px;display:inline;opacity:1;stroke-width:0.264583"
-       x="60.608017"
-       y="238.77159"
+       style="font-weight:bold;font-size:42.3333px;line-height:1;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold';letter-spacing:0px;display:inline;opacity:1;stroke-width:0.264583"
+       x="95.925247"
+       y="259.41946"
        id="text1401"><tspan
          sodipodi:role="line"
-         x="60.608017"
-         y="238.77159"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.2778px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffff00;fill-opacity:1;stroke-width:0.264583"
-         id="tspan1399">Ciu 6</tspan></text>
+         x="95.925247"
+         y="259.41946"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.3333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffff00;fill-opacity:1;stroke-width:0.264583"
+         id="tspan1399">6</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:31.75px;line-height:1;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold';letter-spacing:0px;display:inline;opacity:1;stroke-width:0.264583"
+       x="40.543518"
+       y="206.26897"
+       id="text1401-3"><tspan
+         sodipodi:role="line"
+         x="40.543518"
+         y="206.26897"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:31.75px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffff00;fill-opacity:1;stroke-width:0.264583"
+         id="tspan1399-6">C. de fila</tspan></text>
   </g>
 </svg>
