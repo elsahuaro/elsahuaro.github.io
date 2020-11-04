@@ -14,3 +14,4 @@ México.
 - [Ubica tu sección electoral](encuentra-seccion/)
 - [PDFs para taller](pdfs/)
 - [Barrimiento de fila](barrimiento-fila/)
+- [Anotar bien](anotar-bien/)
