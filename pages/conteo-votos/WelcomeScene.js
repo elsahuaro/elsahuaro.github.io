@@ -54,6 +54,7 @@ class WelcomeScene extends Phaser.Scene {
         onComplete: () => {
           this.scene.start("draw-vote", {
             total: stack.length,
+            errores: 0,
             conteo: this.conteo
           });
         }

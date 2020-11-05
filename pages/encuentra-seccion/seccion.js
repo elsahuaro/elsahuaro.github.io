@@ -1551,8 +1551,12 @@ const ubicaSeccion = (e, form) => {
       .then(json => {
         const DEL = json['properties']['DEL_ROM'];
         const DEF = json['properties']['DEF'];
+        const MUN = json['properties']['Municipio'];
+        const TSEC = json['properties']['Tipo'];
         document.getElementById("del").innerText = DEL;
         document.getElementById("def").innerText = DEF+"";
+        document.getElementById("mun").innerText = MUN;
+        document.getElementById("tsec").innerText = TSEC;
         res.style.display = "block";
         setupMap(json);
       });

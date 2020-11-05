@@ -5,6 +5,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
@@ -14,11 +15,34 @@
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    sodipodi:docname="mono2prev.svg"
-   inkscape:export-filename="/home/elsahuaro/site/electoral/pages/barrimiento-fila/imgs/ciu6.png"
+   inkscape:export-filename="/home/elsahuaro/site/electoral/pages/barrimiento-fila/imgs/1s.png"
    inkscape:export-xdpi="72.00943"
    inkscape:export-ydpi="72.00943">
   <defs
-     id="defs2" />
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient917"
+       id="linearGradient921"
+       x1="154.65344"
+       y1="187.33217"
+       x2="139.26761"
+       y2="201.49791"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,1.0583333)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient917">
+      <stop
+         style="stop-color:#ffffb8;stop-opacity:1"
+         offset="0"
+         id="stop913" />
+      <stop
+         style="stop-color:#e3e300;stop-opacity:1"
+         offset="1"
+         id="stop915" />
+    </linearGradient>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -33,10 +57,10 @@
      inkscape:current-layer="g1403"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -390,5 +414,32 @@
        cx="123.12967"
        cy="87.693672"
        r="5.1440144" />
+    <g
+       id="g931"
+       transform="translate(-0.36483383,-7.402401)"
+       style="display:inline">
+      <circle
+         style="fill:#000000;fill-opacity:0.40968;stroke-width:1.764;stroke-linejoin:round"
+         id="path896"
+         cx="134.38313"
+         cy="207.71761"
+         r="19.018131" />
+      <circle
+         style="display:inline;fill:url(#linearGradient921);fill-opacity:1;stroke-width:1.764;stroke-linejoin:round"
+         id="path896-3"
+         cx="134.38297"
+         cy="206.42053"
+         r="19.018131" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.4028px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;white-space:pre;inline-size:37.6265;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.642658"
+         x="139.79311"
+         y="212.39598"
+         id="text925"
+         transform="translate(-24.156924,0.44635549)"><tspan
+           x="139.79311"
+           y="212.39598"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.4028px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.642658">1S</tspan></tspan></text>
+    </g>
   </g>
 </svg>

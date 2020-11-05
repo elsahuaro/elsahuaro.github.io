@@ -16,6 +16,7 @@ class CategorizeVoteScene extends Phaser.Scene {
 
   init(data) {
     this.total = data.total;
+    this.errores = data.errores;
     this.vote = data.vote;
     this.conteo = data.conteo;
   }
@@ -27,6 +28,10 @@ class CategorizeVoteScene extends Phaser.Scene {
     });
     this.addTapete();
     this.totalText = this.add.text(this.game.config.width-140, 20, "total: " + this.total, {
+      font: '30px "Libertinus Sans"',
+      fill: "black"
+    });
+    this.erroresText = this.add.text(this.game.config.width-167, 40, "errores: " + this.errores, {
       font: '30px "Libertinus Sans"',
       fill: "black"
     });
@@ -116,7 +121,7 @@ class CategorizeVoteScene extends Phaser.Scene {
       this.tapete[votes[i]].on("pointerover", this.voteTintSetter(i));
       this.tapete[votes[i]].on("pointerout", this.voteTintClearer(i));
       this.tapete[votes[i]].on("pointerdown", this.voteCaster(i));
-      var val = this.conteo[votes[i]].correct + this.conteo[votes[i]].incorrect;
+      var val = this.conteo[votes[i]].correct;
       var counterTxt = this.add.text(x, y, "" + val, {
         font: '30px "Libertinus Sans"',
         fill: "black"
@@ -147,29 +152,32 @@ class CategorizeVoteScene extends Phaser.Scene {
   castVote(vote) {
     if (vote == this.vote) {
       this.conteo[vote].correct = this.conteo[vote].correct + 1;
+      for (var i = 0; i < votes.length; i++) {
+        this.tapete[votes[i]].clearTint();
+        this.tapete[votes[i]].off("pointerover");
+        this.tapete[votes[i]].off("pointerout");
+        this.tapete[votes[i]].off("pointerdown");
+      }
+      var x = this.tapete[vote].x;
+      var y = this.tapete[vote].y;
+      this.tweens.add({
+        targets: [this.boleta, this.voteImg],
+        duration: 500,
+        ease: 'Quad.easeInOut',
+        x: x,
+        y: y,
+        scaleX: this.boleta_scale3,
+        scaleY: this.boleta_scale3,
+        onComplete: () => {
+          this.fadeBoleta();
+        }
+      });
     } else {
       this.conteo[vote].incorrect = this.conteo[vote].incorrect + 1;
+      this.errores++;
+      this.erroresText.setText("errores: " + this.errores);
+      this.tapete[vote].setTint(0xFF0000);
     }
-    for (var i = 0; i < votes.length; i++) {
-      this.tapete[votes[i]].clearTint();
-      this.tapete[votes[i]].off("pointerover");
-      this.tapete[votes[i]].off("pointerout");
-      this.tapete[votes[i]].off("pointerdown");
-    }
-    var x = this.tapete[vote].x;
-    var y = this.tapete[vote].y;
-    this.tweens.add({
-      targets: [this.boleta, this.voteImg],
-      duration: 500,
-      ease: 'Quad.easeInOut',
-      x: x,
-      y: y,
-      scaleX: this.boleta_scale3,
-      scaleY: this.boleta_scale3,
-      onComplete: () => {
-        this.fadeBoleta();
-      }
-    });
   }
 
   fadeBoleta() {
@@ -181,6 +189,7 @@ class CategorizeVoteScene extends Phaser.Scene {
       onComplete: () => {
         this.scene.start("draw-vote", {
           total: this.total,
+          errores: this.errores,
           conteo: this.conteo
         });
       }

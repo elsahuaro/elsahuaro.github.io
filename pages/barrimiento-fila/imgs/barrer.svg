@@ -77,7 +77,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -95,14 +95,14 @@
        ry="4.1661334" />
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:14.1111px;line-height:1;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold';letter-spacing:0px;stroke-width:0.264583"
-       x="40.571072"
-       y="48.867554"
-       id="text837"><tspan
+       style="font-weight:bold;font-size:12.3472px;line-height:1;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold';letter-spacing:-1.05569px;stroke-width:0.264583"
+       x="37.096748"
+       y="47.682659"
+       id="text837-3"><tspan
          sodipodi:role="line"
-         id="tspan835"
-         x="40.571072"
-         y="48.867554"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.1111px;font-family:'Libertinus Sans';-inkscape-font-specification:'Libertinus Sans Bold';stroke-width:0.264583">Barrer fila</tspan></text>
+         id="tspan835-6"
+         x="37.096748"
+         y="47.682659"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.3472px;font-family:'Libertinus Sans';-inkscape-font-specification:'Libertinus Sans Bold';stroke-width:0.264583">Recorrer cargos</tspan></text>
   </g>
 </svg>

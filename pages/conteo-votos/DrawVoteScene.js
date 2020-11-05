@@ -6,6 +6,7 @@ class DrawVoteScene extends Phaser.Scene {
 
   init(data) {
     this.total = data.total;
+    this.errores = data.errores;
     this.conteo = data.conteo;
   }
 
@@ -15,41 +16,29 @@ class DrawVoteScene extends Phaser.Scene {
       fill: "black"
     });
     this.addTapete();
-    this.back = this.add.image(120, this.game.config.height/2, "ine-back").setInteractive();
-    this.front = this.add.image(120, this.game.config.height/2, "ine-front").setInteractive();
+    this.back = this.add.image(120, this.game.config.height/2, "ine-back");
+    this.front = this.add.image(120, this.game.config.height/2, "ine-front");
     this.totalText = this.add.text(this.game.config.width-140, 20, "total: " + this.total, {
       font: '30px "Libertinus Sans"',
       fill: "black"
     });
-
-    this.front.on("pointerover", (pointer) => {
-      this.front.setTint(0xDF2EDB);
-      this.back.setTint(0xDF2EDB);
+    this.erroresText = this.add.text(this.game.config.width-167, 40, "errores: " + this.errores, {
+      font: '30px "Libertinus Sans"',
+      fill: "black"
     });
 
-    this.front.on("pointerout", (pointer) => {
-      this.front.clearTint();
-      this.back.clearTint();
-    });
+    if (this.total > 0) {
+      this.total -= 1;
+      this.scene.start("categorize-vote", {
+        total: this.total,
+        errores: this.errores,
+        vote: nextVote(),
+        conteo: this.conteo
+      });
+    }
 
-    this.front.on("pointerdown", (pointer) => {
-      if (this.total <= 0) {
-        this.front.clearTint();
-        this.back.clearTint();
-        this.front.off("pointerover");
-        this.front.off("pointerout");
-        this.front.off("pointerdown");
-      } else {
-        this.total -= 1;
-        this.scene.start("categorize-vote", {
-          total: this.total,
-          vote: nextVote(),
-          conteo: this.conteo
-        });
-      }
-
-      this.totalText.setText("total: " + this.total);
-    });
+    this.totalText.setText("total: " + this.total);
+    this.erroresText.setText("total: " + this.errores);
   }
   
   addTapete() {
@@ -74,7 +63,7 @@ class DrawVoteScene extends Phaser.Scene {
       });
       txt.x = x + width/2 - txt.width/2;
       txt.y = y + 10;
-      var val = this.conteo[votes[i]].correct + this.conteo[votes[i]].incorrect;
+      var val = this.conteo[votes[i]].correct;
       var counterTxt = this.add.text(x, y, "" + val, {
         font: '30px "Libertinus Sans"',
         fill: "black"

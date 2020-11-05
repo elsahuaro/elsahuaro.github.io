@@ -1,7 +1,7 @@
 var votes = ['pan', 'prd', 'mc', 'pan-prd', 'pan-mc', 'prd-mc', 'pan-prd-mc',
              'pri', 'pvem', 'na', 'pri-pvem', 'pri-na', 'pvem-na', 'pri-pvem-na',
              'pt', 'morena', 'pes', 'pt-morena', 'pt-pes', 'morena-pes', 'pt-morena-pes',
-             'mz', 'bronco', 'nulo', 'otro'];
+             'zavala', 'bronco', 'nulo', 'otro'];
 
 var stack = [].concat(Array(18).fill('pan'))
               .concat(Array(14).fill('pri'))

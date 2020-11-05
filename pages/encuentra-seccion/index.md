@@ -1,5 +1,5 @@
-pagetitle: Ubica tu sección electoral
-title: Ubica tu sección electoral
+pagetitle: Identidad electoral
+title: Identidad electoral
 css_includes: /electoral/lib/leaflet/leaflet.css
 css_includes: seccion.css
 js_includes: /electoral/lib/leaflet/leaflet.js
@@ -13,10 +13,16 @@ js_includes: seccion.js
 
 <div id="resultado">
   <div class="renglon">
-    <span class="etiqueta">Distrito Electoral Local:</span> <span id="del" class="distrito">IX</span>
+    <span class="etiqueta">Distrito Electoral Local:</span> <span id="del" class="distrito">X</span>
   </div>
   <div class="renglon">
-    <span class="etiqueta">Distrito Electoral Federal:</span> <span id="def" class="distrito">3</span>
+    <span class="etiqueta">Distrito Electoral Federal:</span> <span id="def" class="distrito">X</span>
+  </div>
+  <div class="renglon">
+    <span class="etiqueta">Municipio:</span> <span id="mun" class="distrito">X</span>
+  </div>
+  <div class="renglon">
+    <span class="etiqueta">Tipo de sección:</span> <span id="tsec" class="distrito">X</span>
   </div>
   <div id="secmap"></div>
 </div>
