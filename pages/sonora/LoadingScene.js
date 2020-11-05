@@ -49,11 +49,20 @@ class LoadingScene extends Phaser.Scene {
       this.scene.start("mapa");
     });
 
-    this.load.image("mapa", "./mapa_municipal.png");
+    for (let i = 1; i <= 7; i++) {
+      this.load.image("def"+i, "./def"+i+".png");
+    }
   }
 
   create() {
-    this.mapa = this.add.image(0, 0, "mapa");
-    this.mapa.setOrigin(0, 0);
+    this.defs = [
+      this.add.image(0, 0, "def1").setOrigin(0, 0),
+      this.add.image(0, 0, "def2").setOrigin(0, 0),
+      this.add.image(0, 0, "def3").setOrigin(0, 0),
+      this.add.image(0, 0, "def4").setOrigin(0, 0),
+      this.add.image(0, 0, "def5").setOrigin(0, 0),
+      this.add.image(0, 0, "def6").setOrigin(0, 0),
+      this.add.image(0, 0, "def7").setOrigin(0, 0)
+    ];
   }
 }
