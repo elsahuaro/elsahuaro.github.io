@@ -243,6 +243,9 @@ const setupMap = json => {
   if (!map) {
     initMap();
   }
+  if (map && secLayer) {
+    map.removeLayer(secLayer);
+  }
   secLayer = L.geoJSON(json).addTo(map);
   map.fitBounds(secLayer.getBounds());
 }
