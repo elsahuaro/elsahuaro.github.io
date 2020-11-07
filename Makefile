@@ -17,6 +17,7 @@ PNG_TGT = $(PNG_SRC:src/%.png=build/%.png)
 .PHONY: build docs
 
 build: $(HTML_TGT) $(JS_TGT) $(CSS_TGT) $(FONT_TGT) $(JSON_TGT) $(PNG_TGT) favicon libs docs
+	cp README.md build/
 
 build/%.html: src/%.html
 	mkdir -p $(@D)
