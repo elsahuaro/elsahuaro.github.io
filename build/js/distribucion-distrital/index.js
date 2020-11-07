@@ -1,18 +1,18 @@
 var info = [
-  { "lnominal": 288072, "secciones": 178, "urbanas": 136, "nourbanas": 42,
-    "municipios": 11, "dels": 3, "curbanas": 18979, "cnourbanas": 5339 },
-  { "lnominal": 333881, "secciones": 226, "urbanas": 186, "nourbanas": 40,
-    "municipios": 11, "dels": 4, "curbanas": 24182, "cnourbanas": 4652 },
-  { "lnominal": 304073, "secciones": 215, "urbanas": 201, "nourbanas": 14,
-    "municipios": 1, "dels": 5, "curbanas": 24914, "cnourbanas": 1646 },
+  { "lnominal": 288072, "secciones": 178, "urbanas": 138, "nourbanas": 40,
+    "municipios": 11, "dels": 3, "casillas": 495, "curbanas": 390, "cnourbanas": 105 },
+  { "lnominal": 333881, "secciones": 226, "urbanas": 189, "nourbanas": 37,
+    "municipios": 11, "dels": 4, "casillas": 565, "curbanas": 487, "cnourbanas": 78 },
+  { "lnominal": 304073, "secciones": 215, "urbanas": 203, "nourbanas": 12,
+    "municipios": 1, "dels": 5, "casillas": 1004, "curbanas": 927, "cnourbanas": 77 },
   { "lnominal": 291131, "secciones": 286, "urbanas": 135, "nourbanas": 151,
-    "municipios": 41, "dels": 4, "curbanas": 18650, "cnourbanas": 18912 },
-  { "lnominal": 295985, "secciones": 202, "urbanas": 183, "nourbanas": 19,
-    "municipios": 1, "dels": 5, "curbanas": 24624, "cnourbanas": 2272 },
-  { "lnominal": 320458, "secciones": 219, "urbanas": 189, "nourbanas": 30,
-    "municipios": 1, "dels": 3, "curbanas": 26445, "cnourbanas": 4161 },
-  { "lnominal": 268126, "secciones": 207, "urbanas": 110, "nourbanas": 97,
-    "municipios": 7, "dels": 3, "curbanas": 14938, "cnourbanas": 13886 }
+    "municipios": 41, "dels": 4, "casillas": 547, "curbanas": 297, "cnourbanas": 250 },
+  { "lnominal": 295985, "secciones": 202, "urbanas": 184, "nourbanas": 18,
+    "municipios": 1, "dels": 5, "casillas": 1004, "curbanas": 927, "cnourbanas": 77 },
+  { "lnominal": 320458, "secciones": 219, "urbanas": 191, "nourbanas": 28,
+    "municipios": 1, "dels": 3, "casillas": 552, "curbanas": 449, "cnourbanas": 103 },
+  { "lnominal": 268126, "secciones": 207, "urbanas": 90, "nourbanas": 117,
+    "municipios": 7, "dels": 3, "casillas": 474, "curbanas": 241, "cnourbanas": 233 }
 ];
 
 function infoSeleccion(i) {

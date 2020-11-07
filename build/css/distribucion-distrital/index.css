@@ -7,6 +7,12 @@
   width: 90%;
 }
 
+#data-entries > p {
+  font-family: 'Roboto Condensed';
+  font-size: 90%;
+  padding-top: 1rem;
+}
+
 @media all and (min-width:768px) { #data-entries { width: 80%; } }
 @media all and (min-width:1366px) { #data-entries { width: 70%; } }
 
