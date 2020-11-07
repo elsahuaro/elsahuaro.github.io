@@ -1,78 +1,64 @@
 .ONESHELL:
 
-JS_SRC = $(shell find pages/ -type f -name '*.js' -not -path "pages/lib/*")
-JS_TGT = $(JS_SRC:pages/%.js=static/electoral/%.js)
-JSON_SRC = $(shell find pages/ -type f -name '*.json' -not -path "pages/lib/*")
-JSON_TGT = $(JSON_SRC:pages/%.json=static/electoral/%.json)
-CSS_SRC = $(shell find pages/ -type f -name '*.css')
-CSS_TGT = $(CSS_SRC:pages/%.css=static/electoral/%.css)
-PNG_SRC = $(shell find pages/ -type f -name '*.png' -not -path "pages/lib/*")
-PNG_TGT = $(PNG_SRC:pages/%.png=static/electoral/%.png)
-JPG_SRC = $(shell find pages/ -type f -name '*.jpg' -not -path "pages/lib/*")
-JPG_TGT = $(JPG_SRC:pages/%.jpg=static/electoral/%.jpg)
-GIF_SRC = $(shell find pages/ -type f -name '*.gif' -not -path "pages/lib/*")
-GIF_TGT = $(GIF_SRC:pages/%.gif=static/electoral/%.gif)
-PDF_SRC = $(shell find pages/ -type f -name '*.pdf' -not -path "pages/lib/*")
-PDF_TGT = $(PDF_SRC:pages/%.pdf=static/electoral/%.pdf)
+HTML_SRC = $(shell find src/ -type f -name '*.html')
+HTML_TGT = $(HTML_SRC:src/%.html=build/%.html)
+JS_SRC = $(shell find src/js/ -type f -name '*.js')
+JS_TGT = $(JS_SRC:src/%.js=build/%.js)
+CSS_SRC = $(shell find src/css/ -type f -name '*.css')
+CSS_TGT = $(CSS_SRC:src/%.css=build/%.css)
+FONT_SRC = $(shell find src/fonts/ -type f -name '*.woff2')
+FONT_TGT = $(FONT_SRC:src/%.woff2=build/%.woff2)
+JSON_SRC = $(shell find src/data/ -type f -name '*.json')
+JSON_TGT = $(JSON_SRC:src/%.json=build/%.json)
+PNG_SRC = $(shell find src/img/ -type f -name '*.png')
+PNG_TGT = $(PNG_SRC:src/%.png=build/%.png)
 
-.PHONY: serve build build_html lib fonts deploy
 
-serve:
-	sbcl --load serve.lisp
+.PHONY: build docs
 
-build: build_html $(JS_TGT) $(JSON_TGT) $(CSS_TGT) $(PNG_TGT) $(JPG_TGT) $(GIF_TGT) $(PDF_TGT) lib fonts docs
+build: $(HTML_TGT) $(JS_TGT) $(CSS_TGT) $(FONT_TGT) $(JSON_TGT) $(PNG_TGT) favicon libs docs
 
-build_html:
-	source pyenv/bin/activate
-	python gensite.py
-	deactivate
-	cp ./pages/favicon.ico ./static/electoral/favicon.ico
-
-static/electoral/%.js: pages/%.js .babelrc
-	mkdir -p $(@D)
-	./node_modules/.bin/babel $< -o $@
-
-static/electoral/%.json: pages/%.json
+build/%.html: src/%.html
 	mkdir -p $(@D)
 	cp $< $@
 
-static/electoral/%.css: pages/%.css
+build/%.js: src/%.js
 	mkdir -p $(@D)
 	cp $< $@
 
-static/electoral/%.png: pages/%.png
+build/%.css: src/%.css
 	mkdir -p $(@D)
 	cp $< $@
 
-static/electoral/%.jpg: pages/%.jpg
+build/%.woff2: src/%.woff2
 	mkdir -p $(@D)
 	cp $< $@
 
-static/electoral/%.gif: pages/%.gif
+build/%.json: src/%.json
 	mkdir -p $(@D)
 	cp $< $@
 
-static/electoral/%.pdf: pages/%.pdf
+build/%.png: src/%.png
 	mkdir -p $(@D)
 	cp $< $@
 
-fonts:
-	mkdir -p static/electoral/fonts
-	find ./pages/fonts -type f -name '*.otf' -exec sfnt2woff {} \;
-	cp ./pages/fonts/*.woff ./static/electoral/fonts
+favicon: src/img/favicon.ico
+	mkdir -p build/img
+	cp src/img/favicon.ico build/img/favicon.ico
 
-lib:
-	mkdir -p static/electoral/lib
-	cp -r ./pages/lib/* ./static/electoral/lib
+libs:
+	mkdir -p build/lib
+	cp -r src/lib build/
 
 docs:
-	mkdir -p static/electoral/
-	cp -r ./pages/docs ./static/electoral/
+	mkdir -p build/doc
+	cp -r src/doc build/
 
-pyfreeze:
-	source pyenv/bin/activate
-	pip freeze > requirements.txt
-	deactivate
+serve:
+	sbcl --load server.lisp
 
 deploy:
-	git subtree push --prefix static/electoral origin gh-pages
+	git subtree push --prefix build origin gh-pages
+
+clean:
+	rm -r build
