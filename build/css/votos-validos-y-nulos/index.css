@@ -1,0 +1,10 @@
+#votos-validos-y-nulos {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.info {
+  text-align: center;
+}
+.info > a {
+  color: var(--pcolor);
+}

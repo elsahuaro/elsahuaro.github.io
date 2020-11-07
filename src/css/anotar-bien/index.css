@@ -1,0 +1,149 @@
+#anotar-bien {
+  margin-top: 1rem;
+}
+
+.bloque {
+  font-family: "Roboto";
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+
+.cabecera {
+  display: flex;
+  text-align: left;
+}
+
+.titinstr {
+  display: flex;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.circ {
+  display: inline-table;
+  justify-content: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  line-height: 0.75rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.btitulo {
+  display: inline;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 0.75rem;
+  letter-spacing: -0.05rem;
+}
+
+.instr {
+  display: inline;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  color: rgba(24, 20, 20, 0.5);
+  font-weight: bold;
+}
+
+.columnas {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.columna {
+  width: 100%;
+}
+
+.pill {
+  background: #fbd9a0;
+  font-size: 0.5rem;
+  padding: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  line-height: 1em;
+  align-items: center;
+}
+
+.pill > span {
+  width: 35%;
+}
+.pill > em {
+  width: 50%;
+}
+
+.pvoto {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  height: 80px;
+}
+
+.pvotom {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  height: 60px;
+  justify-content: space-around;
+}
+
+.pvoto > img {
+  width: 60px;
+  height: 60px;
+}
+
+.pvotom > img {
+  width: 40px;
+  height: 40px;
+}
+
+.pvotom > .dummy {
+  width: 40px;
+  height: 40px;
+}
+
+.pvoto > span {
+  font-size: 0.5rem;
+}
+
+.pvoto > input {
+  width: 65%;
+  margin: 0 10px;
+  height: 40px;
+}
+
+.pvotom > input {
+  width: 40%;
+  margin: 0 10px;
+  height: 30px;
+}
+
+.coltit {
+  font-weight: bold;
+  font-size: 0.7rem;
+  letter-spacing: -0.05rem;
+}
+
+input {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  font-weight: bold;
+}
