@@ -14,9 +14,9 @@ PNG_SRC = $(shell find src/img/ -type f -name '*.png')
 PNG_TGT = $(PNG_SRC:src/%.png=build/%.png)
 
 
-.PHONY: build docs cname
+.PHONY: build docs
 
-build: $(HTML_TGT) $(JS_TGT) $(CSS_TGT) $(FONT_TGT) $(JSON_TGT) $(PNG_TGT) favicon libs docs cname
+build: $(HTML_TGT) $(JS_TGT) $(CSS_TGT) $(FONT_TGT) $(JSON_TGT) $(PNG_TGT) favicon libs docs
 
 build/%.html: src/%.html
 	mkdir -p $(@D)
@@ -53,9 +53,6 @@ libs:
 docs:
 	mkdir -p build/doc
 	cp -r src/doc build/
-
-cname:
-	cp CNAME build/
 
 serve:
 	sbcl --load server.lisp
