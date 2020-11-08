@@ -1,1 +1,1 @@
-# Defensa del voto en Sonora
+# Capacitación para RC de Morena en Sonora
