@@ -472,6 +472,55 @@ footer {
   margin-top: 2rem;
 }
 
+footer > .licencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 75%;
+  font-size: 120%;
+}
+
+.licencia a {
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.licencia p {
+  max-width: 50%;
+}
+
+.licencia-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: max-content;
+  /* background: #FFFFFF; */
+}
+
+.licencia-logo > img {
+  height: 3rem;
+  margin: 0 0.25rem;
+}
+
+.footer-codigo {
+  margin-top: 1rem;
+}
+
+.footer-codigo img {
+  margin-top: 0.5rem;
+  height: 1rem;
+}
+
+.cc-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
 /* CUSTOM ELEMENTS */
 
 .logo-home {
