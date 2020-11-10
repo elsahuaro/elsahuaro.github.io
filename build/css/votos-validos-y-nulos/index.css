@@ -1,6 +1,9 @@
 #votos-validos-y-nulos {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  overflow: visible !important;
+  width: 95% !important;
+  height: unset !important;
 }
 .info {
   text-align: center;

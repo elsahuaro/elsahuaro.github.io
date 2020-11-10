@@ -1,4 +1,7 @@
 #contar-bien {
   margin-top: 1rem;
+  overflow: visible !important;
+  width: 95% !important;
+  height: unset !important;
 }
 

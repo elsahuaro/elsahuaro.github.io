@@ -45,7 +45,7 @@ window.onload = function() {
     backgroundColor: "#FFFFFF",
     parent: "contar-bien",
     scale: {
-      mode: Phaser.Scale.FIT,
+      mode: Phaser.Scale.WIDTH_CONTROLS_HEIGHT,
       autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
     }
   };
