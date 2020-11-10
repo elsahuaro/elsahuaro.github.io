@@ -1,3 +1,7 @@
+#distribucion-distrital {
+  overflow: visible !important;
+}
+
 #data-entries {
   visibility: hidden;
   padding-bottom: 1rem;

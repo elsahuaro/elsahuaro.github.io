@@ -54,10 +54,13 @@ input[type=submit] {
 }
 
 #secmap {
-  height: 30rem;
-  width: 30rem;
+  height: 25rem;
+  width: 25rem;
   margin-bottom: 1rem;
 }
+
+@media all and (min-width:768px) { #secmap { height: 30rem; width: 30rem; } }
+@media all and (min-width:1366px) { #secmap { height: 35rem; width: 35rem; } }
 
 .renglones {
   padding-bottom: 1rem;
