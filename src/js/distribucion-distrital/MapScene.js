@@ -77,7 +77,7 @@ class MapScene extends BaseScene {
   }
 
   seleccionar(i) {
-    if (this.seleccion) {
+    if (Number.isInteger(this.seleccion)) {
       this.defs[this.seleccion].clearTint();
     }
     this.seleccion = i;
@@ -95,7 +95,7 @@ class MapScene extends BaseScene {
         }
       });
       def.on("pointerout", pointer => {
-        if (!this.seleccion || this.seleccion != i) {
+        if (!Number.isInteger(this.seleccion) || this.seleccion != i) {
           def.clearTint();
         }
       });
