@@ -8,9 +8,15 @@ window.onload = function() {
   var config = {
     width: 1210,
     height: 600,
+    maxWidth: 1210,
+    maxHeight: 600,
     scene: [LoadingScene, StartScene, SelectMissingScene],
     backgroundColor: "#FFFFFF",
-    parent: "recorrido-de-cargos"
+    parent: "recorrido-de-cargos",
+    scale: {
+      mode: Phaser.Scale.FIT,
+      autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
+    }
   };
 
   var game = new Phaser.Game(config);

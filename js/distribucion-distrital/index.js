@@ -40,9 +40,15 @@ window.onload = function() {
   var config = {
     width: 670,
     height: 670,
+    maxWidth: 670,
+    maxHeight: 670,
     scene: [LoadingScene, MapScene],
     backgroundColor: "#FFFFFF",
-    parent: "distribucion-distrital"
+    parent: "distribucion-distrital",
+    scale: {
+      mode: Phaser.Scale.WIDTH_CONTROLS_HEIGHT,
+      autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
+    }
   };
 
   document.getElementById("data-entries").style.visibility = "hidden";

@@ -39,9 +39,15 @@ window.onload = function() {
   var config = {
     width: 1210,
     height: 600,
+    maxWidth: 1210,
+    maxHeight: 600,
     scene: [LoadingScene, WelcomeScene, DrawVoteScene, CategorizeVoteScene],
     backgroundColor: "#FFFFFF",
-    parent: "contar-bien" 
+    parent: "contar-bien",
+    scale: {
+      mode: Phaser.Scale.FIT,
+      autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
+    }
   };
 
   shuffle(stack);
