@@ -67,23 +67,9 @@ class DrawVoteScene extends StandardScene {
 
   activateINE() {
     if (availableVotes) {
-      this.front.on("pointerover", (pointer) => {
-        this.front.setTint(0xDF2EDB);
-        this.back.setTint(0xDF2EDB);
-      });
-
-      this.front.on("pointerout", (pointer) => {
-        this.front.clearTint();
-        this.back.clearTint();
-      });
-
-      this.front.on("pointerdown", () => {
-        this.front.clearTint();
-        this.back.clearTint();
-        this.scene.start("categorize-case", {
-          vote: nextVote(),
-          correctos: this.correctos
-        });
+      this.scene.start("categorize-case", {
+        vote: nextVote(),
+        correctos: this.correctos
       });
     }
   }

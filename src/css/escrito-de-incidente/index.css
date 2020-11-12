@@ -1,3 +1,7 @@
+body {
+  min-width: 1000px !important;
+}
+
 #formato {
   border: #000000 1px solid;
   padding: 50px;

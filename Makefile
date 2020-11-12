@@ -25,7 +25,7 @@ build/%.html: src/%.html
 
 build/%.js: src/%.js
 	mkdir -p $(@D)
-	cp $< $@
+	./node_modules/.bin/babel $< -o $@
 
 build/%.css: src/%.css
 	mkdir -p $(@D)
@@ -63,3 +63,6 @@ deploy:
 
 clean:
 	rm -r build
+
+clean-js:
+	rm $(JS_TGT)
