@@ -90,7 +90,7 @@ input[type=submit] {
 .distrito {
   font-family: 'Roboto Slab', serif;
   font-size: 160%;
-  font-weight: 800;
+  font-weight: 900;
   color: var(--scolor-dd);
   border: none;
 }
