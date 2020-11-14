@@ -39,7 +39,7 @@
 #distrito, #dels, #municipios, #lnominal, #secciones, #urbanas, #nourbanas, #curbanas, #cnourbanas {
   font-family: 'Roboto Slab', serif;
   font-size: 160%;
-  font-weight: 800;
+  font-weight: 900;
   color: var(--pcolor);
   border: none;
 }

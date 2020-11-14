@@ -10,7 +10,7 @@ class LoadingScene extends Phaser.Scene {
     var progressBar = this.add.graphics();
     var progressBox = this.add.graphics();
     progressBox.fillStyle(0x222222, 0.8);
-    progressBox.fillRect(445, 270, 320, 50);
+    progressBox.fillRect((width/2)-(320/2), height/2-30, 320, 50);
 
     var loadingText = this.make.text({
       x: width / 2,
