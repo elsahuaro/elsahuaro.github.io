@@ -22,6 +22,7 @@ class CategorizeVoteScene extends Phaser.Scene {
   }
 
   create() {
+    this.game.input.touch.capture = false;
     this.boxlabel = this.add.text(85, this.game.config.height/2+125, "Urna", {
       font: '30px "Roboto"',
       fill: "black"
@@ -134,18 +135,21 @@ class CategorizeVoteScene extends Phaser.Scene {
   voteTintSetter(i) {
     return (pointer) => {
       this.tapete[votes[i]].setTint(0xDF2EDB);
+      pointer.event.preventDefault();
     };
   }
 
   voteTintClearer(i) {
     return (pointer) => {
       this.tapete[votes[i]].clearTint();
+      pointer.event.preventDefault();
     };
   }
 
   voteCaster(i) {
     return (pointer) => {
       this.castVote(votes[i]);
+      pointer.event.preventDefault();
     };
   }
 

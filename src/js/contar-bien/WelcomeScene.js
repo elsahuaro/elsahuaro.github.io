@@ -12,6 +12,7 @@ class WelcomeScene extends Phaser.Scene {
   }
   
   create() {
+    this.game.input.touch.capture = false;
     this.addTapete();
 
     this.boxlabel = this.add.text(this.game.config.width/2-35, this.game.config.height/2+125, "Urna", {
@@ -32,11 +33,13 @@ class WelcomeScene extends Phaser.Scene {
     this.front.on("pointerover", (pointer) => {
       this.front.setTint(0xDF2EDB);
       this.back.setTint(0xDF2EDB);
+      pointer.event.preventDefault();
     });
     
     this.front.on("pointerout", (pointer) => {
       this.front.clearTint();
       this.back.clearTint();
+      pointer.event.preventDefault();
     });
 
     this.front.on("pointerdown", (pointer) => {
@@ -68,6 +71,7 @@ class WelcomeScene extends Phaser.Scene {
         ease: 'Quad.easeInOut',
         alpha: 1.0
       });
+      pointer.event.preventDefault();
     });
   }
 

@@ -19,6 +19,7 @@ class SelectMissingScene extends Phaser.Scene {
   }
 
   create() {
+    this.game.input.touch.capture = false;
     this.miembrosImgs = {}
     this.xFinales = [0, 0, 0, 0, 0, 0, 0, 0, 0];
     this.faltas = [false, false, false, false, false, false, false, false, false];
@@ -74,6 +75,7 @@ class SelectMissingScene extends Phaser.Scene {
         onComplete: () => {
           this.miembrosImgs[m].on("pointerover", pointer => {
             this.miembrosImgs[m].setTint(0x2EDF46);
+            pointer.event.preventDefault();
           });
           this.miembrosImgs[m].on("pointerout", pointer => {
             if (this.faltas[i]) {
@@ -81,6 +83,7 @@ class SelectMissingScene extends Phaser.Scene {
             } else {
               this.miembrosImgs[m].clearTint();
             }
+            pointer.event.preventDefault();
           });
           this.miembrosImgs[m].on("pointerdown", pointer => {
             if (this.faltas[i]) {
@@ -90,6 +93,7 @@ class SelectMissingScene extends Phaser.Scene {
               this.miembrosImgs[m].setTint(0xDF352E);
               this.faltas[i] = true;
             }
+            pointer.event.preventDefault();
           });
         }
       });
@@ -100,9 +104,11 @@ class SelectMissingScene extends Phaser.Scene {
     this.recorrerBtn.scale = 0.75;
     this.recorrerBtn.on("pointerover", pointer => {
       this.recorrerBtn.setTint(0x8AE787);
+      pointer.event.preventDefault();
     });
     this.recorrerBtn.on("pointerout", pointer => {
       this.recorrerBtn.clearTint();
+      pointer.event.preventDefault();
     });
     this.recorrerBtn.on("pointerdown", pointer => {
       this.recorrerBtn.off("pointerdown");
@@ -177,6 +183,7 @@ class SelectMissingScene extends Phaser.Scene {
           }
         });
       }, 2000);
+      pointer.event.preventDefault();
     });
 
     this.reiniciarBtn = this.add.image(890, this.game.config.height-100, "reiniciarBtn").setInteractive();
@@ -184,9 +191,11 @@ class SelectMissingScene extends Phaser.Scene {
     this.reiniciarBtn.scale = 0.75;
     this.reiniciarBtn.on("pointerover", pointer => {
       this.reiniciarBtn.setTint(0x8AE787);
+      pointer.event.preventDefault();
     });
     this.reiniciarBtn.on("pointerout", pointer => {
       this.reiniciarBtn.clearTint();
+      pointer.event.preventDefault();
     });
     this.reiniciarBtn.on("pointerdown", pointer => {
       this.tweens.add({
@@ -198,6 +207,7 @@ class SelectMissingScene extends Phaser.Scene {
           this.scene.start("select-missing");
         }
       });
+      pointer.event.preventDefault();
     });
   }
 }

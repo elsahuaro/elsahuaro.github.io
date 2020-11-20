@@ -16,6 +16,11 @@ window.onload = function() {
     scale: {
       mode: Phaser.Scale.FIT,
       autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
+    },
+    input: {
+      touch: {
+        capture: true
+      }
     }
   };
 

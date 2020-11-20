@@ -4,12 +4,15 @@ class StartScene extends Phaser.Scene {
   }
 
   create() {
+    this.game.input.touch.capture = false;
     this.dvl = this.add.image(this.game.config.width/2, this.game.config.height/2, "dvl").setInteractive();
     this.dvl.on("pointerover", pointer => {
       this.dvl.setTint(0xDF2EDB);
+      pointer.event.preventDefault();
     });
     this.dvl.on("pointerout", pointer => {
       this.dvl.clearTint();
+      pointer.event.preventDefault();
     });
     this.dvl.on("pointerdown", pointer => {
       this.tweens.add({
@@ -21,6 +24,7 @@ class StartScene extends Phaser.Scene {
           this.scene.start("select-missing");
         }
       });
+      pointer.event.preventDefault();
     });
   }
 }

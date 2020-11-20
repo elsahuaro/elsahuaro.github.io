@@ -87,20 +87,24 @@ class MapScene extends BaseScene {
 
   create() {
     super.create();
+    this.game.input.touch.capture = false;
 
     for (let [i, def] of this.defs.entries()) {
       def.on("pointerover", pointer => {
         if (!this.seleccion || this.seleccion != i) {
           def.setTint(tint);
         }
+        pointer.event.preventDefault();
       });
       def.on("pointerout", pointer => {
         if (!Number.isInteger(this.seleccion) || this.seleccion != i) {
           def.clearTint();
         }
+        pointer.event.preventDefault();
       });
       def.on("pointerdown", pointer => {
         this.seleccionar(i);
+        pointer.event.preventDefault();
       });
     }
   }

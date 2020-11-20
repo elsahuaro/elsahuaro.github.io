@@ -11,6 +11,7 @@ class DrawVoteScene extends Phaser.Scene {
   }
 
   create() {
+    this.game.input.touch.capture = false;
     this.boxlabel = this.add.text(85, this.game.config.height/2+125, "Urna", {
       font: '30px "Roboto"',
       fill: "black"
