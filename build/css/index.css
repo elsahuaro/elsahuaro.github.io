@@ -399,7 +399,6 @@ header {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 4rem;
-  margin-bottom: 2rem;
   font-size: 150%;
   width: 100%;
 }
@@ -439,6 +438,7 @@ header {
   font-size: 120%;
   width: 100%;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .banner {
@@ -619,4 +619,48 @@ footer > .licencia {
 .archivo a {
   text-decoration: none;
   color: var(--pcolor);
+}
+
+ol {
+  counter-reset: clistado;
+  text-align: left;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media all and (min-width:768px) { ol { width: 60%; } }
+@media all and (min-width:1366px) { ol { width: 50%; } }
+
+li a {
+  text-decoration: none;
+  color: var(--pcolor);
+}
+
+li a:hover {
+  background: rgba(181, 38, 30, 0.1);
+  color: var(--pcolor);
+}
+
+ol li {
+  counter-increment: clistado;
+  line-height: 1.6rem;
+  padding-bottom: 0.5rem;
+}
+
+ol li::before {
+  content: counter(clistado) ". ";
+  font-weight: 900;
+  font-size: 120%;
+  font-family: 'Roboto Slab', serif;
+  margin-left: -1.5rem;
+  color: var(--pcolor);
+}
+
+ul li:before {
+  content: "•";
+  margin-left: 1rem;
+  padding-right: 0.5rem;
 }
