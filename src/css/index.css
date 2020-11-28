@@ -626,6 +626,10 @@ footer > .licencia {
   opacity: 0.25;
 }
 
+.transp2 {
+  opacity: 0.75;
+}
+
 .modulo-info {
   padding: 2rem;
 }
