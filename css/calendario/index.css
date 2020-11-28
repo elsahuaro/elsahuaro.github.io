@@ -302,8 +302,8 @@
 }
 
 .popup {
-  margin: 70px auto;
-  padding: 20px;
+  margin: 30vh auto;
+  padding: 1.5rem;
   background: #ffff;
   border-radius: 1rem;
   width: 80%;
@@ -324,7 +324,7 @@
   top: 0;
   right: 0.5rem;
   transition: color 200ms;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
   color: #333;
