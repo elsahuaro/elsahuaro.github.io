@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/calendario/index.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="/lib/moment.min.js"></script>
+  </head>
+  <body>
+    <header class="shl-header">
+      <a class="logo-home" href="/">
+        <img src="/img/defensa-elecciones-2021-alt.png" />
+      </a>
+      <h2>
+        Calendario Electoral
+      </h2>
+    </header>
+    <div class="calcont">
+      <div class="topcontrols">
+        <div class="circled" onclick="prevMonth()"><i class="arrow aleft"></i></div>
+        <div class="monthyear" onclick="resetDate()"></div>
+        <div class="circled" onclick="nextMonth()"><i class="arrow aright"></i></div>
+      </div>
+      <div class="calheader">
+        <div>Lunes</div>
+        <div>Martes</div>
+        <div>Miercoles</div>
+        <div>Jueves</div>
+        <div>Viernes</div>
+        <div>Sábado</div>
+        <div>Domingo</div>
+      </div>
+      <div id="calendar" class="calendar"></div>
+      <div class="bottomcontrols">
+        <div class="circled" onclick="prevMonth()"><i class="arrow aleft"></i></div>
+        <div class="monthyear" onclick="resetDate()"></div>
+        <div class="circled" onclick="nextMonth()"><i class="arrow aright"></i></div>
+      </div>
+    </div>
+    <div id="calpopup">
+	  <div class="popup">
+		<h2 id="popupdate"></h2>
+		<a class="close" onclick="closePopup()">&times;</a>
+		<div id="popupcontent" class="content">
+		</div>
+	  </div>
+    </div>
+    <script type="text/javascript" src="/js/calendario/index.js"></script>
+    <script>
+     cal_data = {
+       2020: {
+         10: { 1: ["Designación y/o ratificación de las y los Consejeros Electorales de los Consejos Distritales (inicio de periodo)."],
+               30: ["Designación y/o ratificación de las y los Consejeros Electorales de los Consejos Distritales (fin de periodo)."], },
+         11: { 1: ["Instalación de los Consejos Distritales (inicio de periodo)."],
+               15: ["Instalación de los Consejos Distritales (fin de periodo)."] }
+       },
+       2021: {
+         2: { 16: ["Aprobación del número y ubicación de casillas extraordinarias y especiales."],
+              25: ["Aprobación del número y ubicación de casillas básicas y contiguas."] },
+         3: { 8: ["Segunda insaculación y designación de funcionarios para mesas directivas de casilla."],
+              15: ["Primera publicación de la lista de ubicación de casillas en los lugares más concurridos del distrito electoral y en los medios electrónicos del Institudo."],
+              16: ["Registro de representantes generales y ante mesas directivas de casilla (inicio de periodo).",
+                   "Sustitución de representantes generales y ante mesas directivas de casilla (inicio de periodo)."],
+              26: ["Aprobación de los Mecanismos de recolección (inicio de periodo)."],
+              27: ["Acreditación de representantes de partidos políticos y candidaturas independientes ante los mecanismos de recolección (inicio de periodo)."],
+              28: ["Sustitución de representantes de partidos políticos y candidaturas independientes ante los mecanismos de recolección (inicio de periodo)."],
+              30: ["Aprobación de los Mecanismos de recolección (fin de periodo)."]
+         },
+         4: { 6: ["Lista Nominal de Electores Definitiva con fotografía (inicio de periodo)."],
+              14: ["Lista Nominal de Electores Definitiva con fotografía (fin de periodo)."],
+              15: ["Segunda publicación de la lista de ubicación de casillas por causas supervivientes en los lugares más concurridos del distrito y en los medios electrónicos del Instituto (inicio de periodo)."],
+              19: ["Lista Nominal de Electores con fotografía Producto de Instancias Administrativas y Resoluciones del Tribunal (ADENDA) (inicio de periodo)."],
+              24: ["Lista Nominal de Electores con fotografía Producto de Instancias Administrativas y Resoluciones del Tribunal (ADENDA) (fin de periodo).",
+                   "Registro de representantes generales y ante mesas directivas de casilla (fin de periodo)."],
+              25: ["Segunda publicación de la lista de ubicación de casillas por causas supervivientes en los lugares más concurridos del distrito y en los medios electrónicos del Instituto (fin de periodo)."],
+              27: ["Sustitución de representantes generales y ante mesas directivas de casilla (fin de periodo)."] },
+         5: { 3: ["Acreditación de representantes de partidos políticos y candidaturas independientes ante los mecanismos de recolección (fin de periodo)."],
+              4: ["Sustitución de representantes de partidos políticos y candidaturas independientes ante los mecanismos de recolección (fin de periodo)."],
+              6: ["Jornada Electoral."],
+              7: ["Cómputos municipales (inicio de periodo).",
+                  "Cómputos distritales (inicio de periodo)."],
+              9: ["Cómputos municipales (fin de periodo)."],
+              11: ["Cómputos distritales (fin de periodo)."],
+              13: ["Cómputo estatal para la gubernatura."] }
+       }
+     };
+    </script>
+  </body>
+</html>
