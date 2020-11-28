@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/calendario/index.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="/lib/moment.min.js"></script>
+  </head>
+  <body>
+    <header class="shl-header">
+      <a class="logo-home" href="/">
+        <img src="/img/defensa-elecciones-2021-alt.png" />
+      </a>
+      <h2>
+        Calendario de Capacitación
+      </h2>
+    </header>
+    <div class="calcont">
+      <div class="topcontrols">
+        <div class="circled" onclick="prevMonth()"><i class="arrow aleft"></i></div>
+        <div class="monthyear" onclick="resetDate()"></div>
+        <div class="circled" onclick="nextMonth()"><i class="arrow aright"></i></div>
+      </div>
+      <div class="calheader">
+        <div>Lunes</div>
+        <div>Martes</div>
+        <div>Miercoles</div>
+        <div>Jueves</div>
+        <div>Viernes</div>
+        <div>Sábado</div>
+        <div>Domingo</div>
+      </div>
+      <div id="calendar" class="calendar"></div>
+      <div class="bottomcontrols">
+        <div class="circled" onclick="prevMonth()"><i class="arrow aleft"></i></div>
+        <div class="monthyear" onclick="resetDate()"></div>
+        <div class="circled" onclick="nextMonth()"><i class="arrow aright"></i></div>
+      </div>
+    </div>
+    <div id="calpopup">
+	  <div class="popup">
+		<h2 id="popupdate"></h2>
+		<a class="close" onclick="closePopup()">&times;</a>
+		<div id="popupcontent" class="content">
+		</div>
+	  </div>
+    </div>
+    <script type="text/javascript" src="/js/calendario/index.js"></script>
+    <script>
+     cal_data = {};
+    </script>
+  </body>
+</html>

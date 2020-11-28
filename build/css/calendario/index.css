@@ -1,0 +1,346 @@
+.topcontrols {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  justify-content: space-between;
+}
+
+.bottomcontrols {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  justify-content: space-between;
+}
+
+.monthyear {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  color: var(--scolor-dd);
+  white-space: nowrap;
+}
+
+.calheader {
+  display: none;
+}
+
+.calcont {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+}
+
+.calendar > * {
+  margin-bottom: 1rem;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #fbfbfb;
+  border: 1px solid var(--scolor);
+  width: 100%;
+  min-height: 2rem;
+  padding: 0.5rem;
+}
+
+.daylabel {
+  display: none;
+}
+
+.fulldaylabel {
+  width: 100%;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  padding: 0.25rem;
+  background: var(--scolor-dd);
+  color: white;
+}
+
+.inmonth {
+  color: var(--scolor-dd);
+}
+
+.outmonth {
+  color: var(--scolor);
+  display: none;
+}
+
+.noentry {
+  display: none;
+}
+
+.today {
+  background: #cfd8dc !important;
+}
+
+.entry {
+  font-family: 'Roboto Sans', sans-serif;
+  padding: 0.5rem;
+  background: #eceff1;
+  color: var(--scolor-dd);
+  border-radius: 0.5rem;
+  border: 1px solid #cfd8dc;
+  text-align: center;
+}
+
+.popupentry {
+  font-family: 'Roboto Sans', sans-serif;
+  padding: 0.5rem;
+  background: #eceff1;
+  color: var(--scolor-dd);
+  border-radius: 0.5rem;
+  border: 1px solid #cfd8dc;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+@media all and (min-width:480px) {
+  .topcontrols {
+    padding: 0.25rem 0 0.25rem 0;
+  }
+
+  .bottomcontrols {
+    display: none;
+  }
+  
+  .calheader {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: var(--scolor-dd);
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 75%;
+  }
+  
+  .calcont {
+    width: unset;
+  }
+
+  .monthyear {
+    -webkit-transition: color 0.1s;
+    transition: color 0.1s;
+    color: var(--scolor-dd);
+  }
+
+  .monthyear:hover {
+    color: var(--pcolor);
+  }
+  
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 0px;
+    width: unset;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: unset;
+  }
+  .calendar > * {
+    margin-bottom: unset;
+  }
+  .day {
+    width: 4rem;
+    height: 4rem;
+    border-top: 1px solid var(--scolor);
+    border-left: 1px solid var(--scolor);
+    border-right: none;
+    border-bottom: none;
+    padding: 0.25rem;
+    overflow: hidden;
+  }
+
+  .day:nth-child(7n) {
+    border-right: 1px solid var(--scolor);
+  }
+
+  .day:nth-last-child(-n+7) {
+    border-bottom: 1px solid var(--scolor);
+  }
+
+  .inmonth {
+    -webkit-transition: background 0.1s;
+    transition: background 0.1s;
+  }
+
+  .inmonth:hover {
+    background: #eceff1;
+  }
+
+  .inmonth:hover .daylabel {
+    background: #eceff1;
+  }
+
+  .today .daylabel {
+    background: #cfd8dc !important;
+  }
+
+  .outmonth {
+    display: flex;
+  }
+
+  .noentry {
+    display: flex;
+  }
+
+  .daylabel {
+    display: unset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 70%;
+    font-weight: bold;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    background: #fbfbfb;
+  }
+
+  .fulldaylabel {
+    display: none;
+  }
+
+  .entry {
+    font-family: 'Roboto Sans', sans-serif;
+    font-size: 0.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .inmonth .entry {
+    background: var(--pcolor);
+    color: white;
+  }
+
+  .outmonth .entry {
+    background: var(--scolor-d);
+    color: white;
+  }
+}
+
+@media all and (min-width:768px) {
+  .day {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 0.2rem;
+}
+
+.aright {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.aleft {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.aup {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.adown {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.circled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--scolor-dd);
+  -webkit-transition: background 0.1s;
+  transition: background 0.1s;
+}
+
+.circled:hover {
+  background: var(--pcolor);
+}
+
+#calpopup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #ffff;
+  border-radius: 1rem;
+  width: 80%;
+  position: relative;
+  overflow: auto;
+  max-height: 80%;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 1rem;
+}
+
+.popup .close {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  transition: color 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: var(--pcolor);
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  margin-bottom: 1rem;
+}
+
+@media all and (min-width:768px) {
+  .popup{
+    width: 30rem;
+  }
+}
