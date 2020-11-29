@@ -20,11 +20,13 @@ body {
 
 .cabecera {
   display: flex;
+  flex: 0 0 auto;
   text-align: left;
 }
 
 .titinstr {
   display: flex;
+  flex: 0 0 auto;
   text-align: left;
   flex-wrap: wrap;
 }
@@ -63,6 +65,7 @@ body {
 
 .columnas {
   display: flex;
+  flex: 0 0 auto;
   justify-content: space-between;
   margin-top: 10px;
 }
@@ -78,6 +81,7 @@ body {
   border-radius: 20px;
   font-weight: bold;
   display: flex;
+  flex: 0 0 auto;
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
@@ -96,6 +100,7 @@ body {
 
 .pvoto {
   display: flex;
+  flex: 0 0 auto;
   padding: 10px;
   align-items: center;
   height: 80px;
@@ -103,6 +108,7 @@ body {
 
 .pvotom {
   display: flex;
+  flex: 0 0 auto;
   padding: 10px;
   align-items: center;
   height: 60px;

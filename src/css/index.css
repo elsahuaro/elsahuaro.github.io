@@ -348,6 +348,7 @@ html {
 
 body {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   align-items: center;
   height: 100vh;
@@ -355,6 +356,7 @@ body {
 
 section {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -395,6 +397,7 @@ section {
 
 header {
   display: flex;
+  flex: 0 0 auto;
   align-items: center;
   text-align: center;
   padding-top: 3rem;
@@ -404,6 +407,7 @@ header {
 }
 .hcontainer {
   display: flex;
+  flex: 0 1 auto;
   flex-direction: column;
   align-items: center;
   margin-left: auto;
@@ -462,6 +466,7 @@ header {
 
 footer {
   display: flex;
+  flex: 0 0 auto;
   justify-content: space-evenly;
   width: 100%;
   background: var(--black);
@@ -474,6 +479,7 @@ footer {
 
 footer > .licencia {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -493,6 +499,7 @@ footer > .licencia {
 
 .licencia-logo {
   display: flex;
+  flex: 0 0 auto;
   justify-content: center;
   margin-top: 1rem;
   padding: 0.5rem;
@@ -516,6 +523,7 @@ footer > .licencia {
 
 .cc-info {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
@@ -525,6 +533,7 @@ footer > .licencia {
 
 .logo-home {
   display: flex;
+  flex: 0 0 auto;
   padding: 0 1rem;
 }
 
@@ -534,6 +543,7 @@ footer > .licencia {
 
 .logo-elecciones-2021 {
   display: flex;
+  flex: 0 0 auto;
   align-items: center;
   justify-content: center;
 }
@@ -594,6 +604,7 @@ footer > .licencia {
 
 .sbtn-alt3 {
   display: flex;
+  flex: 0 0 auto;
   align-items: center;
   font-family: 'Roboto Condensed';
   color: white;

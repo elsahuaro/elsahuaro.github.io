@@ -104,12 +104,14 @@ body {
 
 #firmas {
   display: flex;
+  flex: 0 0 auto;
   justify-content: space-evenly;
   margin-bottom: 60px;
 }
 
 .firma {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   padding: 5px;
   margin-left: 2px;

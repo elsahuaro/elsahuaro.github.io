@@ -29,7 +29,7 @@ build/%.js: src/%.js
 
 build/%.css: src/%.css
 	mkdir -p $(@D)
-	cp $< $@
+	./node_modules/.bin/postcss $< --use autoprefixer -o $@
 
 build/%.woff2: src/%.woff2
 	mkdir -p $(@D)

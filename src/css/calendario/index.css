@@ -1,5 +1,6 @@
 .topcontrols {
   display: flex;
+  flex: 0 0 auto;
   flex-wrap: nowrap;
   padding: 0.25rem 1rem 0.25rem 1rem;
   justify-content: space-between;
@@ -7,6 +8,7 @@
 
 .bottomcontrols {
   display: flex;
+  flex: 0 0 auto;
   flex-wrap: nowrap;
   padding: 0.25rem 1rem 0.25rem 1rem;
   justify-content: space-between;
@@ -31,6 +33,7 @@
 
 .calendar {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   width: 100%;
   padding-left: 1rem;
@@ -44,6 +47,7 @@
 
 .day {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -132,7 +136,6 @@
   }
 
   .monthyear {
-    -webkit-transition: color 0.1s;
     transition: color 0.1s;
     color: var(--scolor-dd);
   }
@@ -173,7 +176,6 @@
   }
 
   .inmonth {
-    -webkit-transition: background 0.1s;
     transition: background 0.1s;
   }
 
@@ -191,10 +193,12 @@
 
   .outmonth {
     display: flex;
+    flex: 0 0 auto;
   }
 
   .noentry {
     display: flex;
+    flex: 0 0 auto;
   }
 
   .daylabel {
@@ -253,26 +257,23 @@
 
 .aright {
   transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
 }
 
 .aleft {
   transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
 }
 
 .aup {
   transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
 }
 
 .adown {
   transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
 }
 
 .circled {
   display: flex;
+  flex: 0 0 auto;
   justify-content: center;
   align-items: center;
   min-width: 1.5rem;
@@ -281,7 +282,6 @@
   height: 1.5rem;
   border-radius: 50%;
   background: var(--scolor-dd);
-  -webkit-transition: background 0.1s;
   transition: background 0.1s;
 }
 

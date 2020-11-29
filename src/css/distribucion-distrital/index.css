@@ -8,6 +8,7 @@
   visibility: hidden;
   padding-bottom: 1rem;
   display: flex;
+  flex: 0 0 auto;
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 90%;
@@ -24,6 +25,7 @@
 
 .datum {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   align-items: center;
   margin-bottom: 1rem;
