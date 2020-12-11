@@ -4,6 +4,10 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYD13XKVZG"></script>
     <script>
+     if (window.location.hostname == "localhost") {
+       console.log('deshabilitanto google analytics');
+       window['ga-disable-G-JYD13XKVZG'] = true;
+     }
      window.dataLayer = window.dataLayer || [];
      function gtag(){dataLayer.push(arguments);}
      gtag('js', new Date());
