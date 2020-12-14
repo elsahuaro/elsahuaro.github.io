@@ -135,7 +135,7 @@ const calcCalendar = (year, month) => {
   var calendar = [];
   for (const [index, week] of Object.entries(weeks)) {
     for (var d = 1; d <= 7; d++) {
-      calendar.push(moment().isoWeekYear(week.year).isoWeek(week.week).day(d));
+      calendar.push(moment().isoWeekYear(week.year).isoWeek(week.week).isoWeekday(d));
     }
   }
   return calendar;
