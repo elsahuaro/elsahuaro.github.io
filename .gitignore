@@ -7,3 +7,5 @@ docs/
 iconos/
 /img/
 mockups/
+build/doc/*_orig.pdf
+src/doc/*_orig.pdf

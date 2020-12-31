@@ -70,7 +70,7 @@ const buildCalendar = (year, month) => {
   const caldiv = document.getElementById('calendar');
   const monthyears = document.getElementsByClassName('monthyear');
   caldiv.innerHTML = '';
-  for (let my of monthyears) {
+  for (let my of Array.from(monthyears)) {
     my.innerHTML = '';
   }
   const cal = calcCalendar(year, month);
@@ -115,7 +115,7 @@ const buildCalendar = (year, month) => {
     caldiv.appendChild(newDiv);
   }
   const monthYearStr = monthYearString(moment({ year: year, month: month }));
-  for (let my of monthyears) {
+  for (let my of Array.from(monthyears)) {
     my.appendChild(document.createTextNode(monthYearStr));
   }
 }

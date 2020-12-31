@@ -17,7 +17,7 @@
 .monthyear {
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
-  color: var(--scolor-dd);
+  color: rgb(var(--scolor-dd));
   white-space: nowrap;
 }
 
@@ -53,7 +53,7 @@
   justify-content: center;
   position: relative;
   background: #fbfbfb;
-  border: 1px solid var(--scolor);
+  border: 1px solid rgb(var(--scolor));
   width: 100%;
   min-height: 2rem;
   padding: 0.5rem;
@@ -69,16 +69,16 @@
   font-weight: bold;
   margin: 0 0 0.5rem 0;
   padding: 0.25rem;
-  background: var(--scolor-dd);
+  background: rgb(var(--scolor-dd));
   color: white;
 }
 
 .inmonth {
-  color: var(--scolor-dd);
+  color: rgb(var(--scolor-dd));
 }
 
 .outmonth {
-  color: var(--scolor);
+  color: rgb(var(--scolor-l));
   display: none;
 }
 
@@ -94,17 +94,19 @@
   font-family: 'Roboto Sans', sans-serif;
   padding: 0.5rem;
   background: #eceff1;
-  color: var(--scolor-dd);
+  color: rgb(var(--scolor-dd));
   border-radius: 0.5rem;
   border: 1px solid #cfd8dc;
   text-align: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
 }
 
 .popupentry {
   font-family: 'Roboto Sans', sans-serif;
   padding: 0.5rem;
   background: #eceff1;
-  color: var(--scolor-dd);
+  color: rgb(var(--scolor-dd));
   border-radius: 0.5rem;
   border: 1px solid #cfd8dc;
   text-align: center;
@@ -119,11 +121,12 @@
   .bottomcontrols {
     display: none;
   }
-  
+
   .calheader {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    background: var(--scolor-dd);
+    display: flex;
+    flex-direction: row;
+    width: 28rem;
+    background: rgb(var(--scolor-dd));
     color: white;
     text-align: center;
     font-family: 'Roboto Slab', serif;
@@ -131,36 +134,63 @@
     font-size: 75%;
   }
   
+  /* .calheader {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     background: rgb(var(--scolor-dd));
+     color: white;
+     text-align: center;
+     font-family: 'Roboto Slab', serif;
+     font-weight: bold;
+     font-size: 75%;
+     } */
+  
   .calcont {
     width: unset;
   }
 
   .monthyear {
     transition: color 0.1s;
-    color: var(--scolor-dd);
+    color: rgb(var(--scolor-dd));
   }
 
   .monthyear:hover {
-    color: var(--pcolor);
+    color: rgb(var(--pcolor));
   }
-  
+
   .calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 0px;
-    width: unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 28rem;
     padding-left: 0;
     padding-right: 0;
     margin-top: unset;
   }
+  
+  /* .calendar {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     grid-gap: 0px;
+     width: unset;
+     padding-left: 0;
+     padding-right: 0;
+     margin-top: unset;
+     } */
+  
   .calendar > * {
     margin-bottom: unset;
   }
+
+  .calheader > div {
+    width: 4rem;
+  }
+  
   .day {
     width: 4rem;
     height: 4rem;
-    border-top: 1px solid var(--scolor);
-    border-left: 1px solid var(--scolor);
+    border-top: 1px solid rgb(var(--scolor-l));
+    border-left: 1px solid rgb(var(--scolor-l));
     border-right: none;
     border-bottom: none;
     padding: 0.25rem;
@@ -168,11 +198,11 @@
   }
 
   .day:nth-child(7n) {
-    border-right: 1px solid var(--scolor);
+    border-right: 1px solid rgb(var(--scolor-l));
   }
 
   .day:nth-last-child(-n+7) {
-    border-bottom: 1px solid var(--scolor);
+    border-bottom: 1px solid rgb(var(--scolor-l));
   }
 
   .inmonth {
@@ -225,23 +255,35 @@
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 0.25rem;
-    border-radius: 1rem;
-    width: 100%;
+    border-radius: 2px;
     text-align: left;
+    margin: 0;
   }
 
   .inmonth .entry {
-    background: var(--pcolor);
+    background: rgb(var(--pcolor));
     color: white;
   }
 
   .outmonth .entry {
-    background: var(--scolor-d);
+    background: rgb(var(--scolor-d));
     color: white;
   }
 }
 
 @media all and (min-width:768px) {
+  .calheader {
+    width: 35rem;
+  }
+  
+  .calheader > div {
+    width: 5rem;
+  }
+
+  .calendar {
+    width: 35rem;
+  }
+  
   .day {
     width: 5rem;
     height: 5rem;
@@ -281,12 +323,12 @@
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  background: var(--scolor-dd);
+  background: rgb(var(--scolor-dd));
   transition: background 0.1s;
 }
 
 .circled:hover {
-  background: var(--pcolor);
+  background: rgb(var(--pcolor));
 }
 
 #calpopup {
@@ -302,9 +344,9 @@
 }
 
 .popup {
-  margin: 30vh auto;
+  margin: 3rem auto;
   padding: 1.5rem;
-  background: #ffff;
+  background: rgb(var(--white));
   border-radius: 1rem;
   width: 80%;
   position: relative;
@@ -331,7 +373,7 @@
 }
 
 .popup .close:hover {
-  color: var(--pcolor);
+  color: rgb(var(--pcolor));
 }
 .popup .content {
   max-height: 30%;
@@ -341,6 +383,7 @@
 
 @media all and (min-width:768px) {
   .popup{
+    margin: 7rem auto;
     width: 30rem;
   }
 }

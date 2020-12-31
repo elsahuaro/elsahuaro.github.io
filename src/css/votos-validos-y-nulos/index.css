@@ -1,13 +1,14 @@
 #votos-validos-y-nulos {
-  margin-top: 1rem;
+  margin-top: 0.25rem;
   margin-bottom: 1rem;
   overflow: visible !important;
   width: 95% !important;
   height: unset !important;
+  text-align: left;
 }
 .info {
   text-align: center;
 }
 .info > a {
-  color: var(--pcolor);
+  color: rgb(var(--pcolor));
 }

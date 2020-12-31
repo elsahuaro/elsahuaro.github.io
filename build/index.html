@@ -17,332 +17,386 @@
        cookie_flags: 'SameSite=None;Secure'
      });
     </script>
+    <script>if(!(window.fetch&&Object.entries&&Object.keys&&Object.values&&window.Promise&&[].includes&&Object.assign&&window.Map)){document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=default%2Cfetch%2CObject.values%2CObject.keys%2CObject.entries"></scr'+'ipt>')}</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Capacitación Electoral</title>
+    <title>Defensa del voto en Sonora</title>
+    <meta name="description" content="Material de capacitación para Representantes de Casilla y Representantes Generales de Morena.">
     <link rel="stylesheet" href="/css/index.css">
+    <script type="text/javascript" src="/js/index.js"></script>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
   </head>
-  <body>
-    <header>
-      <div class="hcontainer">
-        <div class="logo-elecciones-2021">
-          <img src="/img/defensa-elecciones-2021.png" />
-          <span>Elecciones</span> <span class="accented">2021</span>
-        </div>
-        <h1>
-          Defensa del voto en Sonora
-        </h1>
+  <body class="main">
+    <!-- Cabecera -->
+    <div class="header">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="/img/defensa-elecciones-2021.png" />
+        <span>Elecciones <span class="hl">2021</span></span>
+      </div>
+      <!-- Título -->
+      <div class="title">
+        <h1>Defensa del voto en Sonora</h1>
+      </div>
+      <!-- Descripción -->
+      <div class="about">
         <p>
-          Herramientas virtuales de capacitación para Instructores de Representantes de
-          Casilla y Representantes Generales de <strong class="red">Morena</strong>.
+          Material de capacitación para Representantes de Casilla y
+          Representantes Generales de <span>Morena</span>.
         </p>
-        <div class="scontainer">
-          <a class="sbtn-alt3" href="/calendario-electoral/">
-            <img src="/img/calendario-electoral.png" class="transp2" />
-            Calendario Electoral
+      </div>
+      <!-- Navegación -->
+      <div class="nav">
+        <!-- Calendario -->
+        <a class="navitem-p" href="#calendarios">
+          <img src="/img/iconocalendario2.svg" />
+          <span>Calendarios</span>
+          <i></i>
+        </a>
+        <!-- Módulos -->
+        <a class="navitem-p" href="#modulos">
+          <img src="/img/iconomodulo1.svg" />
+          <span>Módulos</span>
+          <i></i>
+        </a>
+        <!-- Ejercicios -->
+        <a class="navitem-p" href="#ejercicios">
+          <img src="/img/iconoejercicio1.svg" />
+          <span>Ejercicios</span>
+          <i></i>
+        </a>
+        <!-- Biblioteca  -->
+        <a class="navitem-p" href="#biblioteca">
+          <img src="/img/iconoreferencias1.svg" />
+          <span>Biblioteca</span>
+          <i></i>
+        </a>
+      </div>
+    </div>
+    <!-- Secciones -->
+    <div class="sections">
+      <!-- Calendarios -->
+      <div id="calendarios">
+        <h1>Calendarios</h1>
+        <div class="nav">
+          <!-- Calendario de Capacitación-->
+          <a href="/calendario-capacitacion/" class="navitem-s">
+            <img src="/img/iconocalendario2-capacitacion.svg" />
+            <span>Capacitación</span>
           </a>
-        </div>
-        <div class="scontainer">
-          <a class="sbtn-alt3" href="/calendario-capacitacion/">
-            <img src="/img/calendario-capacitacion.png" class="transp2" />
-            Calendario de Capacitación
+          <!-- Calendario Electoral -->
+          <a href="/calendario-electoral/" class="navitem-s">
+            <img src="/img/iconocalendario2-electoral.svg" />
+            <span>Proceso Electoral</span>
           </a>
         </div>
       </div>
-    </header>
-    <div class="modulo">
-      <h1>Módulo 1</h1>
-      <h2>Capacitación para Representantes de Casilla (RC)</h2>
-      <div class="modulo-info">
-        <div class="archivo">
-          <a href="/doc/Manual_para_Representante_de_Casilla_(RC).pdf" target="_blank">
-            <img src="/img/doc.png" class="transp" />
-            Manual para Representante de Casilla
+      <!-- Módulos -->
+      <div id="modulos">
+        <h1>Módulos</h1>
+        <div class="drawers">
+          <div class="drawer">
+            <input id="modulo-rc" class="toggle" type="checkbox">
+            <label for="modulo-rc" class="label">
+              <img src="/img/iconorc.svg" />
+              <strong>1.</strong> Representantes de Casilla
+            </label>
+            <div class="content">
+              <div class="inner">
+                <div class="doclist">
+                  <a href="/doc/Manual_para_Representante_de_Casilla_(RC).pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span>Manual para Representante de Casilla</span>
+                  </a>
+                  <a href="/doc/Presentacion_RC_Encuadre_v10.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span>Encuadre para taller de Instructores</span>
+                  </a>
+                  <a href="/doc/Presentacion_RC_Encuadre_Redux.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span>Encuadre para la capacitación de RC</span>
+                  </a>
+                  <a href="/doc/Presentacion_RC_v8.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span>Presentación para capacitación de RC</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="drawer">
+            <input id="modulo-rg" class="toggle" type="checkbox">
+            <label for="modulo-rg" class="label">
+              <img src="/img/iconorg.svg" />
+              <strong>2.</strong> Representantes Generales
+            </label>
+            <div class="content">
+              <div class="inner">
+                <div class="doclist">
+                  <a href="/doc/Manual_para_Representantes_Generales_(RG).pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span>Manual para Representantes Generales</span>
+                  </a>
+                  <a href="/doc/Presentacion_RG_Encuadre.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span>Encuadre para la capacitación de RG</span>
+                  </a>
+                  <a href="/doc/Presentacion_RG.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span>Presentación para capacitación de RG</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="drawer dark">
+            <input id="modulo-docs" class="toggle" type="checkbox">
+            <label for="modulo-docs" class="label">
+              <img src="/img/file-invoice-solid.svg" />
+              Actas y Documentos
+            </label>
+            <div class="content">
+              <div class="inner">
+                <div class="doclist">
+                  <a href="/doc/Acta_de_la_Jornada_Electoral.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span>Acta de la Jornada Electoral</span>
+                  </a>
+                  <a href="/doc/Hoja_de_Control_de_Votantes.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span>Hoja de Control de Votantes</span>
+                  </a>
+                  <a href="/doc/Acta_de_Escrutinio_y_Computo.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span>Acta de Escrutinio y Cómputo</span>
+                  </a>
+                  <a href="/doc/Formato de Escrito de Incidente.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span>Formato de Escrito de Incidente</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ejercicios -->
+      <div id="ejercicios">
+        <h1>Ejercicios</h1>
+        <div class="nav">
+          <a class="navitem-s" href="/distribucion-distrital/">
+            <img src="/img/distribucion-distrital.svg" />
+            <span>Distribución Distrital</span>
+          </a>
+          <a class="navitem-s" href="/identidad-electoral/">
+            <img src="/img/identidad-electoral.svg" />
+            <span>Identidad Electoral</span>
+          </a>
+          <a class="navitem-s" href="/recorrido-de-cargos/">
+            <img src="/img/recorrido-de-cargos.svg" />
+            <span>Recorrido de Cargos</span>
+          </a>
+          <a class="navitem-s" href="/escrito-de-incidente/">
+            <img src="/img/escrito-de-incidente.svg" />
+            <span>Escrito de Incidente</span>
+          </a>
+          <a class="navitem-s" href="/votos-validos-y-nulos/">
+            <img src="/img/votos-validos-y-nulos.svg" />
+            <span>Votos Válidos y Nulos</span>
+          </a>
+          <a class="navitem-s" href="/contar-bien/">
+            <img src="/img/contar-bien.svg" />
+            <span>Contar Bien</span>
+          </a>
+          <a class="navitem-s" href="/anotar-bien/">
+            <img src="/img/anotar-bien.svg" />
+            <span>Anotar Bien</span>
           </a>
         </div>
       </div>
-      <div class="modulo-info">
-        <p>
-          Presentaciones de capacitación
-        </p>
-        <div class="archivo">
-          <a href="/doc/Presentacion_RC_Encuadre_v10.pdf" target="_blank">
-            <img src="/img/doc.png" class="transp" />
-            Encuadre para la presentación
-          </a>
-        </div>
-        <div class="archivo">
-          <a href="/doc/Presentacion_RC_v8.pdf" target="_blank">
-            <img src="/img/doc.png" class="transp" />
-            Presentación para capacitación de RC
-          </a>
+      <!-- Biblioteca -->
+      <div id="biblioteca">
+        <h1>Biblioteca</h1>
+        <div class="drawers">
+          <div class="drawer">
+            <input id="bib-cuadernillos" class="toggle" type="checkbox">
+            <label for="bib-cuadernillos" class="label">
+              <img src="/img/cuedernillos.svg" />
+              Cuadernillos
+            </label>
+            <div class="content">
+              <div class="inner">
+                <div class="doclist">
+                  <a href="/doc/cuadernillo-1rev.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span><strong>1.</strong> Partidos Políticos y Procesos Electorales</span>
+                  </a>
+                  <a href="/doc/cuadernillo-2rev.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span><strong>2.</strong> Sobre Representantes de Casilla</span>
+                  </a>
+                  <a href="/doc/cuadernillo-3rev.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span><strong>3.</strong> Sobre Representantes Generales</span>
+                  </a>
+                  <a href="/doc/cuadernillo-4rev.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span><strong>4.</strong> Elecciones Concurrentes y Casillas Únicas</span>
+                  </a>
+                  <a href="/doc/cuadernillo-5rev.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span><strong>5.</strong> Algunos Hechos de Incidentes</span>
+                  </a>
+                  <a href="/doc/cuadernillo-6rev.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span><strong>6.</strong> Actividades de la y el Funcionario de Casilla en las diferentes Etapas de la Jornada Electoral</span>
+                  </a>
+                  <a href="/doc/cuadernillo-7rev.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span><strong>7.</strong> Glosario de Términos Electorales</span>
+                  </a>
+                  <a target="_blank">
+                    <img class="docimg" src="/img/folder.svg" >
+                    <span><strong>8.</strong> Contexto político y geográfico del estado de Sonora frente al proceso electoral 2021</span>
+                  </a>
+                  <div class="doclist">
+                    <a href="/doc/cuadernillo8-1.pdf" target="_blank">
+                      <img class="docimg" src="/img/doc.png" >
+                      <span>Distrito <strong>1</strong> Federal</span>
+                    </a>
+                    <a href="/doc/cuadernillo8-2.pdf" target="_blank">
+                      <img class="docimg" src="/img/doc.png" >
+                      <span>Distrito <strong>2</strong> Federal</span>
+                    </a>
+                    <a href="/doc/cuadernillo8-3.pdf" target="_blank">
+                      <img class="docimg" src="/img/doc.png" >
+                      <span>Distrito <strong>3</strong> Federal</span>
+                    </a>
+                    <a href="/doc/cuadernillo8-4.pdf" target="_blank">
+                      <img class="docimg" src="/img/doc.png" >
+                      <span>Distrito <strong>4</strong> Federal</span>
+                    </a>
+                    <a href="/doc/cuadernillo8-5.pdf" target="_blank">
+                      <img class="docimg" src="/img/doc.png" >
+                      <span>Distrito <strong>5</strong> Federal</span>
+                    </a>
+                    <a href="/doc/cuadernillo8-6.pdf" target="_blank">
+                      <img class="docimg" src="/img/doc.png" >
+                      <span>Distrito <strong>6</strong> Federal</span>
+                    </a>
+                    <a href="/doc/cuadernillo8-7.pdf" target="_blank">
+                      <img class="docimg" src="/img/doc.png" >
+                      <span>Distrito <strong>7</strong> Federal</span>
+                    </a>
+                  </div>
+                  <a href="/doc/cuadernillo-9rev.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span><strong>9.</strong> Delitos Electorales y Fraudecedario</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="drawer">
+            <input id="bib-legislacion" class="toggle" type="checkbox">
+            <label for="bib-legislacion" class="label">
+              <img src="/img/legislacion.svg" />
+              Legislación Electoral
+            </label>
+            <div class="content">
+              <div class="inner">
+                <div class="doclist">
+                  <a href="/doc/Compendio-de-Legislacion-Nacional-Electoral.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span><strong>1.</strong>Compendio de Legislación Nacional Electoral</span>
+                  </a>
+                  <a href="/doc/LIPEES.pdf" target="_blank">
+                    <img class="docimg" src="/img/doc.png" >
+                    <span><strong>2.</strong> Ley de Instituciones y Procedimientos Electorales para el Estado de Sonora (LIPEES)</span>
+                  </a>
+                  <a target="_blank">
+                    <img class="docimg" src="/img/folder.svg" >
+                    <span><strong>3.</strong> Ley General de Instituciones y Procedimientos Electorales (LGIPE)</span>
+                  </a>
+                  <div class="doclist">
+                    <a href="/doc/LGIPE.pdf" target="_blank">
+                      <img class="docimg" src="/img/doc.png" >
+                      <span>Versión de escritorio</span>
+                    </a>
+                    <a href="/doc/LGIPE_cel.pdf" target="_blank">
+                      <img class="docimg" src="/img/doc.png" >
+                      <span>Versión para celular</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="drawer dark">
+            <input id="bib-adicional" class="toggle" type="checkbox">
+            <label for="bib-adicional" class="label">
+              Material Adicional
+            </label>
+            <div class="content">
+              <div class="inner">
+                <div>
+                  <h1>Videos</h1>
+                  <div class="video">
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/wMnbGbwXhDU?start=1&end=488" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    <iframe src="https://www.youtube.com/embed/wMnbGbwXhDU?start=1&end=488" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div>
+                  <h1>Documentos</h1>
+                  <div class="doclist">
+                    <a href="/doc/Cedulas_Consejos_Distritales.pdf" target="_blank">
+                      <img class="docimg" src="/img/doc.png">
+                      <span>Integración de los Consejos Distritales</span>
+                    </a>
+                    <a href="/doc/Cedulas_Consejos_Municipales.pdf" target="_blank">
+                      <img class="docimg" src="/img/doc.png">
+                      <span>Integración de los Consejos Municipales</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="modulo">
-      <h1>Módulo 2</h1>
-      <h2>Capacitación para Representantes Generales (RG)</h2>
-      <div class="modulo-info">
-        <div class="archivo">
-          <a href="/doc/Manual_para_Representantes_Generales_(RG).pdf" target="_blank">
-            <img src="/img/doc.png" class="transp" />
-            Manual para Representantes Generales
+    <!-- Pié de página -->
+    <div class="footer">
+      <div class="info">
+        <h1>Defensa del voto en Sonora</h1>
+        <h2>Red Estatal de Capacitación de Morena</h2>
+          <div><strong>Contacto:</strong> Heriberto Acuña Campa <a href="mailto:haceay3@gmail.com">haceay3@gmail.com</a> </div>
+      </div>
+      <div class="license">
+        <div>
+          <a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">
+            <img alt="Licencia Creative Commons" style="border-width:0" src="/img/cc-88x31.png" />
           </a>
         </div>
-      </div>
-      <div class="modulo-info">
         <p>
-          Presentaciones de capacitación
+          Esta obra está bajo una <a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
         </p>
-        <div class="archivo">
-          <a href="/doc/Presentacion_RG_Encuadre.pdf" target="_blank">
-            <img src="/img/doc.png" class="transp" />
-            Encuadre para la presentación
-          </a>
-        </div>
-        <div class="archivo">
-          <a href="/doc/Presentacion_RG.pdf" target="_blank">
-            <img src="/img/doc.png" class="transp" />
-            Presentación para capacitación de RG
-          </a>
-        </div>
-      </div>
-      <div class="modulo-info">
-        <h2>
-          Actas y documentos para los módulos
-        </h2>
-        <div class="archivo">
-          <a href="/doc/Acta_de_la_Jornada_Electoral.pdf" target="_blank">
-            <img src="/img/doc.png" class="transp" />
-            Acta de la Jornada Electoral
-          </a>
-        </div>
-        <div class="archivo">
-          <a href="/doc/Hoja_de_Control_de_Votantes.pdf" target="_blank">
-            <img src="/img/doc.png" class="transp" />
-            Hoja de Control de Votantes
-          </a>
-        </div>
-        <div class="archivo">
-          <a href="/doc/Acta_de_Escrutinio_y_Computo.pdf" target="_blank">
-            <img src="/img/doc.png" class="transp" />
-            Acta de Escrutinio y Cómputo
-          </a>
-        </div>
-        <div class="archivo">
-          <a href="/doc/Formato de Escrito de Incidente.pdf" target="_blank">
-            <img src="/img/doc.png" class="transp" />
-            Formato de Escrito de Incidente
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="modulo">
-      <h1>Ejercicios de Capacitación</h1>
-      <div class="modulo-info"></div>
-      <section id="sec-distribucion-distrital" class="phl">
-        <img class="transp" src="/img/distribucion-distrital.png"/>
-        <h1 class="banner">
-          Distribución Distrital
-        </h1>
-        <div class="scontainer">
-          <a class="sbtn" href="/distribucion-distrital/">Comenzar</a>
-        </div>
-      </section>
-      <section id="sec-identidad-electoral" class="shl">
-        <img class="transp" src="/img/identidad-electoral.png"/>
-        <h1 class="banner">
-          Identidad Electoral
-        </h1>
-        <div class="scontainer">
-          <div><a class="sbtn" href="/identidad-electoral/">Comenzar</a></div>
-        </div>
-      </section>
-      <section id="sec-recorrido-de-cargos" class="phl">
-        <img class="transp" src="/img/recorrido-de-cargos.png"/>
-        <h1 class="banner">
-          Recorrido de Cargos
-        </h1>
-        <div class="scontainer">
-          <a class="sbtn" href="/recorrido-de-cargos/">Comenzar</a>
-        </div>
-      </section>
-      <section id="sec-escrito-de-incidente" class="shl">
-        <img class="transp" src="/img/escrito-de-incidente.png"/>
-        <h1 class="banner">
-          Escrito de Incidente
-        </h1>
-        <div class="scontainer">
-          <a class="sbtn" href="/escrito-de-incidente/">Comenzar</a>
-        </div>
-      </section>
-      <section id="sec-votos-validos-y-nulos" class="phl">
-        <img class="transp" src="/img/votos-validos-y-nulos.png"/>
-        <h1 class="banner">
-          Votos Válidos y Nulos
-        </h1>
-        <div class="scontainer">
-          <a class="sbtn" href="/votos-validos-y-nulos/">Comenzar</a>
-        </div>
-      </section>
-      <section id="sec-contar-bien" class="shl">
-        <img class="transp" src="/img/contar-bien.png"/>
-        <h1 class="banner">
-          Contar Bien
-        </h1>
-        <div class="scontainer">
-          <a class="sbtn" href="/contar-bien/">Comenzar</a>
-        </div>
-      </section>
-      <section id="sec-anotar-bien" class="phl">
-        <img class="transp" src="/img/anotar-bien.png"/>
-        <h1 class="banner">
-          Anotar Bien
-        </h1>
-        <div class="scontainer">
-          <a class="sbtn" href="/anotar-bien/">Comenzar</a>
-        </div>
-      </section>
-    </div>    
-    <div class="modulo">
-      <h1>Materiales de lectura</h1>
-      <div class="modulo-info">
-        <p>
-          Cuadernillos para Instructores de Representantes de Casilla y Representantes Generales
-        </p>
-        <ol>
-          <li>
-            <a href="/doc/cuadernillo-1rev.pdf" target="_blank">
-              Partidos Políticos y Procesos Electorales
-            </a>
-          </li>
-          <li>
-            <a href="/doc/cuadernillo-2rev.pdf" target="_blank">
-              Sobre Representantes de Casilla
-            </a>
-          </li>
-          <li>
-            <a href="/doc/cuadernillo-3rev.pdf" target="_blank">
-              Sobre Representantes Generales
-            </a>
-          </li>
-          <li>
-            <a href="/doc/cuadernillo-4rev.pdf" target="_blank">
-              Elecciones Concurrentes y Casillas Únicas
-            </a>
-          </li>
-          <li>
-            <a href="/doc/cuadernillo-5rev.pdf" target="_blank">
-              Algunos Hechos de Incidentes
-            </a>
-          </li>
-          <li>
-            <a href="/doc/cuadernillo-6rev.pdf" target="_blank">
-              Actividades de la y el Funcionario de Casilla en las diferentes Etapas de la Jornada Electoral
-            </a>
-          </li>
-          <li>
-            <a href="/doc/cuadernillo-7rev.pdf" target="_blank">
-              Glosario de Términos Electorales
-            </a>
-          </li>
-          <li>
-            Contexto político y geográfico del estado de Sonora frente al proceso electoral 2021
-            <ul>
-              <li>
-                <a href="/doc/cuadernillo8-1.pdf" target="_blank">
-                  Distrito 1 Federal
-                </a>
-              </li>
-              <li>
-                <a href="/doc/cuadernillo8-2.pdf" target="_blank">
-                  Distrito 2 Federal
-                </a>
-              </li>
-              <li>
-                <a href="/doc/cuadernillo8-3.pdf" target="_blank">
-                  Distrito 3 Federal
-                </a>
-              </li>
-              <li>
-                <a href="/doc/cuadernillo8-4.pdf" target="_blank">
-                  Distrito 4 Federal
-                </a>
-              </li>
-              <li>
-                <a href="/doc/cuadernillo8-5.pdf" target="_blank">
-                  Distrito 5 Federal
-                </a>
-              </li>
-              <li>
-                <a href="/doc/cuadernillo8-6.pdf" target="_blank">
-                  Distrito 6 Federal
-                </a>
-              </li>
-              <li>
-                <a href="/doc/cuadernillo8-7.pdf" target="_blank">
-                  Distrito 7 Federal
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-    </div>
-    <div class="modulo">
-      <h1>Materiales de consulta</h1>
-      <div class="modulo-info">
-        <p>Legislación Electoral</p>
-        <ol>
-          <li>
-            <a href="/doc/LIPEES.pdf" target="_blank">
-              Ley de Instituciones y Procedimientos Electorales para el Estado de Sonora
-            </a>
-          </li>
-          <li>
-            Ley General de Instituciones y Procedimientos Electorales
-            <ul>
-              <li>
-                <a href="/doc/LGIPE_cel.pdf" target="_blank">
-                  Versión para celular
-                </a>
-              </li>
-              <li>
-                <a href="/doc/LGIPE.pdf" target="_blank">
-                  Versión de escritorio
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-    </div>
-    <footer>
-      <div class="licencia">
-        <h3>Capacitación para RC de Morena en Sonora</h3>
-        <p>por El Sahuaro</p>
-        <div class="footer-codigo">
-          Contacto: <strong>elsahuaro2020@gmail.com</strong>
-        </div>
-        <div class="cc-info">
-          <a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-          <br />
-          <p>
-            Esta obra está bajo una <a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
-          </p>
-        </div>
-        <div class="licencia-logo">
+        <div class="badges">
           <img src="/img/cc-01.png"/>
           <img src="/img/cc-02.png"/>
           <img src="/img/cc-03.png"/>
           <img src="/img/cc-04.png"/>
         </div>
-        <div class="footer-codigo">
-          Puedes consultar el código fuente de la página en <a target="_blank" href="https://github.com/elsahuaro/elsahuaro.github.io">GitHub <img src="/img/github-logo.png" /></a>
-        </div>
       </div>
-    </footer>
+      <div class="code">
+        <p>
+          Consulta el código fuente de la página en <a target="_blank" href="https://github.com/elsahuaro/elsahuaro.github.io">GitHub <img src="/img/github-logo.png" /></a>.
+        </p>
+        <p>
+          Puedes contactar al equipo de desarrollo de este portal mandando un correo a <a href="mailto:elsahuaro2020@gmail.com">elsahuaro2020@gmail.com</a>.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
