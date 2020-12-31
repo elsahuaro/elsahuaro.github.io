@@ -17,24 +17,24 @@
        cookie_flags: 'SameSite=None;Secure'
      });
     </script>
+    <script>if(!(window.fetch&&Object.entries&&Object.keys&&Object.values&&window.Promise&&[].includes&&Object.assign&&window.Map)){document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=default%2Cfetch%2CObject.values%2CObject.keys%2CObject.entries"></scr'+'ipt>')}</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Calendario de Capacitación</title>
+    <meta name="description" content="Calendario de las actividades y talleres de capacitación de Representantes de Casilla, Representantes Generales e Instructores.">
     <link rel="stylesheet" href="/css/index.css">
+    <script type="text/javascript" src="/js/index.js"></script>
     <link rel="stylesheet" href="/css/calendario/index.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="/lib/moment.min.js"></script>
   </head>
   <body>
-    <header class="shl-header">
-      <a class="logo-home" href="/">
-        <img src="/img/defensa-elecciones-2021-alt.png" />
-      </a>
-      <h2>
-        Calendario de Capacitación
-      </h2>
-    </header>
+    <div class="toptitle">
+      <a href="/#calendarios"><img src="/img/defensa-elecciones-2021-alt.png" /></a>
+      <h1>Calendario de Capacitación</h1>
+      <a><img src="/img/defensa-elecciones-2021-alt.png" class="hide" /></a>
+    </div>
     <div class="calcont">
       <div class="topcontrols">
         <div class="circled" onclick="prevMonth()"><i class="arrow aleft"></i></div>
@@ -57,8 +57,8 @@
         <div class="circled" onclick="nextMonth()"><i class="arrow aright"></i></div>
       </div>
     </div>
-    <div id="calpopup">
-	  <div class="popup">
+    <div id="calpopup" onclick="closePopup()">
+	  <div class="popup" onclick="event.stopPropagation();">
 		<h2 id="popupdate"></h2>
 		<a class="close" onclick="closePopup()">&times;</a>
 		<div id="popupcontent" class="content">
@@ -66,43 +66,6 @@
 	  </div>
     </div>
     <script type="text/javascript" src="/js/calendario/index.js"></script>
-    <script>
-     cal_data = {
-       2020: {
-         10: {
-           7: ["Piloto Virtual del Módulo 1 de Capacitación para RC. Primera Parte.  17:00 hrs."],
-           8: ["Piloto Virtual del Módulo 1 de Capacitación para RC. Segunda Parte. 17:00 hrs."],
-           14: ["Talleres Virtuales para Instructores de Capacitación para RC y RG en cada Distrito Electoral Federal. Módulo 1. Primera Parte. 9:00 a 20:00 hrs."],
-           15: ["Talleres Virtuales para Instructores de Capacitación para RC y RG en cada Distrito Electoral Federal. Módulo 1. Segunda Parte. 9:00 a 20:00 hrs."],
-           22: ["Encuentro de Capacitación Electoral con Coordinadores de Representantes Generales (CRG). 15:00 hrs."],
-           25: ["Taller Virtual para Instructores de Capacitación para RC y RG de  todos los Distritos Electorales Federales. Módulo 1. Primera Parte. 18:00 a 20:00 hrs."],
-           26: ["Taller Virtual para Instructores de Capacitación para RC y RG de  todos los Distritos Electorales Federales. Módulo 1. Segunda Parte. 18:00 a 20:00 hrs."],
-           28: ["Reunión Virtual con Instructores de RC y RG sobre Aspectos Organizativos de la Capacitación. Todos los Distritos Electorales Federales. 16:00 hrs."],
-           29: ["Reuniones-Taller Virtual con Instructores de cada Distrito Electoral Federal sobre uso básico de la plataforma zoom. 9:00 a 16:00 hrs."]
-         },
-         11: {
-           5: ["Capacitación de Representantes Generales del Distrito 3. 16:00 hrs."],
-           10: ["Capacitación para RC del Distrito 3. 18:00 hrs."],
-           12: ["Capacitación de RG del Distrito 5. 15:00 hrs.",
-                "Reunión de avance de tareas de organización de la capacitación del Distrito Electoral Federal 1. 16:00 hrs.",
-                "Capacitación de RG del Distrito 3 (parte 2). 17:00 hrs.",
-                "Reunión de avance de tareas de organización de la capacitación del Distrito Electoral Federal 2. 18:00 hrs."],
-           13: ["Reunión de avance de tareas de organización de la capacitación del Distrito Electoral Federal 4. 16:00 hrs.",
-                "Reunión de avance de tareas de organización de la capacitación del Distrito Electoral Federal 7. 18:00 hrs."],
-           16: ["Capacitación de RC del Distrito 5. 16:00 hrs."],
-           17: ["Capacitación de RC del Distrito 3 (parte 2). 18:00 hrs.",
-                "Capacitación de RG del Distrito 4. 17:00 hrs."],
-           18: ["Capacitación de Instructores de todos los distritos. 17:00 hrs.",
-                "Capacitación de RC del Distrito 5. 19:00 hrs."],
-           20: ["Capacitación de RC del Distrito 5. 9:00 hrs. (suspendida por falta de participantes)"],
-           21: ["Capacitación de Instructores de todos los distritos (parte 2). 17:00 hrs.",
-                "Capacitación de RG del Distrito 2. 18:00 hrs."],
-           22: ["Capacitación de RG del Distrito 1. 17:00 hrs.",
-                "Capacitación de RC del Distrito 3. 17:00 hrs."],
-           23: ["Capacitación de RG del Distrito 6. 17:00 hrs."]
-         }
-       }
-     };
-    </script>
+    <script type="text/javascript" src="/js/calendario-capacitacion/index.js"></script>
   </body>
 </html>

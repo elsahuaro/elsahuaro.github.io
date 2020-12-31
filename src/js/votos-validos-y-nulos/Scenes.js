@@ -140,6 +140,17 @@ class CategorizeCaseScene extends StandardScene {
     return obj;
   }
 
+  deactivateButtons() {
+    this.validoBtn.off("pointerover");
+    this.validoBtn.off("pointerout");
+    this.validoBtn.off("pointerdown");
+    this.validoBtn.setFillStyle(0x8AE787);
+    this.nuloBtn.off("pointerover");
+    this.nuloBtn.off("pointerout");
+    this.nuloBtn.off("pointerdown");
+    this.nuloBtn.setFillStyle(0xE79187);
+  }
+
   activateButtons() {
     this.validoBtn.on("pointerover", pointer => {
       this.validoBtn.setFillStyle(0xDF2EDB);
@@ -154,6 +165,7 @@ class CategorizeCaseScene extends StandardScene {
       this.validoBtn.off("pointerover");
       this.validoBtn.off("pointerout");
       this.validoBtn.off("pointerdown");
+      this.deactivateButtons();
       this.categorizaValido();
       pointer.event.preventDefault();
     });
@@ -171,6 +183,7 @@ class CategorizeCaseScene extends StandardScene {
       this.nuloBtn.off("pointerover");
       this.nuloBtn.off("pointerout");
       this.nuloBtn.off("pointerdown");
+      this.deactivateButtons();
       this.categorizaNulo();
       pointer.event.preventDefault();
     });
@@ -334,15 +347,15 @@ class CategorizeCaseScene extends StandardScene {
     this.nextTxt.depth = 3;
     this.nextBtn.setInteractive();
 
-    this.nextBtn.on("pointerover", () => {
+    this.nextBtn.on("pointerover", pointer => {
       this.nextBtn.setFillStyle(0xDF2EDB);
       pointer.event.preventDefault();
     });
-    this.nextBtn.on("pointerout", () => {
+    this.nextBtn.on("pointerout", pointer => {
       this.nextBtn.setFillStyle(0x8792E7);
       pointer.event.preventDefault();
     });
-    this.nextBtn.on("pointerdown", () => {
+    this.nextBtn.on("pointerdown", pointer => {
       this.nextBtn.setFillStyle(0x8792E7);
       this.nextBtn.off("pointerover");
       this.nextBtn.off("pointerout");

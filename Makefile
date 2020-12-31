@@ -6,17 +6,21 @@ JS_SRC = $(shell find src/js/ -type f -name '*.js')
 JS_TGT = $(JS_SRC:src/%.js=build/%.js)
 CSS_SRC = $(shell find src/css/ -type f -name '*.css')
 CSS_TGT = $(CSS_SRC:src/%.css=build/%.css)
-FONT_SRC = $(shell find src/fonts/ -type f -name '*.woff2')
-FONT_TGT = $(FONT_SRC:src/%.woff2=build/%.woff2)
+TTF_SRC = $(shell find src/fonts/ -type f -name '*.ttf')
+TTF_TGT = $(TTF_SRC:src/%.ttf=build/%.ttf)
+WOFF_SRC = $(shell find src/fonts/ -type f -name '*.woff2')
+WOFF_TGT = $(WOFF_SRC:src/%.woff2=build/%.woff2)
 JSON_SRC = $(shell find src/data/ -type f -name '*.json')
 JSON_TGT = $(JSON_SRC:src/%.json=build/%.json)
 PNG_SRC = $(shell find src/img/ -type f -name '*.png')
 PNG_TGT = $(PNG_SRC:src/%.png=build/%.png)
+SVG_SRC = $(shell find src/img/ -type f -name '*.svg')
+SVG_TGT = $(SVG_SRC:src/%.svg=build/%.svg)
 
 
 .PHONY: build docs
 
-build: $(HTML_TGT) $(JS_TGT) $(CSS_TGT) $(FONT_TGT) $(JSON_TGT) $(PNG_TGT) favicon libs docs
+build: $(HTML_TGT) $(JS_TGT) $(CSS_TGT) $(TTF_TGT) $(WOFF_TGT) $(JSON_TGT) $(PNG_TGT) $(SVG_TGT) favicon libs docs
 	cp README.md build/
 
 build/%.html: src/%.html
@@ -31,6 +35,10 @@ build/%.css: src/%.css
 	mkdir -p $(@D)
 	./node_modules/.bin/postcss $< --use autoprefixer -o $@
 
+build/%.ttf: src/%.ttf
+	mkdir -p $(@D)
+	cp $< $@
+
 build/%.woff2: src/%.woff2
 	mkdir -p $(@D)
 	cp $< $@
@@ -40,6 +48,10 @@ build/%.json: src/%.json
 	cp $< $@
 
 build/%.png: src/%.png
+	mkdir -p $(@D)
+	cp $< $@
+
+build/%.svg: src/%.svg
 	mkdir -p $(@D)
 	cp $< $@
 

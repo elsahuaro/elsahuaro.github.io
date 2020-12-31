@@ -45,7 +45,7 @@ De lo anterior, se desprende que el voto debe considerarse válido y computarse 
   "ref27": "Para considerar como voto válido para alguna candidatura independiente, la marca debe estar en un solo recuadro o bien el nombre del candidato siempre y cuando la intención del elector sea clara.",
   "ref28": "La Sala Superior estimó que, si en una boleta no se marcó ninguno de los recuadros que contienen los emblemas de los partidos políticos o coaliciones, pero en otra parte de la boleta se asienta el nombre del candidato de cualquiera de los partidos contiendientes o candidatos independientes, esto indica la intención del elector de encaminar su voto a favor candidato. Por lo que el voto debe considerarse válido.",
   "ref29": "La Sala Superior estimó que son votos nulos, en virtud de que marcaron toda la boleta.",
-  "ref30": "Aun cuando esté marcada la boleta a favor de un partido, es claro que el lector manifestó su repudio con una expresión que muestra un insulto o es denotativa y que no expresó su voluntad de sufragar en su favor. Este voto es nulo.",
+  "ref30": "Aun cuando esté marcada la boleta a favor de un partido, es claro que el lector manifestó su repudio con una expresión que muestra un insulto o es denotativa y que no expresó su voluntad de sufragar en su favor. Este voto es nulo. Ejemplos de insultos son: ojete, cabrón, idiota, pendejo, puto, ratero, hijo de la chingada o cualquier otra expresión denotativa u ofensiva.",
   "ref31": "Ejemplos de insultos son: ojete, cabrón, idiota, pendejo, puto, ratero, hijo de la chingada o cualquier otra expresión denotativa u ofensiva.",
   "ref32": "La Sala Superior consideró que dicha frase (perdedor) denota, rechazo, baja estimación o descrédito por parte del elector a tales sujetos. Por tanto, aun cuando la boleta tiene una marca (paloma) característica del voto, lo cierto es que no se puede tener la certeza de cuál fue la intención del elector, por lo que dicho votó debe ser nulo.",
   "ref33": "El hecho de que esté cortada la boleta impide conocer la verdadera intención del elector, pues cabe la posibilidad de que el propio elector decidió desechar su voto, y por eso procedió a su destrucción. En esas condiciones, dicho voto debe considerarse nulo y sumarse al rubro correspondiente.",
@@ -103,7 +103,62 @@ var resoluciones = {
   "ref39": "Fundamento legal: Artículo 288, párrafo 2, y artículo 291, párrafo 1, inciso b), de la Ley General de Instituciones y Procedimientos Electorales"
 };
 
-var stack = [
+var stack_tope = [
+  {
+    "id": "votos-partido_c_02",
+    "voto": "pri",
+    "ref": "ref3"
+  },
+  {
+    "id": "votos-nulos_b_04",
+    "voto": "nulo",
+    "ref": "ref33",
+    "ruptura": "total"
+  },
+  {
+    "id": "votos-coalicion_d_02",
+    "voto": "pt-morena",
+    "ref": "ref26",
+    "ruptura": "esquina"
+  },
+  {
+    "id": "votos-partido_f_08",
+    "voto": "morena",
+    "ref": "ref14"
+  },
+  {
+    "id": "votos-nulos_b_02",
+    "voto": "nulo",
+    "ref": "ref30"
+  },
+  {
+    "id": "votos-partido_b_04",
+    "voto": "morena",
+    "ref": "ref2"
+  },
+  {
+    "id": "votos-coalicion_c_01",
+    "voto": "pt-morena-pes",
+    "ref": "ref38"
+  },
+  {
+    "id": "votos-coalicion_c_05",
+    "voto": "pt-morena-pes",
+    "ref": "ref25"
+  },
+  {
+    "id": "votos-nulos_c_03",
+    "voto": "nulo",
+    "ref": "ref34"
+  },
+  {
+    "id": "votos-coalicion_a_01",
+    "voto": "pri-pvem-na",
+    "ref": "ref38"
+  }
+];
+
+var stack_resto = [
   {
     "id": "votos-partido_a_01",
     "voto": "pan",
@@ -185,11 +240,6 @@ var stack = [
     "ref": "ref2"
   },
   {
-    "id": "votos-partido_b_04",
-    "voto": "morena",
-    "ref": "ref2"
-  },
-  {
     "id": "votos-partido_b_05",
     "voto": "pes",
     "ref": "ref2"
@@ -207,11 +257,6 @@ var stack = [
   {
     "id": "votos-partido_c_01",
     "voto": "prd",
-    "ref": "ref3"
-  },
-  {
-    "id": "votos-partido_c_02",
-    "voto": "pri",
     "ref": "ref3"
   },
   {
@@ -270,11 +315,6 @@ var stack = [
     "ref": "ref13"
   },
   {
-    "id": "votos-partido_f_08",
-    "voto": "morena",
-    "ref": "ref14"
-  },
-  {
     "id": "votos-partido_f_09",
     "voto": "prd",
     "ref": "ref14"
@@ -313,11 +353,6 @@ var stack = [
     "id": "votos-partido_g_05",
     "voto": "prd",
     "ref": "ref20"
-  },
-  {
-    "id": "votos-coalicion_a_01",
-    "voto": "pri-pvem-na",
-    "ref": "ref38"
   },
   {
     "id": "votos-coalicion_a_02",
@@ -385,11 +420,6 @@ var stack = [
     "ref": "ref24"
   },
   {
-    "id": "votos-coalicion_c_01",
-    "voto": "pt-morena-pes",
-    "ref": "ref38"
-  },
-  {
     "id": "votos-coalicion_c_02",
     "voto": "morena-pes",
     "ref": "ref38"
@@ -405,19 +435,8 @@ var stack = [
     "ref": "ref38"
   },
   {
-    "id": "votos-coalicion_c_05",
-    "voto": "pt-morena-pes",
-    "ref": "ref25"
-  },
-  {
     "id": "votos-coalicion_d_01",
     "voto": "pt-morena-pes",
-    "ref": "ref26",
-    "ruptura": "esquina"
-  },
-  {
-    "id": "votos-coalicion_d_02",
-    "voto": "pt-morena",
     "ref": "ref26",
     "ruptura": "esquina"
   },
@@ -517,20 +536,9 @@ var stack = [
     "ref": "ref39"
   },
   {
-    "id": "votos-nulos_b_02",
-    "voto": "nulo",
-    "ref": "ref30"
-  },
-  {
     "id": "votos-nulos_b_03",
     "voto": "nulo",
     "ref": "ref32"
-  },
-  {
-    "id": "votos-nulos_b_04",
-    "voto": "nulo",
-    "ref": "ref33",
-    "ruptura": "total"
   },
   {
     "id": "votos-nulos_c_01",
@@ -539,11 +547,6 @@ var stack = [
   },
   {
     "id": "votos-nulos_c_02",
-    "voto": "nulo",
-    "ref": "ref34"
-  },
-  {
-    "id": "votos-nulos_c_03",
     "voto": "nulo",
     "ref": "ref34"
   },
@@ -609,6 +612,8 @@ var stack = [
   }
 ];
 
+var stack = [];
+
 var stack_idx = 0;
 var availableVotes;
 
@@ -621,7 +626,7 @@ function shuffle(array) {
   }
 }
 
-var nextVote = function() {
+var nextVote = function() {  
   var val = stack[stack_idx];
   stack_idx++;
   if (stack_idx >= stack.length) {
@@ -631,6 +636,19 @@ var nextVote = function() {
 }
 
 window.onload = function() {
+  stack = [];
+  shuffle(stack_tope);
+  shuffle(stack_resto);
+  stack_tope.forEach(function(elt) {
+    stack.push(elt);
+  });
+  stack_resto.forEach(function(elt) {
+    stack.push(elt);
+  });
+  if (stack_idx < stack.length) {
+    availableVotes = true;
+  }
+  
   var config = {
     width: 1210,
     height: 600,
@@ -649,11 +667,6 @@ window.onload = function() {
       }
     }
   };
-
-  shuffle(stack);
-  if (stack_idx < stack.length) {
-    availableVotes = true;
-  }
 
   var game = new Phaser.Game(config);
 }
