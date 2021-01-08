@@ -32,5 +32,13 @@ cal_data = {
            "Capacitación de RC del Distrito 3. 17:00 hrs."],
       23: ["Capacitación de RG del Distrito 6. 17:00 hrs."]
     }
+  },
+  2021: {
+    0: {
+      7: ["Capacitación de RG del Distrito 2. 18:00 hrs."],
+      8: ["Capacitación de RG del Distrito 2. 18:00 hrs."],
+      9: ["Capacitación de RG del Distrito 2. 10:00 hrs."],
+      11: ["Capacitación de Instructores de todos los Distritos. 17:00 hrs"]
+    }
   }
 };
