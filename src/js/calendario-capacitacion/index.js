@@ -39,7 +39,7 @@ cal_data = {
       8: ["Capacitación de RG del Distrito 2. 18:00 hrs."],
       9: ["Capacitación de RG del Distrito 2. 10:00 hrs."],
       11: ["Capacitación de Instructores de todos los Distritos. 17:00 hrs"],
-      12: ["Capacitación de RC del Distrito 5. 17:00 hrs."],
+      12: ["Capacitación de RC del Distrito 5. 19:00 hrs."],
       13: ["Capacitación de RG del Distrito 6. 17:00 hrs."],
       15: ["Capacitación de Instructores de todos los Distritos (parte 2). 17:00 hrs."]
     }
