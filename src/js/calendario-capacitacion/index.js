@@ -48,6 +48,7 @@ cal_data = {
       15: ["Capacitación de Instructores de todos los Distritos (parte 2). 17:00 hrs.",
            "Reunión de avance de tareas de organización de la capacitación del Distrito Electoral Federal 6. 18:00 hrs.",
            "Reunión de avance de tareas de organización de la capacitación del Distrito Electoral Federal 2. 19:00 hrs."],
+      16: ["Capacitación de RC del Distrito 5. 16:00 hrs."],
       19: ["Capacitación de RG del Distrito 5. 19:00 hrs."]
     }
   }
