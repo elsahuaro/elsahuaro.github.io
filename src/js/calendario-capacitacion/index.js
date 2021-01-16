@@ -50,7 +50,8 @@ cal_data = {
            "Reunión de avance de tareas de organización de la capacitación del Distrito Electoral Federal 2. 19:00 hrs."],
       16: ["Capacitación de RC del Distrito 5. 16:00 hrs.",
            "Capacitación de RC del Distrito 2. 16:00 hrs."],
-      17: ["Capacitación de RG del Distrito 2. 12:00 hrs."],
+      17: ["Capacitación de RG del Distrito 2. 12:00 hrs.",
+           "Capacitación de RG del Distrito 7. 12:00 hrs."],
       19: ["Capacitación de RG del Distrito 5. 19:00 hrs."]
     }
   }
