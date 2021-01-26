@@ -63,7 +63,8 @@ cal_data = {
            "Capacitación de RC del Distrito 5. 19:00 hrs. (suspendida)"],
       24: ["Capacitación de RC del Distrito 2. 16:00 hrs.",
            "Capacitación de RG del Distrito 4. 16:00 hrs.",
-           "Capacitación Municipal de RG. 19:00 hrs."]
+           "Capacitación Municipal de RG. 19:00 hrs."],
+      27: ["Capacitación Municipal de RG. 18:00 hrs."]
     }
   }
 };
