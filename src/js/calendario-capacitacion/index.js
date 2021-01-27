@@ -74,6 +74,7 @@ cal_data = {
       30: ["Capacitación de RC del Distrito 3. 11:00 hrs."]
     },
     1: {
+      4: ["Capacitación de RC del Distrito 3. 19:00 hrs."],
       7: ["Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 16:00 hrs."]
     }
   }
