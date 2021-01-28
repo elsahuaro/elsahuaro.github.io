@@ -65,13 +65,14 @@ cal_data = {
            "Capacitación de RC del Distrito 2. 16:00 hrs.",
            "Capacitación de RG del Distrito 4. 16:00 hrs.",
            "Capacitación Municipal de RG. 19:00 hrs."],
-      27: ["Capacitación de RC del Distrito 1 presencial en Puerto Peñasco. 17:00 hrs.",
+      27: ["Capacitación de RC del Distrito 1 presencial en Puerto Peñasco. 17:00 hrs. (suspendida)",
            "Capacitación de RG del Distrito 6. 17:00 hrs.",
            "Capacitación Municipal de RG. 18:00 hrs."],
       28: ["Capacitación de RC del Distrito 3. 18:00 hrs.",
            "Capacitación de RC del Distrito 5. 19:00 hrs."],
       29: ["Capacitación de RG del Distrito 3. 18:00 hrs."],
-      30: ["Capacitación de RC del Distrito 3. 11:00 hrs."]
+      30: ["Capacitación de RC del Distrito 3. 11:00 hrs."],
+      31: ["Capacitación de RC del Distrito 1 presencial en Caborca. 10:00 hrs."]
     },
     1: {
       4: ["Capacitación de RC del Distrito 3. 19:00 hrs."],
