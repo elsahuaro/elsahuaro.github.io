@@ -70,7 +70,6 @@ cal_data = {
            "Capacitación Municipal de RG. 18:00 hrs."],
       28: ["Capacitación de RC del Distrito 3. 18:00 hrs.",
            "Capacitación de RC del Distrito 5. 19:00 hrs."],
-      29: ["Capacitación de RG del Distrito 3. 18:00 hrs."],
       30: ["Capacitación de RC del Distrito 3. 11:00 hrs."],
       31: ["Capacitación de RC del Distrito 1 presencial en oficinas Morena de Caborca. 10:00 hrs."]
     },
