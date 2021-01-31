@@ -74,6 +74,7 @@ cal_data = {
       31: ["Capacitación de RC del Distrito 1 presencial en oficinas Morena de Caborca. 10:00 hrs."]
     },
     1: {
+      1: ["Capacitación de RC del Distrito 3. 15:00 hrs."],
       4: ["Capacitación de RC del Distrito 3. 19:00 hrs."],
       5: ["Capacitación de RC del Distrito 3 presencial en Colonia Cuatro Olivos de Hermosillo. 18:00 hrs."],
       7: ["Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 16:00 hrs."]
