@@ -83,7 +83,8 @@ cal_data = {
           "Capacitación de RC del Distrito 1. 18:00 hrs."],
       6: ["Capacitación de RG del Distrito 3. 16:00 hrs."],
       7: ["Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 16:00 hrs.",
-          "Capacitación de RC del Distrito 1 presencial en Colonia Topahue en SLRC. 16:00 hrs."]
+          "Capacitación de RC del Distrito 1 presencial en Colonia Topahue en SLRC. 16:00 hrs."],
+      8: ["Capacitación de RC del Distrito 1 presencial en oficinas de Morena de Sonoyta. 20:00 hrs."]
     }
   }
 };
