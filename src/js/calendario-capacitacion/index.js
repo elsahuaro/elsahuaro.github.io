@@ -76,11 +76,13 @@ cal_data = {
     1: {
       1: ["Capacitación de RC del Distrito 3. 15:00 hrs."],
       3: ["Capacitación de RC del Distrito 1 presencial en Local de Morena de Caborca. 15:00 hrs."],
-      4: ["Capacitación de RC del Distrito 3. 19:00 hrs."],
+      4: ["Capacitación de RC del Distrito 3. 19:00 hrs.",
+          "Capacitación de RG del Distrito 1. 19:30 hrs."],
       5: ["Capacitación de RC del Distrito 3 presencial en Colonia Cuatro Olivos de Hermosillo. 18:00 hrs.",
           "Capacitación de RC del Distrito 1. 18:00 hrs."],
       6: ["Capacitación de RG del Distrito 3. 16:00 hrs."],
-      7: ["Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 16:00 hrs."]
+      7: ["Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 16:00 hrs.",
+          "Capacitación de RC del Distrito 1 presencial en Colonia Topahue en SLRC. 16:00 hrs."]
     }
   }
 };
