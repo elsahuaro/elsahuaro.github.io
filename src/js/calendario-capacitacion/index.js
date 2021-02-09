@@ -88,6 +88,7 @@ cal_data = {
       8: ["Capacitación de RC del Distrito 5. 19:00 hrs.",
           "Capacitación de RC del Distrito 1 presencial en oficinas de Morena de Sonoyta. 20:00 hrs."],
       11: ["Capacitación de RC del Distrito 3. 18:00 hrs."],
+      12: ["Capacitación de RC del Distrito 1. 19:30 hrs."],
       14: ["Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 16:00 hrs.",
            "Capacitación de RC del Distrito 3. 17:00 hrs."]
     }
