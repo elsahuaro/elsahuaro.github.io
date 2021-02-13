@@ -190,7 +190,13 @@ class CategorizeCaseScene extends StandardScene {
   }
 
   categorizaValido() {
-    if (this.vote["voto"] == "nulo") {
+    var es_nulo = false;
+    if (alt_elec) {
+      es_nulo = this.vote["voto"] == "son-nulo";
+    } else {
+      es_nulo = this.vote["voto"] == "nulo";
+    }
+    if (es_nulo) {
       this.tweens.add({
         targets: [this.boleta, this.mark, this.highlight],
         duration: 500,
@@ -210,7 +216,14 @@ class CategorizeCaseScene extends StandardScene {
   }
 
   categorizaNulo() {
-    if (this.vote["voto"] == "nulo") {
+    var es_nulo = false;
+    if (alt_elec) {
+      es_nulo = this.vote["voto"] == "son-nulo";
+    } else {
+      es_nulo = this.vote["voto"] == "nulo";
+    }
+    
+    if (es_nulo) {
       this.tweens.add({
         targets: [this.boleta, this.mark, this.highlight],
         duration: 500,

@@ -53,10 +53,22 @@ class LoadingScene extends Phaser.Scene {
     
     this.load.image("ine-back", "/img/contar-bien/ine-box-back.png");
     this.load.image("ine-front", "/img/contar-bien/ine-box-front.png");
-    this.load.image("tapete", "/img/contar-bien/tapete.png");
-    this.load.image("boleta", "/img/contar-bien/boleta.png");
-    for (var vote of votes) {
-      this.load.image(vote, "/img/contar-bien/voto-" + vote + ".png");
+    if (alt_elec) {
+      this.load.image("tapete", "/img/contar-bien/son-tapete.png");
+    } else {
+      this.load.image("tapete", "/img/contar-bien/tapete.png");
+    }
+    if (!alt_elec) {
+      this.load.image("boleta", "/img/contar-bien/boleta.png");
+    }
+    if (alt_elec) {
+      for (var vote of stack) {
+        this.load.image(vote, "/img/contar-bien/" + vote + ".png");
+      }
+    } else {
+      for (var vote of votes) {
+        this.load.image(vote, "/img/contar-bien/voto-" + vote + ".png");
+      }
     }
   }
 }

@@ -51,9 +51,11 @@ class LoadingScene extends Phaser.Scene {
 
     this.load.image("ine-back", "/img/votos-validos-y-nulos/ine-box-back.png");
     this.load.image("ine-front", "/img/votos-validos-y-nulos/ine-box-front.png");
-    this.load.image("boleta", "/img/votos-validos-y-nulos/boleta.png");
-    this.load.image("boleta-esquina", "/img/votos-validos-y-nulos/boleta-esquina.png");
-    this.load.image("boleta-total", "/img/votos-validos-y-nulos/boleta-total.png");
+    if (!alt_elec) {
+      this.load.image("boleta", "/img/votos-validos-y-nulos/boleta.png");
+      this.load.image("boleta-esquina", "/img/votos-validos-y-nulos/boleta-esquina.png");
+      this.load.image("boleta-total", "/img/votos-validos-y-nulos/boleta-total.png");
+    }    
     for (var voto of votos) {
       this.load.image("realce-" + voto, "/img/votos-validos-y-nulos/realce-" + voto + ".png");
     }

@@ -27,7 +27,11 @@ class CategorizeVoteScene extends Phaser.Scene {
       font: '30px "Roboto"',
       fill: "black"
     });
-    this.addTapete();
+    if (alt_elec) {
+      this.addTapeteSon();
+    } else {
+      this.addTapeteFed();
+    }
     this.totalText = this.add.text(this.game.config.width-140, 20, "total: " + this.total, {
       font: '30px "Roboto"',
       fill: "black"
@@ -96,7 +100,7 @@ class CategorizeVoteScene extends Phaser.Scene {
     });
   }
 
-  addTapete() {
+  addTapeteFed() {
     var offsetx = 490;
     var offsety = 100;
     this.matlabel = this.add.text(800, 525, "Tapete", {
@@ -132,6 +136,53 @@ class CategorizeVoteScene extends Phaser.Scene {
     }
   }
 
+  addTapeteSon() {
+    var offsetx = 490;
+    var offsety = 100;
+    this.matlabel = this.add.text(800, 525, "Tapete", {
+      font: '30px "Roboto"',
+      fill: "black"
+    });
+
+    for (var i = 0; i < votes.length; i++) {
+      this.tapete[votes[i]] = this.add.image(0, 0, "tapete");
+      this.tapete[votes[i]].setOrigin(0, 0);
+      var width = this.tapete[votes[i]].width;
+      var height = this.tapete[votes[i]].height;
+      var x = offsetx + (i % 3) * width;
+      var y = offsety + Math.floor(i / 3) * height;
+      this.tapete[votes[i]].x = x;
+      this.tapete[votes[i]].y = y;
+      
+      var txt = this.add.text(x, y, partidos_txt_son[votes[i]], {
+        font: '16px "Roboto"',
+        fill: "black"
+      });
+      txt.x = x + width/2 - txt.width/2;
+      txt.y = y + 10;
+      
+      var txt2 = this.add.text(x, y, candidaturas_txt_son[votes[i]], {
+        font: 'bold 16px "Roboto"',
+        fill: "black"
+      });
+      txt2.x = x + width/2 - txt2.width/2;
+      txt2.y = y + this.tapete[votes[i]].height - 25;
+
+      this.tapete[votes[i]].setInteractive();
+      this.tapete[votes[i]].on("pointerover", this.voteTintSetter(i));
+      this.tapete[votes[i]].on("pointerout", this.voteTintClearer(i));
+      this.tapete[votes[i]].on("pointerdown", this.voteCaster(i));
+      
+      var val = this.conteo[votes[i]].correct;
+      var counterTxt = this.add.text(x, y, "" + val, {
+        font: '30px "Roboto"',
+        fill: "black"
+      });
+      counterTxt.x = x + width/2 - counterTxt.width/2;
+      counterTxt.y = y + height/2 - counterTxt.height/2 + 10;
+    }
+  }
+
   voteTintSetter(i) {
     return (pointer) => {
       this.tapete[votes[i]].setTint(0xDF2EDB);
@@ -154,7 +205,7 @@ class CategorizeVoteScene extends Phaser.Scene {
   }
 
   castVote(vote) {
-    if (vote == this.vote) {
+    if (vote == stack_vote_son[this.vote]) {
       this.conteo[vote].correct = this.conteo[vote].correct + 1;
       for (var i = 0; i < votes.length; i++) {
         this.tapete[votes[i]].clearTint();

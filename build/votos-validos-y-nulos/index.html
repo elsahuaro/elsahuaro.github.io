@@ -40,12 +40,15 @@
       <script type="text/javascript" src="/js/votos-validos-y-nulos/Scenes.js"></script>
       <script type="text/javascript" src="/js/votos-validos-y-nulos/index.js"></script>
     </div>
-    <div class="info">
-      Ejemplos basados en el documento
-      <br />
-      <a href="/doc/Cuadernillo-Votos-validos-nulos.pdf" target="_blank">
-        Cuadernillo de consulta sobre votos válidos y votos nulos del INE
-      </a>.
+    <div id="data-info" class="info">
+    </div>
+    <div id="selec-variante">
+      <label for="elec-select">Versión del ejercicio:</label>
+      <select id="elec-select">
+        <option value="sonora-2021" selected>Elecciones estatales Sonora 2021</option>
+        <option value="federal-2018">Elecciones federales 2018</option>
+      </select>
+      <button onclick="selectData()">Elegir</button>
     </div>
   </body>
 </html>

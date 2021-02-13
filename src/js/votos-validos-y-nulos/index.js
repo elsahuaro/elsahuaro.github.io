@@ -1,9 +1,123 @@
-var votos = ['pan', 'prd', 'mc', 'pan-prd', 'pan-mc', 'prd-mc', 'pan-prd-mc',
-             'pri', 'pvem', 'na', 'pri-pvem', 'pri-na', 'pvem-na', 'pri-pvem-na',
-             'pt', 'morena', 'pes', 'pt-morena', 'pt-pes', 'morena-pes', 'pt-morena-pes',
-             'mz', 'bronco', 'nulo', 'otro'];
+var votos_son = ['son-prian', 'son-4t', 'son-mc', 'son-pes', 'son-rsp', 'son-fpm', 'son-nulo', 'son-otro'];
 
-var explicaciones = {
+var explicaciones_son = {
+  "ref1": `La Sala Superior considera que este voto debe clasificarse como válido, ya que con las marcas asentadas se puede interpretar la intención del elector de sufragar a favor de "Alfonso Durazo", candidato común de los partidos Morena, PT, PVEM y NA Sonora, ya que el recuadro correspondiente al primer candidato coloca la palabra "NO", lo que constituye un signo inequívoco de que la intención del elector se encamina a otorgar su voto al candidato "Alfonzo Durazo".`,
+  "ref2": `El elector marca un solo recuadro en donde elige la opción de su preferencia, aunque tiene una mancha, no se trata de las líneas cruzadas o de alguna otra marca que los electores usen para manifestar su voluntad al votar, sino de una mancha de tinta, que puede tener un origen distinto al acto de votar, por lo tanto este voto es válido.`,
+  "ref3": `Si alguna línea invade algún otro recuadro, pero se advierte con claridad que la parte sobresaliente fue accidental por lo que se tomará como válido para el candidato "Alfonso Durazo" candidato común del partido Morena, PT, PVEM y NA Sonora.`,
+  "ref4": `Aún y cuando existen dos marcas en la boleta, se desprende claramente la opción política deseada por el elector, pues el hecho de que también se encuentre escrito el nombre de "Lupita" en nada hace pensar que su deseo de sufragar sea por una opción distinta a la señalada. De lo anterior, se desprende que el voto debe considerarse válido y computarse a favor de "Alfonso Durazo" candidato común del partido Morena, PT, PVEM y NA Sonora.`,
+  "ref5": `Del análisis de la boleta la sala superior consideró que es evidente la intención del elector de sufragar a favor de "Alfonso Durazo" candidato común del partido Morena, PT, PVEM y NA Sonora, dado que es el único recuadro en el que se aprecia la marca de una equis "X", sin que sea impedimento que en los demás recuadros existan marcas consistentes en tres líneas onduladas, las cuales se advierten como signo negativo o de rechazo a las demás opciones políticas. Por lo anterior, la sala superior determina que en este caso, se debe revocar la determinación de los integrantes de las Mesas Directivas de Casilla, en el sentido de considerar nulo el aludido voto, para efecto de considerarlo válido y se debe computar como un sufragio emitido a favor del candidato "Alfonso Durazo".`,
+  "ref6": `La Sala Superior señaló que si bien se aprecia una linea diagonal sobre otro emblema, se trata de una marca sin trascendencia, pero se advierte que la marca "X" tiene una intención clara de votar por otro candidato.`,
+  "ref7": `Si bien es cierto que la boleta presenta dos rayas paralelas en señal de inutilización como boleta sobrante marcada, con tinta negra de bolígrafo, motivo por el cual dicha boleta fue extraída del sobre de boletas sobrantes, también lo es que se encuentra claramente marcado el recuadro correspondiente a "Alfonso Durazo".`,
+  "ref8": `Cuando se encuentra la palabra "SÍ" o una marca en un recuadro y la palabra "NO" o un insulto en los demás recuadros, el voto debe considerarse a favor del partido o coalición en la que se haya asentado la palabra o marca positiva. Cuando en todos los recuadros se asientan palabras negativas o de descalificación y en una opción se plasmó una palabra afirmativa o de aceptación se debe tomar como voto válido a favor de este último.`,
+  "ref9": `La Sala Superior estimó que, si una boleta no se marcó ninguno de los recuadros que contienen los emblemas de los partidos políticos o coaliciones, pero en otra parte de la boleta se asienta el nombre del candidato de cualquiera de los partidos contendientes o candidatos independientes, esto indica la intención del elector de encaminar su voto a favor del candidato. Por lo que el voto debe considerarse válido.`,
+  "ref10": `Si la boleta presenta una rotura o mutilación, de mayor o menor magnitud, pero se logran apreciar completos los recuadros de todos los partidos políticos para garantizar que el elector no marcó otra opción, y la marca puesta en la misma es lo suficientemente clara, el voto se considera válido.`,
+  "ref11": `La Sala Superior estimó que es voto nulo, en virtud de que marcaron toda la boleta.`,
+  "ref12": `El hecho de que estee cortada la boleta impide conocer la verdadera intención del elector, pues cabe la posibilidad de que el propio elector decidió desechar su voto, y por eso procedió a su destrucción. En esas condiciones, dicho voto debe considerarse nulo y sumarse al rubro correspondiente.`,
+  "ref13": `La Sala Superior estimó que es voto nulo, en virtud de que marcaron recuadros destinados a partidos políticos cuyos candidatos son diferentes y que no conformaron coalición.`,
+  "ref14": `Aun cuando esté marcada la boleta a favor de un partido, es claro que el lector manifestó su repudio con una expresión que muestra un insulto o es denostativa y que no expresó su voluntad de sufragar en su favor. Este voto es nulo.`
+};
+
+var resoluciones_son = {
+  "ref1": "SUP-JIN-29-2012",
+  "ref2": "SUP-JIN-12/2012 y SUP-JIN-14/2012",
+  "ref3": "SUP-JIN-21/2006",
+  "ref4": "SUP-JIN-21/2012",
+  "ref5": "SUP-JIN-11-2012",
+  "ref6": "SUP-JIN-216/2012, SUP-JIN-14/2012, SUP-JIN-254/2012, SUP-JIN-95/2012, SUP-JIN-305/2012, SUP-JIN-28/2012",
+  "ref7": "SUP-JIN-205-2012",
+  "ref8": "",
+  "ref9": "SUP-JRC-39/2018",
+  "ref10": "SUP-JIN-5/2006, SUP-JIN-6/2006 ACUMULADOS y SUP-JIN-14/2006",
+  "ref11": "SUP-JIN-61-2012",
+  "ref12": "SUP-JIN-085/2006",
+  "ref13": "SUP-JIN-61-2012",
+  "ref14": "SUP-JIN-69/2006"
+};
+
+var stack_son = [
+  {
+    "id": "sonora-01",
+    "voto": "son-4t",
+    "ref": "ref1"
+  },
+  {
+    "id": "sonora-03",
+    "voto": "son-4t",
+    "ref": "ref2"
+  },
+  {
+    "id": "sonora-05",
+    "voto": "son-4t",
+    "ref": "ref3"
+  },
+  {
+    "id": "sonora-07",
+    "voto": "son-4t",
+    "ref": "ref4"
+  },
+  {
+    "id": "sonora-09",
+    "voto": "son-4t",
+    "ref": "ref5"
+  },
+  {
+    "id": "sonora-11",
+    "voto": "son-4t",
+    "ref": "ref6"
+  },
+  {
+    "id": "sonora-13",
+    "voto": "son-4t",
+    "ref": "ref7"
+  },
+  {
+    "id": "sonora-15",
+    "voto": "son-4t",
+    "ref": "ref8"
+  },
+  {
+    "id": "sonora-17",
+    "voto": "son-4t",
+    "ref": "ref9"
+  },
+  {
+    "id": "sonora-19",
+    "voto": "son-4t",
+    "ref": "ref10"
+  },
+  {
+    "id": "sonora-21",
+    "voto": "son-nulo",
+    "ref": "ref11"
+  },
+  {
+    "id": "sonora-23",
+    "voto": "son-nulo",
+    "ref": "ref12"
+  },
+  {
+    "id": "sonora-25",
+    "voto": "son-nulo",
+    "ref": "ref13"
+  },
+  {
+    "id": "sonora-27",
+    "voto": "son-nulo",
+    "ref": "ref14"
+  },
+  {
+    "id": "sonora-29",
+    "voto": "son-nulo",
+    "ref": "ref11"
+  }
+];
+
+var votos_fed = ['pan', 'prd', 'mc', 'pan-prd', 'pan-mc', 'prd-mc', 'pan-prd-mc',
+                 'pri', 'pvem', 'na', 'pri-pvem', 'pri-na', 'pvem-na', 'pri-pvem-na',
+                 'pt', 'morena', 'pes', 'pt-morena', 'pt-pes', 'morena-pes', 'pt-morena-pes',
+                 'mz', 'bronco', 'nulo', 'otro'];
+
+var explicaciones_fed = {
   "ref1": "El ciudadano selecciona un recuadro con un símbolo o marca distinta a la \"X\" o \"cruz\", pero se entiende claramente que votó en el recuadro donde aparece el emblema de un partido y no aparece marca en otra parte de la boleta que ponga en duda lo anterior, el voto es válido.",
   "ref2": "Si se observa la palabra \"SI\" aunque no es la forma de \"X\" que tradicionalmente se usa para emitir el voto, siempre y cuando se encuentre dentro del recuadro correspondiente a un partido y mientras no sea injuriosa o difamante, es considerado voto válido.",
   "ref3": "El elector marca un sólo recuadro en donde elige la opción de su preferencia, aunque tiene una mancha, no se trata de las líneas cruzadas o de alguna otra marca que los electores usen para manifestar su voluntad al votar, sino de una mancha de tinta, que puede tener un origen distinto al acto de votar, por lo tanto, este voto es válido.",
@@ -59,7 +173,7 @@ De lo anterior, se desprende que el voto debe considerarse válido y computarse 
   "ref39": "Es Voto Nulo aquel expresado por un elector en una boleta depositada en la urna, sin que hubiera marcado ningún cuadro que contenga el emblema de un partido político o candidatura independiente; cuando el elector marque dos o más cuadros sin que exista coalición entre los partidos cuyos emblemas hayan sido marcados; o en su caso, aquél emitido en forma distinta a la señalada como voto válido."
 };
 
-var resoluciones = {
+var resoluciones_fed = {
   "ref1": "SUP-JIN-81/2006",
   "ref2": "SUP-JIN-81/200",
   "ref3": "SUP-JIN-12/2012 y SUP-JIN-14/2012",
@@ -613,6 +727,11 @@ var stack_resto = [
 ];
 
 var stack = [];
+var votos = [];
+var explicaciones = {};
+var resoluciones = {};
+
+var alt_elec = false;
 
 var stack_idx = 0;
 var availableVotes;
@@ -635,7 +754,25 @@ var nextVote = function() {
   return val;
 }
 
-window.onload = function() {
+var game;
+
+function selectData() {
+  let select = document.getElementById('elec-select');
+  if (game) {
+    game.destroy(true, false);
+  }
+  if (select.value == 'sonora-2021') {
+    sonora2021();
+  } else if (select.value == 'federal-2018') {
+    federales2018();
+  }
+}
+
+function federales2018() {
+  votos = votos_fed;
+  alt_elec = false;
+  explicaciones = explicaciones_fed;
+  resoluciones = resoluciones_fed;
   stack = [];
   shuffle(stack_tope);
   shuffle(stack_resto);
@@ -645,8 +782,11 @@ window.onload = function() {
   stack_resto.forEach(function(elt) {
     stack.push(elt);
   });
+  stack_idx = 0;
   if (stack_idx < stack.length) {
     availableVotes = true;
+  } else {
+    availableVotes = false;
   }
   
   var config = {
@@ -668,5 +808,62 @@ window.onload = function() {
     }
   };
 
-  var game = new Phaser.Game(config);
+  game = new Phaser.Game(config);
+
+  let info = document.getElementById('data-info');
+  info.innerHTML = `
+    Ejemplos basados en el documento
+    <br />
+    <a href="/doc/Cuadernillo-Votos-validos-nulos.pdf" target="_blank">
+      Cuadernillo de consulta sobre votos válidos y votos nulos del INE
+    </a>.
+  `;
+}
+
+function sonora2021() {
+  votos = votos_son;
+  alt_elec = true;
+  stack = [];
+  explicaciones = explicaciones_son;
+  resoluciones = resoluciones_son;
+  shuffle(stack_son);
+  stack_son.forEach(function(elt) {
+    stack.push(elt);
+  });
+  stack_idx = 0;
+  if (stack_idx < stack.length) {
+    availableVotes = true;
+  } else {
+    availableVotes = false;
+  }
+
+  var config = {
+    width: 1210,
+    height: 600,
+    maxWidth: 1210,
+    maxHeight: 600,
+    scene: [LoadingScene, StartScene, DrawVoteScene, CategorizeCaseScene],
+    backgroundColor: "#FFFFFF",
+    parent: "votos-validos-y-nulos",
+    scale: {
+      mode: Phaser.Scale.WIDTH_CONTROLS_HEIGHT,
+      autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
+    },
+    input: {
+      touch: {
+        capture: true
+      }
+    }
+  }
+
+  game = new Phaser.Game(config);
+
+  let info = document.getElementById('data-info');
+  info.innerHTML = `
+    Ejemplos adaptados del documento
+    <br />
+    <a href="/doc/Cuadernillo-Votos-validos-nulos.pdf" target="_blank">
+      Cuadernillo de consulta sobre votos válidos y votos nulos del INE
+    </a>.
+  `;
 }
