@@ -98,12 +98,14 @@ cal_data = {
            "Capacitación Municipal de RC. 18:00 hrs.",
            "Capacitación de RC del Distrito 2. 19:00 hrs.",
            "Capacitación de RC del Distrito 1. 19:30 hrs."],
-      13: ["Capacitación de RC del Distrito 5. 16:00 hrs."],
+      13: ["Capacitación de RC del Distrito 5. 16:00 hrs.",
+           "Capacitación de RC del Distrito 1 presencial en Oficina de Morena en SLRC. 16:00 hrs."],
       14: ["Capacitación de RG del Distrito 7 presencial en Comité de Morena de Navojoa. 9:00 hrs.",
            "Capacitación de RG del Distrito 7 presencial en Huatabampo. 15:00 hrs.",
            "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 16:00 hrs.",
            "Capacitación de RC del Distrito 3. 17:00 hrs."],
-      15: ["Capacitación de RC del Distrito 5. 19:00 hrs."]
+      15: ["Capacitación de RC del Distrito 5. 19:00 hrs."],
+      17: ["Capacitación de RC del Distrito 1 presencial en Oficina de Morena en Puerto Peñasco. 17:00 hrs."]
     }
   }
 };
