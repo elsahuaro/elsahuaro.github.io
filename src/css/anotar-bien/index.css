@@ -134,6 +134,11 @@ body {
   font-size: 0.5rem;
 }
 
+.pvotom > span {
+  font-size: 0.5rem;
+  width: 40px;
+}
+
 .pvoto > input {
   width: 65%;
   margin: 0 10px;
