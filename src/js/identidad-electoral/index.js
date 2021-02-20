@@ -234,8 +234,11 @@ var map = false;
 
 const initMap = () => {
   map = L.map("secmap").setView([29.1026, -110.97732], 6);
-  L.tileLayer.wms('http://gaia.inegi.org.mx/NLB/tunnel/wms/wms61', {
-    layers: 'MGE'
+  //L.tileLayer.wms('http://gaia.inegi.org.mx/NLB/tunnel/wms/wms61', {
+  //  layers: 'MGE',
+  //}).addTo(map);
+  L.tileLayer.wms('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 }
 
