@@ -154,8 +154,8 @@ cal_data = {
 	   "Capacitación de RC del Distrito 7 presencial en Oficina de Morena en Navojoa. 16:00 hrs.",
 	   "Capacitación de RC del Distrito 7 presencial en Oficina de Morena en Etchojoa. 17:00 hrs."],
       23: ["Capacitación de RC del Distrito 7 presencial en Oficina de Morena en Etchojoa. 16:00 hrs.",
-	   "Capacitación de RC del Distrito 6 presencial en Col. Casa Blanca en Cd. Obregón. 16:00 hrs."],
-      24: ["Capacitación de RC del Distrito 6 presencial en Calle Juárez en Esperanza. 17:00 hrs."],
+	   "Capacitación de RC/RG del Distrito 6 presencial en Col. Casa Blanca en Cd. Obregón. 16:00 hrs."],
+      24: ["Capacitación de RC/RG del Distrito 6 presencial en Calle Juárez en Esperanza. 17:00 hrs."],
       25: ["Capacitación de RG del Distrito 2 presencial en Nogales. 11:00 hrs."],
       26: ["Capacitación de RG del Distrito 2 presencial en Nogales. 11:00 hrs."],
       28: ["Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs."]
