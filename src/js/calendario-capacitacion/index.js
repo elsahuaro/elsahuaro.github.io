@@ -148,6 +148,8 @@ cal_data = {
 	   "Capacitación de RC/RG del Distrito 6 presencial en Col. Casa Blanca en Cd. Obregón. 16:00 hrs."],
       25: ["Capacitación de RG del Distrito 2 presencial en Nogales. 11:00 hrs.",
 	   "Capacitación de RG del Distrito 2. 16:00 hrs.",
+	   "Capacitación de RC del Distrito 7 presencial en domicilio particular en Navojoa. 18:00 hrs.",
+	   "Capacitación de RC del Distrito 3 presencial en Blvd. Luis Encinas en Hermosillo. 18:30 hrs.",
 	   "Capacitación de RC del Distrito 5. 19:00 hrs."],
       26: ["Capacitación de RG del Distrito 2 presencial en Nogales. 11:00 hrs.",
 	   "Capacitación de RC del Distrito 3. 17:00 hrs."],
