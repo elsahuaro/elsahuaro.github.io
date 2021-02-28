@@ -158,12 +158,15 @@ cal_data = {
 	   "Capacitación de RC del Distrito 6. 18:00 hrs.",
 	   "Capacitación de RC del Distrito 1. 19:30 hrs."],
       27: ["Capacitación de RC del Distrito 1 presencial en Oficina de Morena en SLRC. 16:00 hrs.",
-	   "Capacitación de RC del Distrito 6. 16:00 hrs."],
+	   "Capacitación de RC del Distrito 6. 16:00 hrs.",
+	   "Capacitación de RC del Distrito 7 presencial en Comunidad Mabejaqui en Etchojoa. 17:00 hrs.",
+	   "Capacitación de RG del Distrito 6. 18:00 hrs."],
       28: ["Capacitación de RC del Distrito 1 presencial en Oficina de Morena en Caborca. 10:00 hrs.",
 	   "Capacitación de RC del Distrito 7 presencial en domicilio particular en Benito Juárez. 11:00 hrs.",
 	   "Capacitación de RC del Distrito 1 presencial en domicilio particular Av Nuevo Leon en SLRC. 16:00 hrs.",
 	   "Capacitación de RC del Distrito 6 presencial en Campo 30 en Cajeme. 16:30 hrs.",
-	   "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs."]
+	   "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs.",
+	   "Capacitación de RC del Distrito 7 presencial en Oficina de Morena en Etchojoa. 17:00 hrs."]
     },
     2: {
       6: ["Capacitación de RC del Distrito 3 presencial en Blvd Luis Encinas y America en Hermosillo. 17:00 hrs."]
