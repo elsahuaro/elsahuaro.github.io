@@ -20,6 +20,10 @@ var galeria_data = [
   { src: '0018.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-02-26' },
   { src: '0019.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-02-19' },
   { src: '0020.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-02-19' },
+  { src: '0021.jpg', distrito: 4, lugar: 'Bacadehuachi', fecha: '2021-02-21' },
+  { src: '0022.jpg', distrito: 4, lugar: 'Bacadehuachi', fecha: '2021-02-21' },
+  { src: '0023.jpg', distrito: 4, lugar: 'Villa Hidalgo', fecha: '2021-02-20' },
+  { src: '0024.jpg', distrito: 4, lugar: 'Granados - Huásabas', fecha: '2021-02-21' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
