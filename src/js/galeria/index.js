@@ -26,6 +26,10 @@ var galeria_data = [
   { src: '0024.jpg', distrito: 4, lugar: 'Granados - Huásabas', fecha: '2021-02-21' },
   { src: '0025.jpg', distrito: 1, lugar: 'San Luis Río Colorado', fecha: '2021-02-27' },
   { src: '0026.jpg', distrito: 1, lugar: 'San Luis Río Colorado', fecha: '2021-02-27' },
+  { src: '0027.jpg', distrito: 4, lugar: 'Bavispe', fecha: '2021-02-21' },
+  { src: '0028.jpg', distrito: 4, lugar: 'Bavispe', fecha: '2021-02-21' },
+  { src: '0029.jpg', distrito: 4, lugar: 'Bavispe', fecha: '2021-02-21' },
+  { src: '0030.jpg', distrito: 4, lugar: 'Bavispe', fecha: '2021-02-21' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
