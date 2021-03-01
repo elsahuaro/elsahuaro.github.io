@@ -10,7 +10,15 @@ var galeria_data = [
   { src: '0008.jpg', distrito: 3, lugar: 'Poblado Miguel Alemán', fecha: '2021-02-28' },
   { src: '0009.jpg', distrito: 3, lugar: 'Poblado Miguel Alemán', fecha: '2021-02-28' },
   { src: '0010.jpg', distrito: 3, lugar: 'Poblado Miguel Alemán', fecha: '2021-02-28' },
-  { src: '0011.jpg', distrito: 4, lugar: 'Capacitación Virtual', fecha: '2021-02-28' }
+  { src: '0011.jpg', distrito: 4, lugar: 'Capacitación Virtual', fecha: '2021-02-28' },
+  { src: '0012.jpg', distrito: 1, lugar: 'Caborca', fecha: '2021-02-28' },
+  { src: '0013.jpg', distrito: 1, lugar: 'Caborca', fecha: '2021-02-28' },
+  { src: '0014.jpg', distrito: 1, lugar: 'Caborca', fecha: '2021-02-28' },
+  { src: '0015.jpg', distrito: 7, lugar: 'Etchojoa', fecha: '2021-02-27' },
+  { src: '0016.jpg', distrito: 7, lugar: 'Etchojoa', fecha: '2021-02-27' },
+  { src: '0017.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-02-26' },
+  { src: '0018.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-02-26' }
+  // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
 window.addEventListener("load", function() {
