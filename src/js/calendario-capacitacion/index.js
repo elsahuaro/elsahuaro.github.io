@@ -169,6 +169,7 @@ cal_data = {
 	   "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs."]
     },
     2: {
+      1: ["Capacitación de RC del Distrito 7 presencial en Chucarit Etchojoa. 18:00 hrs."],
       6: ["Capacitación de RC del Distrito 3 presencial en Blvd Luis Encinas y America en Hermosillo. 17:00 hrs."]
     }
   }
