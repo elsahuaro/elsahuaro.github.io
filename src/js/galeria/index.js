@@ -17,7 +17,9 @@ var galeria_data = [
   { src: '0015.jpg', distrito: 7, lugar: 'Etchojoa', fecha: '2021-02-27' },
   { src: '0016.jpg', distrito: 7, lugar: 'Etchojoa', fecha: '2021-02-27' },
   { src: '0017.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-02-26' },
-  { src: '0018.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-02-26' }
+  { src: '0018.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-02-26' },
+  { src: '0019.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-02-19' },
+  { src: '0020.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-02-19' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
