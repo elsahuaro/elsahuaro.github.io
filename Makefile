@@ -14,13 +14,15 @@ JSON_SRC = $(shell find src/data/ -type f -name '*.json')
 JSON_TGT = $(JSON_SRC:src/%.json=build/%.json)
 PNG_SRC = $(shell find src/img/ -type f -name '*.png')
 PNG_TGT = $(PNG_SRC:src/%.png=build/%.png)
+JPG_SRC = $(shell find src/img/ -type f -name '*.jpg')
+JPG_TGT = $(JPG_SRC:src/%.jpg=build/%.jpg)
 SVG_SRC = $(shell find src/img/ -type f -name '*.svg')
 SVG_TGT = $(SVG_SRC:src/%.svg=build/%.svg)
 
 
 .PHONY: build docs
 
-build: $(HTML_TGT) $(JS_TGT) $(CSS_TGT) $(TTF_TGT) $(WOFF_TGT) $(JSON_TGT) $(PNG_TGT) $(SVG_TGT) favicon libs docs
+build: $(HTML_TGT) $(JS_TGT) $(CSS_TGT) $(TTF_TGT) $(WOFF_TGT) $(JSON_TGT) $(PNG_TGT) $(JPG_TGT) $(SVG_TGT) favicon libs docs
 	cp README.md build/
 
 build/%.html: src/%.html
@@ -48,6 +50,11 @@ build/%.json: src/%.json
 	cp $< $@
 
 build/%.png: src/%.png
+	mkdir -p $(@D)
+	cp $< $@
+
+build/%.jpg: src/%.jpg
+	mogrify -strip -resize "1280x1280>" $<
 	mkdir -p $(@D)
 	cp $< $@
 
