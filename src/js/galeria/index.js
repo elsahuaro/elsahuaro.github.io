@@ -24,6 +24,8 @@ var galeria_data = [
   { src: '0022.jpg', distrito: 4, lugar: 'Bacadehuachi', fecha: '2021-02-21' },
   { src: '0023.jpg', distrito: 4, lugar: 'Villa Hidalgo', fecha: '2021-02-20' },
   { src: '0024.jpg', distrito: 4, lugar: 'Granados - Huásabas', fecha: '2021-02-21' },
+  { src: '0025.jpg', distrito: 1, lugar: 'San Luis Río Colorado', fecha: '2021-02-27' },
+  { src: '0026.jpg', distrito: 1, lugar: 'San Luis Río Colorado', fecha: '2021-02-27' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
