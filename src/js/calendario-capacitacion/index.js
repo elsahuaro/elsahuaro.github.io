@@ -174,9 +174,13 @@ cal_data = {
       2: ["Capacitación de RG del Distrito 1 presencial en Oficinas de Morena en Sonoyta. 14:00 hrs.",
 	  "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Sonoyta. 15:00 hrs.",
 	  "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 18:00 hrs."],
-      3: ["Capacitación de RC del Distrito 7 presencial en domicilio particular en Bacobampo. 16:00 hrs."],
-      4: ["Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 18:00 hrs."],
-      6: ["Capacitación de RC del Distrito 3 presencial en Blvd Luis Encinas y America en Hermosillo. 17:00 hrs."]
+      3: ["Capacitación de RC del Distrito 7 presencial en domicilio particular en Bacobampo. 16:00 hrs.",
+	  "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Sonoyta. 17:00 hrs.",
+	  "Taller virtual para instructores de Capacitación de RC. 17:00 hrs."],
+      4: ["Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 18:00 hrs.",
+	  "Capacitación de RC del Distrito 5. 19:00 hrs."],
+      6: ["Capacitación de RC del Distrito 3 presencial en domicilio particular en Hermosillo. 17:00 hrs.",
+	  "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs."]
     }
   }
 };
