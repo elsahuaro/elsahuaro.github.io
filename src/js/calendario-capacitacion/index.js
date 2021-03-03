@@ -173,6 +173,7 @@ cal_data = {
 	  "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 18:00 hrs."],
       2: ["Capacitación de RG del Distrito 1 presencial en Oficinas de Morena en Sonoyta. 14:00 hrs.",
 	  "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Sonoyta. 15:00 hrs.",
+	  "Capacitación de RC del Distrito 6 presencial en Ciudad Obregón. 16:00 hrs.",
 	  "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 18:00 hrs."],
       3: ["Capacitación de RC del Distrito 7 presencial en domicilio particular en Bacobampo. 16:00 hrs.",
 	  "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Sonoyta. 17:00 hrs.",
