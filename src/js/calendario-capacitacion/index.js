@@ -177,11 +177,16 @@ cal_data = {
 	  "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 18:00 hrs."],
       3: ["Capacitación de RC del Distrito 7 presencial en domicilio particular en Bacobampo. 16:00 hrs.",
 	  "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Sonoyta. 17:00 hrs.",
-	  "Taller virtual para instructores de Capacitación de RC. 17:00 hrs."],
-      4: ["Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 18:00 hrs.",
+	  "Taller virtual para instructores de Capacitación de RC. 17:00 hrs.",
+	  "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 19:00 hrs."],
+      4: ["Capacitación de RC del Distrito 7 presencial en domicilio particular en Navojoa. 17:00 hrs.",
+	  "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 18:00 hrs.",
 	  "Capacitación de RC del Distrito 5. 19:00 hrs."],
+      5: ["Capacitación de RC del Distrito 7 presencial en Sebampo en Etchojoa. 17:00 hrs.",
+	  "Capacitación de RC del Distrito 7 presencial en Huatabampo. 18:30 hrs."],
       6: ["Capacitación de RC del Distrito 3 presencial en domicilio particular en Hermosillo. 17:00 hrs.",
-	  "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs."]
+	  "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs."],
+      8: ["Capacitación de RC del Distrito 7 presencial en Ejido La Unión en Huatabampo. 17:00 hrs."]
     }
   }
 };
