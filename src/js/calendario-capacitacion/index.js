@@ -182,10 +182,18 @@ cal_data = {
       4: ["Capacitación de RC del Distrito 7 presencial en domicilio particular en Navojoa. 17:00 hrs.",
 	  "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 18:00 hrs.",
 	  "Capacitación de RC del Distrito 5. 19:00 hrs."],
-      5: ["Capacitación de RC del Distrito 7 presencial en Sebampo en Etchojoa. 17:00 hrs.",
+      5: ["Capacitación de RC del Distrito 2. 10:00 hrs.",
+	  "Capacitación de RC del Distrito 7 presencial en Sebampo en Etchojoa. 17:00 hrs.",
 	  "Capacitación de RC del Distrito 7 presencial en Huatabampo. 18:30 hrs."],
-      6: ["Capacitación de RC del Distrito 3 presencial en domicilio particular en Hermosillo. 17:00 hrs.",
-	  "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs."],
+      6: ["Capacitación de RC del Distrito 4 presencial en Sahuaripa. 10:00 hrs.",
+	  "Capacitación de RC del Distrito 7. 10:00 hrs.",
+	  "Capacitación de RC del Distrito 3 presencial en domicilio particular en Hermosillo. 17:00 hrs.",
+	  "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs.",
+	  "Capacitación de RC del Distrito 7 presencial en Buaysiacobe. 17:00 hrs."],
+      7: ["Capacitación de RC del Distrito 2 presencial en Nuevo Nogales en Nogales. 14:00 hrs.",
+	  "Capacitación de RC del Distrito 3. 15:00 hrs.",
+	  "Capacitación de RC del Distrito 7 presencial en Ejido El Maquipo en Alamos. 16:00 hrs.",
+	  "Capacitación de RC del Distrito 7 presencial en La Bocana en Etchojoa. 17:00 hrs."],
       8: ["Capacitación de RC del Distrito 7 presencial en Ejido La Unión en Huatabampo. 17:00 hrs."]
     }
   }
