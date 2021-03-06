@@ -195,6 +195,8 @@ cal_data = {
 	  "Capacitación de RC del Distrito 7 presencial en Buaysiacobe. 17:00 hrs.",
           "Capacitación para Estructura Jurídica-Zona Sur. 18:00 hrs."],
       7: ["Capacitación de RC del Distrito 4 presencial en Comité Municipal Morena en Nacozari. 9:00 hrs.",
+          "Capacitación de RC del Distrito 7 presencial en domicilio particular en Navojoa. 9:00 hrs.",
+          "Capacitación de RC del Distrito 1. 10:00 hrs.",
           "Capacitación de RC del Distrito 4 presencial en Aconchi. 11:00 hrs.",
           "Capacitación de RC del Distrito 4 presencial en Comité Municipal Morena en Cumpas. 12:30 hrs.",
           "Capacitación de RC del Distrito 2 presencial en Nuevo Nogales en Nogales. 14:00 hrs.",
@@ -204,7 +206,9 @@ cal_data = {
           "Capacitación de RC del Distrito 4 presencial en Asociación Ganadera en Moctezuma. 16:00 hrs.",
 	  "Capacitación de RC del Distrito 7 presencial en La Bocana en Etchojoa. 17:00 hrs."],
       8: ["Capacitación de RC del Distrito 4 presencial en Ejido Basiroa en Alamos. 16:00 hrs.",
-          "Capacitación de RC del Distrito 7 presencial en Ejido La Unión en Huatabampo. 17:00 hrs."]
+          "Capacitación de RC del Distrito 7 presencial en Ejido La Unión en Huatabampo. 17:00 hrs.",
+          "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 18:00 hrs."],
+      11: ["Capacitación de RC del Distrito 1. 18:00 hrs."]
     }
   }
 };
