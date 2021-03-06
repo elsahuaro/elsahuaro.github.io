@@ -32,6 +32,9 @@ var galeria_data = [
   { src: '0030.jpg', distrito: 4, lugar: 'Bavispe', fecha: '2021-02-21' },
   { src: '0031.jpg', distrito: 1, lugar: 'Sonoyta', fecha: '2021-03-02' },
   { src: '0032.jpg', distrito: 1, lugar: 'Puerto Peñasco', fecha: '2021-03-02' },
+  { src: '0033.jpg', distrito: 4, lugar: 'Sahuaripa', fecha: '2021-03-06' },
+  { src: '0034.jpg', distrito: 4, lugar: 'Sahuaripa', fecha: '2021-03-06' },
+  { src: '0035.jpg', distrito: 4, lugar: 'Sahuaripa', fecha: '2021-03-06' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
