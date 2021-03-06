@@ -189,7 +189,6 @@ cal_data = {
 	  "Capacitación de RC del Distrito 7 presencial en Huatabampo. 18:30 hrs.",
           "Capacitación de RC del Distrito 1. 19:30 hrs."],
       6: ["Capacitación de RC del Distrito 4 presencial en Sahuaripa. 10:00 hrs.",
-	  "Capacitación de RC del Distrito 7. 10:00 hrs.",
 	  "Capacitación de RC del Distrito 3 presencial en domicilio particular en Hermosillo. 17:00 hrs.",
 	  "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs.",
 	  "Capacitación de RC del Distrito 7 presencial en Buaysiacobe. 17:00 hrs.",
