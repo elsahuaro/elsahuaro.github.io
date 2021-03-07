@@ -41,6 +41,14 @@ var galeria_data = [
   { src: '0039.jpg', distrito: 5, lugar: 'Poblado Miguel Alemán', fecha: '2021-03-06' },
   { src: '0040.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-03-06' },
   { src: '0041.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-03-06' },
+  { src: '0042.jpg', distrito: 5, lugar: 'Poblado Miguel Alemán', fecha: '2021-03-06' },
+  { src: '0043.jpg', distrito: 5, lugar: 'Poblado Miguel Alemán', fecha: '2021-03-06' },
+  { src: '0044.jpg', distrito: 5, lugar: 'Poblado Miguel Alemán', fecha: '2021-03-06' },
+  { src: '0045.jpg', distrito: 1, lugar: 'San Luis Río Colorado', fecha: '2021-03-06' },
+  { src: '0046.jpg', distrito: 1, lugar: 'San Luis Río Colorado', fecha: '2021-03-06' },
+  { src: '0047.jpg', distrito: 7, lugar: 'Etchojoa', fecha: '2021-03-06' },
+  { src: '0048.jpg', distrito: 7, lugar: 'Etchojoa', fecha: '2021-03-06' },
+  { src: '0049.jpg', distrito: 2, lugar: 'Nogales', fecha: '2021-03-07' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
