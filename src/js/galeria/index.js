@@ -35,6 +35,12 @@ var galeria_data = [
   { src: '0033.jpg', distrito: 4, lugar: 'Sahuaripa', fecha: '2021-03-06' },
   { src: '0034.jpg', distrito: 4, lugar: 'Sahuaripa', fecha: '2021-03-06' },
   { src: '0035.jpg', distrito: 4, lugar: 'Sahuaripa', fecha: '2021-03-06' },
+  { src: '0036.jpg', distrito: 5, lugar: 'Poblado Miguel Alemán', fecha: '2021-03-06' },
+  { src: '0037.jpg', distrito: 5, lugar: 'Poblado Miguel Alemán', fecha: '2021-03-06' },
+  { src: '0038.jpg', distrito: 5, lugar: 'Poblado Miguel Alemán', fecha: '2021-03-06' },
+  { src: '0039.jpg', distrito: 5, lugar: 'Poblado Miguel Alemán', fecha: '2021-03-06' },
+  { src: '0040.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-03-06' },
+  { src: '0041.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-03-06' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
