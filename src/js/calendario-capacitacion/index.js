@@ -204,9 +204,12 @@ cal_data = {
 	  "Capacitación de RC del Distrito 7 presencial en Ejido El Maquipo en Alamos. 16:00 hrs.",
           "Capacitación de RC del Distrito 4 presencial en Asociación Ganadera en Moctezuma. 16:00 hrs.",
 	  "Capacitación de RC del Distrito 7 presencial en La Bocana en Etchojoa. 17:00 hrs."],
-      8: ["Capacitación de RC del Distrito 4 presencial en Ejido Basiroa en Alamos. 16:00 hrs.",
+      8: ["Capacitación de RC del Distrito 7 presencial en Ejido Basiroa en Alamos. 16:00 hrs.",
+          "Capacitación de RC del Distrito 7 presencial en Sebampo en Etchojoa. 16:00 hrs.",
           "Capacitación de RC del Distrito 7 presencial en Ejido La Unión en Huatabampo. 17:00 hrs.",
           "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 18:00 hrs."],
+      9: ["Capacitación de RC del Distrito 7 presencial en El Rodeo en Etchojoa. 17:00 hrs."],
+      10: ["Capacitación de RC del Distrito 7 presencial en Oficina de Morena en Etchojoa. 17:00 hrs."],
       11: ["Capacitación de RC del Distrito 1. 18:00 hrs."]
     }
   }
