@@ -49,6 +49,13 @@ var galeria_data = [
   { src: '0047.jpg', distrito: 7, lugar: 'Etchojoa', fecha: '2021-03-06' },
   { src: '0048.jpg', distrito: 7, lugar: 'Etchojoa', fecha: '2021-03-06' },
   { src: '0049.jpg', distrito: 2, lugar: 'Nogales', fecha: '2021-03-07' },
+  { src: '0050.jpg', distrito: 2, lugar: 'Nogales', fecha: '2021-03-07' },
+  { src: '0051.jpg', distrito: 2, lugar: 'Nogales', fecha: '2021-03-07' },
+  { src: '0052.jpg', distrito: 5, lugar: 'La Peaña - Costa de Hermosillo', fecha: '2021-03-07' },
+  { src: '0053.jpg', distrito: 5, lugar: 'La Peaña - Costa de Hermosillo', fecha: '2021-03-07' },
+  { src: '0054.jpg', distrito: 5, lugar: 'Los Pericos - Costa de Hermosillo', fecha: '2021-03-07' },
+  { src: '0055.jpg', distrito: 5, lugar: 'Los Pericos - Costa de Hermosillo', fecha: '2021-03-07' },
+  { src: '0056.jpg', distrito: 5, lugar: 'Los Pericos - Costa de Hermosillo', fecha: '2021-03-07' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
