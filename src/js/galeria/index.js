@@ -1,5 +1,5 @@
 var galeria_data = [
-  { src: '0000.jpg', distrito: 7, lugar: 'Alamos', fecha: '2021-02-22' },
+  { src: '0000.jpg', distrito: 7, lugar: 'Álamos', fecha: '2021-02-22' },
   { src: '0001.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-02-23' },
   { src: '0002.jpg', distrito: 3, lugar: 'Poblado Miguel Alemán', fecha: '2021-02-28' },
   { src: '0003.jpg', distrito: 6, lugar: 'Campo 30', fecha: '2021-02-28' },
@@ -56,6 +56,13 @@ var galeria_data = [
   { src: '0054.jpg', distrito: 5, lugar: 'Los Pericos - Costa de Hermosillo', fecha: '2021-03-07' },
   { src: '0055.jpg', distrito: 5, lugar: 'Los Pericos - Costa de Hermosillo', fecha: '2021-03-07' },
   { src: '0056.jpg', distrito: 5, lugar: 'Los Pericos - Costa de Hermosillo', fecha: '2021-03-07' },
+  { src: '0057.jpg', distrito: 7, lugar: 'Tapizuelas Álamos', fecha: '2021-03-08' },
+  { src: '0058.jpg', distrito: 7, lugar: 'Tapizuelas Álamos', fecha: '2021-03-08' },
+  { src: '0059.jpg', distrito: 7, lugar: 'Basirom Álamos', fecha: '2021-03-08' },
+  { src: '0060.jpg', distrito: 7, lugar: 'El Maquipo Álamos', fecha: '2021-03-08' },
+  { src: '0061.jpg', distrito: 7, lugar: 'El Maquipo Álamos', fecha: '2021-03-08' },
+  { src: '0062.jpg', distrito: 7, lugar: 'El Maquipo Álamos', fecha: '2021-03-08' },
+  { src: '0063.jpg', distrito: 7, lugar: 'El Maquipo Álamos', fecha: '2021-03-08' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 

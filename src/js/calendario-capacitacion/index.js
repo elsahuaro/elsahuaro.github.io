@@ -208,10 +208,12 @@ cal_data = {
           "Capacitación de RC del Distrito 7 presencial en Sebampo en Etchojoa. 16:00 hrs.",
           "Capacitación de RC del Distrito 7 presencial en Ejido La Unión en Huatabampo. 17:00 hrs.",
           "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 18:00 hrs."],
-      9: ["Capacitación de RC del Distrito 7 presencial en El Rodeo en Etchojoa. 17:00 hrs.",
-          "Capacitación Municipal de RC. 18:00 hrs."],
-      10: ["Capacitación de RC del Distrito 7 presencial en Oficina de Morena en Etchojoa. 17:00 hrs."],
-      11: ["Capacitación de RC del Distrito 1. 18:00 hrs."]
+      9: ["Capacitación de RC del Distrito 7 presencial en El Rodeo en Etchojoa. 17:00 hrs."],
+      10: ["Capacitación de RC del Distrito 7 presencial en Oficina de Morena en Etchojoa. 17:00 hrs.",
+           "Capacitación Municipal de RC. 18:00 hrs.",
+           "Capacitación de RC del Distrito 1 en Oficinas de Morena en Puerto Peñasco. 18:30 hrs."],
+      11: ["Capacitación de RC del Distrito 1. 18:00 hrs."],
+      14: ["Capacitación de RC del Distrito 7 en El Saneal en Navojoa. 9:00 hrs."]
     }
   }
 };
