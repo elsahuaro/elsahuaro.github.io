@@ -63,6 +63,11 @@ var galeria_data = [
   { src: '0061.jpg', distrito: 7, lugar: 'El Maquipo Álamos', fecha: '2021-03-08' },
   { src: '0062.jpg', distrito: 7, lugar: 'El Maquipo Álamos', fecha: '2021-03-08' },
   { src: '0063.jpg', distrito: 7, lugar: 'El Maquipo Álamos', fecha: '2021-03-08' },
+  { src: '0064.jpg', distrito: 7, lugar: 'Sebampo Etchojoa', fecha: '2021-03-08' },
+  { src: '0065.jpg', distrito: 7, lugar: 'Sebampo Etchojoa', fecha: '2021-03-08' },
+  { src: '0066.jpg', distrito: 7, lugar: 'Sebampo Etchojoa', fecha: '2021-03-08' },
+  { src: '0067.jpg', distrito: 7, lugar: 'Sebampo Etchojoa', fecha: '2021-03-08' },
+  { src: '0068.jpg', distrito: 7, lugar: 'Sebampo Etchojoa', fecha: '2021-03-08' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
