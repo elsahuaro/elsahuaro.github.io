@@ -68,6 +68,10 @@ var galeria_data = [
   { src: '0066.jpg', distrito: 7, lugar: 'Sebampo Etchojoa', fecha: '2021-03-08' },
   { src: '0067.jpg', distrito: 7, lugar: 'Sebampo Etchojoa', fecha: '2021-03-08' },
   { src: '0068.jpg', distrito: 7, lugar: 'Sebampo Etchojoa', fecha: '2021-03-08' },
+  { src: '0069.jpg', distrito: 7, lugar: 'El Rodeo Etchojoa', fecha: '2021-03-09' },
+  { src: '0070.jpg', distrito: 7, lugar: 'El Rodeo Etchojoa', fecha: '2021-03-09' },
+  { src: '0071.jpg', distrito: 7, lugar: 'El Rodeo Etchojoa', fecha: '2021-03-09' },
+  { src: '0072.jpg', distrito: 7, lugar: 'El Rodeo Etchojoa', fecha: '2021-03-09' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
