@@ -210,13 +210,18 @@ cal_data = {
           "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Puerto Peñasco. 18:00 hrs."],
       9: ["Capacitación de RC del Distrito 7 presencial en El Rodeo en Etchojoa. 17:00 hrs."],
       10: ["Capacitación de RC del Distrito 7 presencial en Oficina de Morena en Etchojoa. 17:00 hrs.",
+           "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Caborca. 17:00 hrs.",
            "Capacitación Municipal de RC. 18:00 hrs.",
            "Capacitación de RC del Distrito 1 en Oficinas de Morena en Puerto Peñasco. 18:30 hrs."],
       11: ["Capacitación de RC del Distrito 1. 18:00 hrs.",
            "Capacitación para Estructura Jurídica (Bacum, San Ignacio Río Muerto, Quiriego, Tesopaco y Cajeme). 18:00 hrs."],
-      12: ["Capacitación para Estructura Jurídica (Navojoa, Etchojoa, Benito Juárez, Huatabampo y Álamos). 18:00 hrs."],
-      13: ["Capacitación para Estructura Jurídica (Nacozari, Agua Prieta y Puerto Peñasco). 16:00 hrs."],
-      14: ["Capacitación de RC del Distrito 7 en El Saneal en Navojoa. 9:00 hrs."]
+      12: ["Capacitación para Estructura Jurídica (Navojoa, Etchojoa, Benito Juárez, Huatabampo y Álamos). 18:00 hrs.",
+           "Capacitación de RC del Distrito 1. 19:30 hrs."],
+      13: ["Capacitación para Estructura Jurídica (Nacozari, Agua Prieta y Puerto Peñasco). 16:00 hrs.",
+           "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en SLRC. 16:00 hrs."],
+      14: ["Capacitación de RC del Distrito 7 en El Saneal en Navojoa. 9:00 hrs.",
+           "Capacitación de RC del Distrito 1 en El Ocuca en Trincheras. 9:00 hrs.",
+           "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs."]
     }
   }
 };
