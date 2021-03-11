@@ -72,6 +72,8 @@ var galeria_data = [
   { src: '0070.jpg', distrito: 7, lugar: 'El Rodeo Etchojoa', fecha: '2021-03-09' },
   { src: '0071.jpg', distrito: 7, lugar: 'El Rodeo Etchojoa', fecha: '2021-03-09' },
   { src: '0072.jpg', distrito: 7, lugar: 'El Rodeo Etchojoa', fecha: '2021-03-09' },
+  { src: '0073.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-10' },
+  { src: '0074.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-10' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
