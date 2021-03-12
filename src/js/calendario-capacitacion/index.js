@@ -225,17 +225,17 @@ cal_data = {
       13: ["Capacitación para Estructura Jurídica (Nacozari, Agua Prieta y Puerto Peñasco). 16:00 hrs.",
            "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en SLRC. 16:00 hrs.",
            "Capacitación de RG del Distrito 5. 16:00 hrs.",
-           "Capacitación de RC del Distrito 7 en San Pedro Viejo en Etchojoa. 18:00 hrs.",
-           "Capacitación de RC del Distrito 7 en Oficina de Morena en Navojoa. 21:00 hrs."],
+           "Capacitación de RC del Distrito 7 en Oficina de Morena en Navojoa. 16:00 hrs.",
+           "Capacitación de RC del Distrito 7 en San Pedro Viejo en Etchojoa. 18:00 hrs.",],
       14: ["Capacitación de RC del Distrito 7 en El Saneal en Navojoa. 9:00 hrs.",
            "Capacitación de RC del Distrito 1 en El Ocuca en Trincheras. 9:00 hrs.",
            "Capacitación de RC del Distrito 1 en Oficina de Morena en Caborca. 10:00 hrs.",
            "Capacitación de RC del Distrito 7 en La Bocana en Etchojoa. 10:00 hrs.",
+           "Capacitación de RC del Distrito 7 en domicilio particular en Benito Juárez. 11:00 hrs.",
            "Capacitación de RC del Distrito 7 en Masiaca Etchojoa. 12:00 hrs.",
            "Capacitación de RC del Distrito 2. 16:00 hrs.",
            "Capacitación de RC del Distrito 7 presencial en Bacobampo Etchojoa. 16:00 hrs.",
-           "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs.",
-           "Capacitación de RC del Distrito 7 en domicilio particular en Benito Juárez. 23:07 hrs."]
+           "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs."]
     }
   }
 };
