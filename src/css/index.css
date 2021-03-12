@@ -708,6 +708,12 @@ body {
   padding-bottom: 0.5rem;
 }
 
+.drawers > .drawer h2 {
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
+}
+
 .drawers > .drawer > .label > img {
   position: absolute;
   top: 0;
