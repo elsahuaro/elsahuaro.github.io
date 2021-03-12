@@ -74,6 +74,15 @@ var galeria_data = [
   { src: '0072.jpg', distrito: 7, lugar: 'El Rodeo Etchojoa', fecha: '2021-03-09' },
   { src: '0073.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-10' },
   { src: '0074.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-10' },
+  { src: '0075.jpg', distrito: 7, lugar: 'Etchojoa', fecha: '2021-03-10' },
+  { src: '0076.jpg', distrito: 7, lugar: 'Etchojoa', fecha: '2021-03-10' },
+  { src: '0077.jpg', distrito: 7, lugar: 'Etchojoa', fecha: '2021-03-10' },
+  { src: '0078.jpg', distrito: 7, lugar: 'Etchojoa', fecha: '2021-03-10' },
+  { src: '0079.jpg', distrito: 7, lugar: 'Etchojoa', fecha: '2021-03-10' },
+  { src: '0080.jpg', distrito: 7, lugar: 'Chacarita Etchojoa', fecha: '2021-03-11' },
+  { src: '0081.jpg', distrito: 7, lugar: 'Chacarita Etchojoa', fecha: '2021-03-11' },
+  { src: '0082.jpg', distrito: 7, lugar: 'Chacarita Etchojoa', fecha: '2021-03-11' },
+  { src: '0083.jpg', distrito: 7, lugar: 'Chacarita Etchojoa', fecha: '2021-03-11' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
