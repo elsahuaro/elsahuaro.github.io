@@ -90,6 +90,17 @@ var galeria_data = [
   { src: '0088.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-03-13' },
   { src: '0089.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-03-13' },
   { src: '0090.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-03-13' },
+  { src: '0091.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-03-13' },
+  { src: '0092.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-03-13' },
+  { src: '0093.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-03-13' },
+  { src: '0094.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-03-13' },
+  { src: '0095.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-03-13' },
+  { src: '0096.jpg', distrito: 1, lugar: 'Trincheras y Tubutama', fecha: '2021-03-14' },
+  { src: '0097.jpg', distrito: 1, lugar: 'Trincheras y Tubutama', fecha: '2021-03-14' },
+  { src: '0098.jpg', distrito: 1, lugar: 'Trincheras y Tubutama', fecha: '2021-03-14' },
+  { src: '0099.jpg', distrito: 4, lugar: 'Nacozari de García', fecha: '2021-03-14' },
+  { src: '0100.jpg', distrito: 4, lugar: 'Nacozari de García', fecha: '2021-03-14' },
+  { src: '0101.jpg', distrito: 4, lugar: 'Nacozari de García', fecha: '2021-03-14' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
