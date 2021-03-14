@@ -83,6 +83,13 @@ var galeria_data = [
   { src: '0081.jpg', distrito: 7, lugar: 'Chacarita Etchojoa', fecha: '2021-03-11' },
   { src: '0082.jpg', distrito: 7, lugar: 'Chacarita Etchojoa', fecha: '2021-03-11' },
   { src: '0083.jpg', distrito: 7, lugar: 'Chacarita Etchojoa', fecha: '2021-03-11' },
+  { src: '0084.jpg', distrito: 2, lugar: 'Cananea', fecha: '2021-03-13' },
+  { src: '0085.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-03-13' },
+  { src: '0086.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-03-13' },
+  { src: '0087.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-03-13' },
+  { src: '0088.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-03-13' },
+  { src: '0089.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-03-13' },
+  { src: '0090.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-03-13' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
