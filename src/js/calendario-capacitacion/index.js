@@ -242,9 +242,13 @@ cal_data = {
            "Capacitación de RC del Distrito 4 presencial en Bácum. 14:00 hrs.",
            "Capacitación de RC del Distrito 7 presencial en Oficinas de Morena en Navojoa. 14:00 hrs.",
            "Capacitación de RC del Distrito 4 presencial en Local de Morena en Cumpas. 14:00 hrs.",
+           "Capacitación de RC del Distrito 4 presencial en Ejido Antonio Rosales en Empalme. 14:30 hrs.",
            "Capacitación de RC del Distrito 2. 16:00 hrs.",
            "Capacitación de RC del Distrito 7 presencial en Bacobampo Etchojoa. 16:00 hrs.",
-           "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs."]
+           "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs."],
+      15: ["Capacitación de RC del Distrito 7 presencial en El Potrero de Alcantar en Álamos. 16:00 hrs."],
+      17: ["Capacitación de RC del Distrito 7 presencial en Gerocoa en Álamos. 16:00 hrs.",
+           "Capacitación de RC del Distrito 7 presencial en Ejido Palos Chinos en Álamos. 16:00 hrs."],
     }
   }
 };
