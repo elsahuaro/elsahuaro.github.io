@@ -247,9 +247,20 @@ cal_data = {
            "Capacitación de RC del Distrito 7 presencial en Bacobampo Etchojoa. 16:00 hrs.",
            "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs."],
       15: ["Capacitación de RC del Distrito 7 presencial en El Potrero de Alcantar en Álamos. 16:00 hrs.",
-           "Capacitación de Instructores de todos los distritos. 17:00 hrs."],
+           "Capacitación de Instructores de todos los distritos. 17:00 hrs.",
+           "Capacitación de RC del Distrito 7 presencial en El Sahuaral Etchojoa. 17:00 hrs."],
+      16: ["Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs.",
+           "Capacitación de RC del Distrito 7 presencial en Buaysiacobe Etchojoa. 17:00 hrs.",
+           "Capacitación de RC del Distrito 7 presencial en Oficinas de Morena en Navojoa. 17:00 hrs.",
+           "Capacitación de RC del Distrito 2 presencial en Local de Morena en Cananea. 17:30 hrs.",
+           "Capacitación de RC del Distrito 7 presencial en Oficinas de Morena en Huatabampo. 18:00 hrs."],
       17: ["Capacitación de RC del Distrito 7 presencial en Gerocoa en Álamos. 16:00 hrs.",
-           "Capacitación de RC del Distrito 7 presencial en Ejido Palos Chinos en Álamos. 16:00 hrs."],
+           "Capacitación de RC del Distrito 7 presencial en Ejido Palos Chinos en Álamos. 16:00 hrs.",
+           "Capacitación de RC del Distrito 7 presencial en Ejido El Chinal en Alamos. 16:00 hrs.",
+           "Capacitación de RC del Distrito 7 presencial en Etchojoa. 17:00 hrs."],
+      18: ["Capacitación de RC del Distrito 7 presencial en Bacame Etchojoa. 17:00 hrs.",
+           "Capacitación de RC del Distrito 7 presencial en Oficinas de Morena en Navojoa. 17:00 hrs.",
+           "Capacitación de RC del Distrito 7 presencial en Oficinas de Morena en Huatabampo. 18:00 hrs."],
     }
   }
 };
