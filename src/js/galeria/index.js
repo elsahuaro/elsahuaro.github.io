@@ -132,6 +132,16 @@ var galeria_data = [
   { src: '0130.jpg', distrito: 4, lugar: 'Ejido Antonio Rosales Empalme', fecha: '2021-03-15' },
   { src: '0131.jpg', distrito: 4, lugar: 'Ejido Antonio Rosales Empalme', fecha: '2021-03-15' },
   { src: '0132.jpg', distrito: 4, lugar: 'Ejido Antonio Rosales Empalme', fecha: '2021-03-15' },
+  { src: '0133.jpg', distrito: 7, lugar: 'El Sahuaral Etchojoa', fecha: '2021-03-15' },
+  { src: '0134.jpg', distrito: 7, lugar: 'El Sahuaral Etchojoa', fecha: '2021-03-15' },
+  { src: '0135.jpg', distrito: 7, lugar: 'El Sahuaral Etchojoa', fecha: '2021-03-15' },
+  { src: '0136.jpg', distrito: 7, lugar: 'El Sahuaral Etchojoa', fecha: '2021-03-15' },
+  { src: '0137.jpg', distrito: 7, lugar: 'El Sahuaral Etchojoa', fecha: '2021-03-15' },
+  { src: '0138.jpg', distrito: 7, lugar: 'Álamos', fecha: '2021-03-15' },
+  { src: '0139.jpg', distrito: 7, lugar: 'Álamos', fecha: '2021-03-15' },
+  { src: '0140.jpg', distrito: 7, lugar: 'Álamos', fecha: '2021-03-15' },
+  { src: '0141.jpg', distrito: 7, lugar: 'Álamos', fecha: '2021-03-15' },
+  { src: '0142.jpg', distrito: 7, lugar: 'Álamos', fecha: '2021-03-15' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
