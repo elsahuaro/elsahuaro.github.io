@@ -260,7 +260,8 @@ cal_data = {
            "Capacitación de RC del Distrito 7 presencial en Etchojoa. 17:00 hrs."],
       18: ["Capacitación de RC del Distrito 7 presencial en Bacame Etchojoa. 17:00 hrs.",
            "Capacitación de RC del Distrito 7 presencial en Oficinas de Morena en Navojoa. 17:00 hrs.",
-           "Capacitación de RC del Distrito 7 presencial en Oficinas de Morena en Huatabampo. 18:00 hrs."],
+           "Capacitación de RC del Distrito 7 presencial en Oficinas de Morena en Huatabampo. 18:00 hrs.",
+           "Capacitación de RC del Distrito 5. 19:00 hrs."],
     }
   }
 };
