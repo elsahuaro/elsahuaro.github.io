@@ -147,6 +147,17 @@ var galeria_data = [
   { src: '0145.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2021-03-16' },
   { src: '0146.jpg', distrito: 7, lugar: 'Huatabampo', fecha: '2021-03-16' },
   { src: '0147.jpg', distrito: 7, lugar: 'Huatabampo', fecha: '2021-03-16' },
+  { src: '0148.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-17' },
+  { src: '0149.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-17' },
+  { src: '0150.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-17' },
+  { src: '0151.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-17' },
+  { src: '0152.jpg', distrito: 7, lugar: 'Ejido El Chinal Álamos', fecha: '2021-03-17' },
+  { src: '0153.jpg', distrito: 7, lugar: 'Ejido El Chinal Álamos', fecha: '2021-03-17' },
+  { src: '0154.jpg', distrito: 7, lugar: 'Ejido El Chinal Álamos', fecha: '2021-03-17' },
+  { src: '0155.jpg', distrito: 7, lugar: 'Ejido El Chinal Álamos', fecha: '2021-03-17' },
+  { src: '0156.jpg', distrito: 7, lugar: 'Ejido El Chinal Álamos', fecha: '2021-03-17' },
+  { src: '0157.jpg', distrito: 7, lugar: 'Ejido El Chinal Álamos', fecha: '2021-03-17' },
+  { src: '0158.jpg', distrito: 7, lugar: 'Ejido El Chinal Álamos', fecha: '2021-03-17' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
