@@ -158,6 +158,9 @@ var galeria_data = [
   { src: '0156.jpg', distrito: 7, lugar: 'Ejido El Chinal Álamos', fecha: '2021-03-17' },
   { src: '0157.jpg', distrito: 7, lugar: 'Ejido El Chinal Álamos', fecha: '2021-03-17' },
   { src: '0158.jpg', distrito: 7, lugar: 'Ejido El Chinal Álamos', fecha: '2021-03-17' },
+  { src: '0159.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2020-03-18' },
+  { src: '0160.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2020-03-18' },
+  { src: '0161.jpg', distrito: 7, lugar: 'Navojoa', fecha: '2020-03-18' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ];
 
