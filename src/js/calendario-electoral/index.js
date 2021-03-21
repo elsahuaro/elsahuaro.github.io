@@ -3,13 +3,13 @@ cal_data = {
     10: {
       1: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Designación y/o ratificación de las y los Consejeros Electorales de los Consejos Distritales (inicio de periodo)."
         }
       ],
       30: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Designación y/o ratificación de las y los Consejeros Electorales de los Consejos Distritales (fin de periodo)."
         }
       ]
@@ -17,17 +17,17 @@ cal_data = {
     11: {
       1: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Instalación de los Consejos Distritales (inicio de periodo)."
         }
       ],
       15: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Instalación de los Consejos Distritales (fin de periodo)."
         },
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Inicio de precampaña de Gubernatura."
         }
       ]
@@ -37,17 +37,17 @@ cal_data = {
     0: {
       4: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Inicio de precampaña de Diputaciones y ayuntamientos."
         }
       ],
       23: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Fin de precampaña de Gubernatura."
         },
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Fin de precampaña de Diputaciones y ayuntamientos."
         }
       ]
@@ -55,13 +55,13 @@ cal_data = {
     1: {
       16: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Inicio de registro de candidaturas para Gubernatura."
         }
       ],
       20: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Fin de registro de candidaturas para Gubernatura."
         }
       ]
@@ -69,25 +69,25 @@ cal_data = {
     2: {
       5: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Campaña para la Gubernatura (inicio de periodo)."
         }
       ],
       15: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Debates (inicio de periodo)."
         }
       ],
       16: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Aprobación del número y ubicación de casillas extraordinarias y especiales."
         }
       ],
       25: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Aprobación del número y ubicación de casillas básicas y contiguas."
         }
       ]
@@ -95,67 +95,67 @@ cal_data = {
     3: {
       4: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Inicio de registro de candidaturas para Diputaciones y Ayuntamientos."
         }
       ],
       8: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Segunda insaculación y designación de funcionarios para mesas directivas de casilla."
         },
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Fin de registro de candidaturas para Diputaciones y Ayuntamientos."
         }
       ],
       15: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Primera publicación de la lista de ubicación de casillas en los lugares más concurridos del distrito electoral y en los medios electrónicos del Institudo."
         }
       ],
       16: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Registro de representantes generales y ante mesas directivas de casilla (inicio de periodo)."
         },
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Sustitución de representantes generales y ante mesas directivas de casilla (inicio de periodo)."
         }
       ],
       24: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Campaña para Diputaciones (inicio de periodo)."
         },
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Campaña para Ayuntamientos (inicio de periodo)."
         }
       ],
       26: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Aprobación de los Mecanismos de recolección (inicio de periodo)."
         }
       ],
       27: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Acreditación de representantes de partidos políticos y candidaturas independientes ante los mecanismos de recolección (inicio de periodo)."
         }
       ],
       28: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Sustitución de representantes de partidos políticos y candidaturas independientes ante los mecanismos de recolección (inicio de periodo)."
         }
       ],
       30: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Aprobación de los Mecanismos de recolección (fin de periodo)."
         }
       ]
@@ -163,47 +163,47 @@ cal_data = {
     4: {
       6: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Lista Nominal de Electores Definitiva con fotografía (inicio de periodo)."
         }
       ],
       14: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Lista Nominal de Electores Definitiva con fotografía (fin de periodo)."
         }
       ],
       15: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Segunda publicación de la lista de ubicación de casillas por causas supervivientes en los lugares más concurridos del distrito y en los medios electrónicos del Instituto (inicio de periodo)."
         }
       ],
       19: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Lista Nominal de Electores con fotografía Producto de Instancias Administrativas y Resoluciones del Tribunal (ADENDA) (inicio de periodo)."
         }
       ],
       24: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Lista Nominal de Electores con fotografía Producto de Instancias Administrativas y Resoluciones del Tribunal (ADENDA) (fin de periodo)."
         },
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Registro de representantes generales y ante mesas directivas de casilla (fin de periodo)."
         }
       ],
       25: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Segunda publicación de la lista de ubicación de casillas por causas supervivientes en los lugares más concurridos del distrito y en los medios electrónicos del Instituto (fin de periodo)."
         }
       ],
       27: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Sustitución de representantes generales y ante mesas directivas de casilla (fin de periodo)."
         }
       ]
@@ -211,41 +211,41 @@ cal_data = {
     5: {
       2: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Campaña para la Gubernatura (fin de periodo)."
         },
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Campaña para Diputaciones (fin de periodo)."
         },
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Campaña para Ayuntamientos (fin de periodo)."
         },
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Debates (fin de periodo)."
         }
       ],
       3: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Acreditación de representantes de partidos políticos y candidaturas independientes ante los mecanismos de recolección (fin de periodo)."
         }
       ],
       4: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Sustitución de representantes de partidos políticos y candidaturas independientes ante los mecanismos de recolección (fin de periodo)."
         }
       ],
       6: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Jornada Electoral."
         },
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "PREP (inicio de periodo)."
         }
       ],
@@ -255,11 +255,11 @@ cal_data = {
           "texto": "Cómputos municipales (inicio de periodo)."
         },
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Cómputos distritales (inicio de periodo)."
         },
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "PREP (fin de periodo)."
         }
       ],
@@ -271,13 +271,13 @@ cal_data = {
       ],
       11: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Cómputos distritales (fin de periodo)."
         }
       ],
       13: [
         {
-          "tipo": "G",
+          "tipo": "E",
           "texto": "Cómputo estatal para la gubernatura."
         }
       ]

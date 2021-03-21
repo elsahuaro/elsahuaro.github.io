@@ -309,6 +309,7 @@
   .ct-D7 { background: #F0A693; color: black; }
   .ct-M  { background: #CC81D9; color: black; }
   .ct-G  { background: rgb(var(--pcolor)); color: white; }
+  .ct-E  { background: rgb(var(--pcolor)); color: white; }
 
   .ct-D1::after { content: 'D1'; }
   .ct-D2::after { content: 'D2'; }
@@ -319,6 +320,7 @@
   .ct-D7::after { content: 'D7'; }
   .ct-M::after { content: 'M'; }
   .ct-G::after { content: 'G'; color: white; }
+  .ct-E::after { content: 'PE'; color: white; }
 
   .outmonth .entry::after { color: white; }
 
@@ -463,4 +465,4 @@
 .ct-D7 { border-bottom: 5px solid #F0A693; }
 .ct-M  { border-bottom: 5px solid #CC81D9; }
 .ct-G  { border-bottom: 5px solid rgb(var(--pcolor)); }
-
+.ct-E  { border-bottom: 5px solid rgb(var(--pcolor)); }
