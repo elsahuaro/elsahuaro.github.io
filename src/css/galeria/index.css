@@ -14,12 +14,14 @@
 
 @media all and (min-width:768px) {
   .galeria {
+    width: 90%;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media all and (min-width:1366px) {
   .galeria {
+    width: 50rem;
     grid-template-columns: repeat(6, 1fr);
   }
 }
@@ -70,4 +72,51 @@
   color: white;
   padding: 0.5rem;
   font-size: 0.9rem;
+}
+
+.circled {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: rgb(var(--scolor-dd));
+  transition: background 0.1s;
+}
+
+.circled:hover {
+  background: rgb(var(--pcolor));
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 0.2rem;
+}
+
+.aright {
+  transform: rotate(-45deg);
+}
+
+.aleft {
+  transform: rotate(135deg);
+}
+
+.topcontrols {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+#galpag {
+  width: 6rem;
+  font-weight: bold;
 }

@@ -184,23 +184,69 @@ var galeria_data = [
   { src: '0182.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-03-20' },
   { src: '0183.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-03-20' },
   // { src: '', distrito: , lugar: '', fecha: '' },
-];
+].reverse();
+
+const fotosPorPag = 35;
+const totalPag = Math.ceil(galeria_data.length / fotosPorPag);
+const totalFotos = galeria_data.length;
+
+function initPage() {
+  const page = getPage();
+}
+
+function getPage() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const pageParam = urlParams.get('pag');
+  return parseInt(pageParam);
+}
+
+function setPage(p) {
+  const urlParams = new URLSearchParams(window.location.search);
+  urlParams.set('pag', p);
+  window.location.search = urlParams.toString();
+}
 
 window.addEventListener("load", function() {
-  const gal = document.getElementById('galeria');
-  gal.innerHTML = '';
-  for (var item of galeria_data) {
-    var newItem = document.createElement('a');
-    var newImage = document.createElement('img');
-    var newDiv = document.createElement('div');
-    newItem.classList.add('galeria__item');
-    newItem.href = '/img/galeria/' + item['src'];
-    newImage.classList.add('galeria__image');
-    newImage.src = '/img/galeria/' + item['src'];
-    newDiv.classList.add('galeria__descr');
-    newDiv.innerHTML = item.fecha + ' Distrito ' + item.distrito + ' en ' + item.lugar;
-    newItem.appendChild(newImage);
-    newItem.appendChild(newDiv);
-    gal.appendChild(newItem);
+  const pag = getPage();
+  if (!pag) {
+    setPage(1);
+  } else {
+    const gal = document.getElementById('galeria');
+    const galpag = document.getElementById('galpag');
+    galpag.innerHTML = pag + ' / ' + totalPag;
+    gal.innerHTML = '';
+    const offset = (pag-1)* fotosPorPag;
+    const below = Math.min(offset+fotosPorPag, totalFotos);
+    for (var i = offset; i < below; i++) {
+      var item = galeria_data[i];
+      var newItem = document.createElement('a');
+      var newImage = document.createElement('img');
+      var newDiv = document.createElement('div');
+      newItem.classList.add('galeria__item');
+      newItem.href = '/img/galeria/' + item['src'];
+      newImage.classList.add('galeria__image');
+      newImage.src = '/img/galeria/' + item['src'];
+      newDiv.classList.add('galeria__descr');
+      newDiv.innerHTML = item.fecha + ' Distrito ' + item.distrito + ' en ' + item.lugar;
+      newItem.appendChild(newImage);
+      newItem.appendChild(newDiv);
+      gal.appendChild(newItem);
+    }
   }
 });
+
+function prevPag() {
+  const pag = getPage();
+  if (pag <= 1) {
+    return;
+  }
+  setPage(pag-1);
+}
+
+function nextPag() {
+  const pag = getPage();
+  if (pag >= totalPag) {
+    return;
+  }
+  setPage(pag+1);
+}
