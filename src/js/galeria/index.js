@@ -183,6 +183,17 @@ var galeria_data = [
   { src: '0181.jpg', distrito: 4, lugar: 'Empalme', fecha: '2021-03-20' },
   { src: '0182.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-03-20' },
   { src: '0183.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-03-20' },
+  { src: '0184.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-03-20' },
+  { src: '0185.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-03-20' },
+  { src: '0186.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-03-20' },
+  { src: '0187.jpg', distrito: 7, lugar: 'Bacame Etchojoa', fecha: '2021-03-20' },
+  { src: '0188.jpg', distrito: 7, lugar: 'Bacame Etchojoa', fecha: '2021-03-20' },
+  { src: '0189.jpg', distrito: 7, lugar: 'La Labor de Santa Lucía', fecha: '2020-03-20' },
+  { src: '0190.jpg', distrito: 7, lugar: 'La Labor de Santa Lucía', fecha: '2020-03-20' },
+  { src: '0191.jpg', distrito: 7, lugar: 'Álamos', fecha: '2020-03-19' },
+  { src: '0192.jpg', distrito: 7, lugar: 'Álamos', fecha: '2020-03-19' },
+  { src: '0193.jpg', distrito: 7, lugar: 'Álamos', fecha: '2020-03-19' },
+  { src: '0194.jpg', distrito: 7, lugar: 'Álamos', fecha: '2020-03-19' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ].reverse();
 
