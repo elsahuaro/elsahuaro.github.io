@@ -48,7 +48,8 @@
 .day {
   display: flex;
   flex: 0 0 auto;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -105,15 +106,27 @@
 .popupentry {
   font-family: 'Roboto Sans', sans-serif;
   padding: 0.5rem;
-  background: #eceff1;
-  color: rgb(var(--scolor-dd));
+  background: #eceff1 !important;
+  color: rgb(var(--scolor-dd)) !important;
   border-radius: 0.5rem;
   border: 1px solid #cfd8dc;
   text-align: center;
   margin-top: 0.5rem;
 }
 
+.popupentry::after {
+  content: '' !important;
+}
+
 @media all and (min-width:480px) {
+  .day {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media all and (min-width:768px) {
   .topcontrols {
     padding: 0.25rem 0 0.25rem 0;
   }
@@ -125,7 +138,7 @@
   .calheader {
     display: flex;
     flex-direction: row;
-    width: 28rem;
+    width: 35rem;
     background: rgb(var(--scolor-dd));
     color: white;
     text-align: center;
@@ -162,7 +175,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 28rem;
+    width: 35rem;
     padding-left: 0;
     padding-right: 0;
     margin-top: unset;
@@ -183,17 +196,24 @@
   }
 
   .calheader > div {
-    width: 4rem;
+    width: 5rem;
   }
   
   .day {
-    width: 4rem;
-    height: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    width: 5rem;
+    height: 5rem;
     border-top: 1px solid rgb(var(--scolor-l));
     border-left: 1px solid rgb(var(--scolor-l));
     border-right: none;
     border-bottom: none;
     padding: 0.25rem;
+    padding-top: 1.1rem;
+    padding-left: 1.1rem;
     overflow: hidden;
   }
 
@@ -222,8 +242,8 @@
   }
 
   .outmonth {
-    display: flex;
-    flex: 0 0 auto;
+    /* display: flex; */
+    /* flex: 0 0 auto; */
   }
 
   .noentry {
@@ -253,42 +273,88 @@
     font-size: 0.4rem;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
     padding: 0.25rem;
+    border: none !important;
     border-radius: 2px;
     text-align: left;
     margin: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    text-indent: 200%;
+    position: relative;
   }
 
+  .entry::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 0%;
+    font-size: 150%;
+  }
+
+  .ct-D1 { background: #3ECCBB; color: black; }
+  .ct-D2 { background: #94C893; color: black; }
+  .ct-D3 { background: #BFC67F; color: black; }
+  .ct-D4 { background: #E9C46A; color: black; }
+  .ct-D5 { background: #F4A261; color: black; }
+  .ct-D6 { background: #EB886F; color: black; }
+  .ct-D7 { background: #F0A693; color: black; }
+  .ct-M  { background: #CC81D9; color: black; }
+  .ct-G  { background: rgb(var(--pcolor)); color: white; }
+
+  .ct-D1::after { content: 'D1'; }
+  .ct-D2::after { content: 'D2'; }
+  .ct-D3::after { content: 'D3'; }
+  .ct-D4::after { content: 'D4'; }
+  .ct-D5::after { content: 'D5'; }
+  .ct-D6::after { content: 'D6'; }
+  .ct-D7::after { content: 'D7'; }
+  .ct-M::after { content: 'M'; }
+  .ct-G::after { content: 'G'; color: white; }
+
+  .outmonth .entry::after { color: white; }
+
   .inmonth .entry {
-    background: rgb(var(--pcolor));
-    color: white;
+    /* background: rgb(var(--pcolor)); */
+    /* color: white; */
   }
 
   .outmonth .entry {
     background: rgb(var(--scolor-d));
     color: white;
   }
+
+  .ct-hide {
+    display: none;
+  }
 }
 
-@media all and (min-width:768px) {
-  .calheader {
-    width: 35rem;
-  }
-  
-  .calheader > div {
-    width: 5rem;
-  }
+/* @media all and (min-width:768px) {
+   .calheader {
+   width: 35rem;
+   }
+   
+   .calheader > div {
+   width: 5rem;
+   }
 
-  .calendar {
-    width: 35rem;
-  }
-  
-  .day {
-    width: 5rem;
-    height: 5rem;
-  }
-}
+   .calendar {
+   width: 35rem;
+   }
+   
+   .day {
+   width: 5rem;
+   height: 5rem;
+   }
+   } */
 
 .arrow {
   border: solid white;
@@ -387,3 +453,14 @@
     width: 30rem;
   }
 }
+
+.ct-D1 { border-bottom: 5px solid #3ECCBB; }
+.ct-D2 { border-bottom: 5px solid #94C893; }
+.ct-D3 { border-bottom: 5px solid #BFC67F; }
+.ct-D4 { border-bottom: 5px solid #E9C46A; }
+.ct-D5 { border-bottom: 5px solid #F4A261; }
+.ct-D6 { border-bottom: 5px solid #EB886F; }
+.ct-D7 { border-bottom: 5px solid #F0A693; }
+.ct-M  { border-bottom: 5px solid #CC81D9; }
+.ct-G  { border-bottom: 5px solid rgb(var(--pcolor)); }
+

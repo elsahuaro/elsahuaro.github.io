@@ -39,7 +39,7 @@ const monthYearString = d => {
 
 const openPopup = (d) => {
   return () => {
-    if (!window.matchMedia("all and (min-width:480px)").matches) {
+    if (!window.matchMedia("all and (min-width:768px)").matches) {
       return;
     }
     let popupdate = document.getElementById('popupdate');
@@ -49,8 +49,9 @@ const openPopup = (d) => {
     const entries = cal_data[d.year()][d.month()][d.date()];
     for (var entry of entries) {
       var newEntry = document.createElement('div');
-      var newEntryTxt = document.createTextNode(entry);
+      var newEntryTxt = document.createTextNode(entry['texto']);
       newEntry.classList.add('popupentry');
+      newEntry.classList.add('ct-' + entry['tipo']);
       newEntry.appendChild(newEntryTxt);
       popupcontent.appendChild(newEntry);
     }
@@ -99,10 +100,17 @@ const buildCalendar = (year, month) => {
         d.month() in cal_data[d.year()] &&
         d.date() in cal_data[d.year()][d.month()]) {
       const entries = cal_data[d.year()][d.month()][d.date()];
+      let entry_types = [];
       for (var entry of entries) {
         var newEntry = document.createElement('div');
-        var newEntryTxt = document.createTextNode(entry);
+        var newEntryTxt = document.createTextNode(entry['texto']);
         newEntry.classList.add('entry');
+        newEntry.classList.add('ct-' + entry['tipo']);
+        if (entry_types.includes(entry['tipo'])) {
+          newEntry.classList.add('ct-hide');
+        } else {
+          entry_types.push(entry['tipo']);
+        }
         newEntry.appendChild(newEntryTxt);
         newDiv.appendChild(newEntry);
       }
