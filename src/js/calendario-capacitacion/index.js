@@ -331,6 +331,7 @@ cal_data = {
       21: ["Capacitación de RC del Distrito 3. 18:00 hrs."],
       22: ["Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs."],
       23: ["Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 18:00 hrs."],
+      24: ["Capacitación de RG del Distrito 1. 19:30 hrs."],
       28: ["Capacitación de RC del Distrito 3. 18:00 hrs."],
       29: ["Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs."],
       30: ["Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 18:00 hrs."],
