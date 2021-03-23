@@ -226,12 +226,12 @@ var galeria_data = [
   { src: '0224.jpg', distrito: 4, lugar: 'Guaymas', fecha: '2021-03-23' },
   { src: '0225.jpg', distrito: 4, lugar: 'Guaymas', fecha: '2021-03-23' },
   { src: '0226.jpg', distrito: 4, lugar: 'Guaymas', fecha: '2021-03-23' },
-  { src: '0227.jpg', distrito: 7, lugar: 'Ejido Palos Chinos Guamuchil', fecha: '2021-03-23' },
-  { src: '0228.jpg', distrito: 7, lugar: 'Ejido Palos Chinos Guamuchil', fecha: '2021-03-23' },
-  { src: '0229.jpg', distrito: 7, lugar: 'Ejido Palos Chinos Guamuchil', fecha: '2021-03-23' },
-  { src: '0230.jpg', distrito: 7, lugar: 'Ejido Palos Chinos Guamuchil', fecha: '2021-03-23' },
-  { src: '0231.jpg', distrito: 7, lugar: 'Ejido Palos Chinos Guamuchil', fecha: '2021-03-23' },
-  { src: '0232.jpg', distrito: 7, lugar: 'Ejido Palos Chinos Guamuchil', fecha: '2021-03-23' },
+  { src: '0227.jpg', distrito: 7, lugar: 'Ejido Palos Chinos', fecha: '2021-03-23' },
+  { src: '0228.jpg', distrito: 7, lugar: 'Ejido Palos Chinos', fecha: '2021-03-23' },
+  { src: '0229.jpg', distrito: 7, lugar: 'Ejido Palos Chinos', fecha: '2021-03-23' },
+  { src: '0230.jpg', distrito: 7, lugar: 'Ejido Palos Chinos', fecha: '2021-03-23' },
+  { src: '0231.jpg', distrito: 7, lugar: 'Ejido Palos Chinos', fecha: '2021-03-23' },
+  { src: '0232.jpg', distrito: 7, lugar: 'Ejido Palos Chinos', fecha: '2021-03-23' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ].reverse();
 
