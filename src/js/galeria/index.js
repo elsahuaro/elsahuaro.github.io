@@ -232,6 +232,14 @@ var galeria_data = [
   { src: '0230.jpg', distrito: 7, lugar: 'Ejido Palos Chinos', fecha: '2021-03-23' },
   { src: '0231.jpg', distrito: 7, lugar: 'Ejido Palos Chinos', fecha: '2021-03-23' },
   { src: '0232.jpg', distrito: 7, lugar: 'Ejido Palos Chinos', fecha: '2021-03-23' },
+  { src: '0233.jpg', distrito: 6, lugar: 'Capacitación Virtual', fecha: '2021-03-23' },
+  { src: '0234.jpg', distrito: 2, lugar: 'Nogales', fecha: '2021-03-23' },
+  { src: '0235.jpg', distrito: 7, lugar: 'Ejido Cerro Colorado Álamos', fecha: '2021-03-23' },
+  { src: '0236.jpg', distrito: 7, lugar: 'Ejido Cerro Colorado Álamos', fecha: '2021-03-23' },
+  { src: '0237.jpg', distrito: 7, lugar: 'Ejido Cerro Colorado Álamos', fecha: '2021-03-23' },
+  { src: '0238.jpg', distrito: 7, lugar: 'Ejido Cerro Colorado Álamos', fecha: '2021-03-23' },
+  { src: '0239.jpg', distrito: 7, lugar: 'Ejido Cerro Colorado Álamos', fecha: '2021-03-23' },
+  { src: '0240.jpg', distrito: 7, lugar: 'Ejido Cerro Colorado Álamos', fecha: '2021-03-23' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ].reverse();
 
