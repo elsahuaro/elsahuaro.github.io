@@ -240,6 +240,15 @@ var galeria_data = [
   { src: '0238.jpg', distrito: 7, lugar: 'Ejido Cerro Colorado Álamos', fecha: '2021-03-23' },
   { src: '0239.jpg', distrito: 7, lugar: 'Ejido Cerro Colorado Álamos', fecha: '2021-03-23' },
   { src: '0240.jpg', distrito: 7, lugar: 'Ejido Cerro Colorado Álamos', fecha: '2021-03-23' },
+  { src: '0241.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-24' },
+  { src: '0242.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-24' },
+  { src: '0243.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-24' },
+  { src: '0244.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-24' },
+  { src: '0245.jpg', distrito: 4, lugar: 'Vícam', fecha: '2021-03-24' },
+  { src: '0246.jpg', distrito: 4, lugar: 'Vícam', fecha: '2021-03-24' },
+  { src: '0247.jpg', distrito: 4, lugar: 'Vícam', fecha: '2021-03-24' },
+  { src: '0248.jpg', distrito: 4, lugar: 'Vícam', fecha: '2021-03-24' },
+  { src: '0249.jpg', distrito: 4, lugar: 'Vícam', fecha: '2021-03-24' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ].reverse();
 
