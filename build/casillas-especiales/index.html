@@ -74,14 +74,23 @@
       </div>
       <button class="button" onclick="puedeVotar()">¿Puede votar?</button>
       <div id="secerr">
-        La credencial del elector corresponde a una sección electoral
-        que no existe en Sonora.
+        <strong>Error</strong>
+        <br>
+        La clave del estado 26 corresponde a Sonora, sin embargo, la
+        sección especificada no existe en este estado.
       </div>
       <div id="circerr">
-        La credencial del elector corresponde a una sección electoral fuera de la Circunscripción 1.
+        <strong>No puede votar</strong>
+        <br>
+        La credencial del elector corresponde a una sección electoral
+        fuera de la Circunscripción 1.
       </div>
       <div id="mismaerr">
-        La credencial del elector corresponde a la misma sección electoral de la casilla especial. Debe ir a votar a la casilla que le corresponde.
+        <strong>No puede votar</strong>
+        <br>
+        La credencial del elector corresponde a la misma sección
+        electoral de la casilla especial. Debe ir a votar a la casilla
+        que le corresponde.
       </div>
       <div id="pv-info">
         <h1 id="puede-votar" style="margin-top:0.5rem; margin-bottom:1rem; width:100%;">Puede votar por...</h1>
