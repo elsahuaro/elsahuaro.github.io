@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYD13XKVZG"></script>
+    <script>
+     if (window.location.hostname == "localhost") {
+       console.log('deshabilitanto google analytics');
+       window['ga-disable-G-JYD13XKVZG'] = true;
+     }
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'G-JYD13XKVZG', {
+       cookie_domain: 'elsahuaro.github.io',
+       cookie_flags: 'SameSite=None;Secure'
+     });
+    </script>
+    <script>if(!(window.fetch&&Object.entries&&Object.keys&&Object.values&&window.Promise&&[].includes&&Object.assign&&window.Map)){document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=default%2Cfetch%2CObject.values%2CObject.keys%2CObject.entries"></scr'+'ipt>')}</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Casillas Especiales</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script type="text/javascript" src="/js/index.js"></script>
+    <link rel="stylesheet" href="/lib/leaflet.css">
+    <link rel="stylesheet" href="/css/casillas-especiales/index.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="/lib/leaflet.js"></script>
+    <script type="text/javascript" src="/js/casillas-especiales/index.js"></script>
+  </head>
+  <body>
+    <div class="toptitle">
+      <a href="/#ejercicios"><img src="/img/defensa-elecciones-2021-alt.png" /></a>
+      <h1>Casillas Especiales</h1>
+      <a><img src="/img/defensa-elecciones-2021-alt.png" class="hide" /></a>
+    </div>
+    <div id="descr">
+      Selecciona con el cursor alguna de las 25 casillas especiales
+      instaladas en el estado de Sonora. Oprima el botón <em>Seleccionar</em> para
+      desplegar la información de esta casilla.
+    </div>
+    <div id="map"></div>
+    <div id="ce-info">
+      <div class="renglones">
+        <div class="renglon">
+          <span class="etiqueta">Distrito Electoral Local:</span> <span id="ce-del" class="distrito">X</span>
+        </div>
+        <div class="renglon">
+          <span class="etiqueta">Distrito Electoral Federal:</span> <span id="ce-def" class="distrito">X</span>
+        </div>
+        <div class="renglon">
+          <span class="etiqueta">Municipio:</span> <span id="ce-mun" class="distrito">X</span>
+        </div>
+        <div class="renglon">
+          <span class="etiqueta">Sección:</span> <span id="ce-sec" class="distrito">X</span>
+        </div>
+      </div>
+      <h1 id="elector" style="margin-top:0.5rem; margin-bottom:1rem; width:100%;">Elector</h1>
+      <div class="renglones" style="margin-top:0.5rem; width:90%">
+        <div class="renglon">
+          <span class="etiqueta">Clave del Estado</span>
+          <input name="Estado" id="el-estado" type="text" placeholder="26" />
+        </div>
+        <div class="renglon">
+          <span class="etiqueta">Estado</span>
+          <span id="estado-nombre" class="distrito" style="font-size:100%; width:7.05rem">Sonora</span>
+        </div>
+        <div class="renglon">
+          <span class="etiqueta">Sección</span>
+          <input name="Sección" id="la-secc" type="text" placeholder="Sección" />
+        </div>
+      </div>
+      <button class="button" onclick="puedeVotar()">¿Puede votar?</button>
+      <div id="secerr">
+        La credencial del elector corresponde a una sección electoral
+        que no existe en Sonora.
+      </div>
+      <div id="circerr">
+        La credencial del elector corresponde a una sección electoral fuera de la Circunscripción 1.
+      </div>
+      <div id="mismaerr">
+        La credencial del elector corresponde a la misma sección electoral de la casilla especial. Debe ir a votar a la casilla que le corresponde.
+      </div>
+      <div id="pv-info">
+        <h1 id="puede-votar" style="margin-top:0.5rem; margin-bottom:1rem; width:100%;">Puede votar por...</h1>
+        <div class="vota-grupo">
+          <div class="vota-entrada">
+            <div class="vota-tipo">
+              <span class="vota-nombre">Gubernatura</span>
+              <span class="vota-extra"></span>
+            </div>
+            <span id="vota-puede-gub" class="vota-puede"></span>
+            <span class="vota-porque" onclick="toggleCajon('cajon-gub')">
+              <img src="/img/question.svg"></img>
+            </span>
+          </div>
+          <div id="cajon-gub" class="cajon" style="max-height: 0px;">
+            <div id="cajon-gub-inner" class="cajon-inner"></div>
+          </div>
+          <div class="vota-entrada">
+            <div class="vota-tipo">
+              <span class="vota-nombre">Diputación Local</span>
+              <span id="dip-loc-tipo" class="vota-extra"></span>
+            </div>
+            <span id="vota-puede-dip-loc" class="vota-puede"></span>
+            <span class="vota-porque" onclick="toggleCajon('cajon-dip-loc')">
+              <img src="/img/question.svg"></img>
+            </span>
+          </div>
+          <div id="cajon-dip-loc" class="cajon" style="max-height: 0px;">
+            <div id="cajon-dip-loc-inner" class="cajon-inner"></div>
+          </div>
+          <div class="vota-entrada">
+            <div class="vota-tipo">
+              <span class="vota-nombre">Ayuntamiento</span>
+              <span class="vota-extra"></span>
+            </div>
+            <span id="vota-puede-ayun" class="vota-puede"></span>
+            <span class="vota-porque" onclick="toggleCajon('cajon-ayun')">
+              <img src="/img/question.svg"></img>
+            </span>
+          </div>
+          <div id="cajon-ayun" class="cajon" style="max-height: 0px;">
+            <div id="cajon-ayun-inner" class="cajon-inner"></div>
+          </div>
+          <div class="vota-entrada">
+            <div class="vota-tipo">
+              <span class="vota-nombre">Diputación Federal</span>
+              <span id="dip-fed-tipo" class="vota-extra"></span>
+            </div>
+            <span id="vota-puede-dip-fed" class="vota-puede"></span>
+            <span class="vota-porque" onclick="toggleCajon('cajon-dip-fed')">
+              <img src="/img/question.svg"></img>
+            </span>
+          </div>
+          <div id="cajon-dip-fed" class="cajon" style="max-height: 0px;">
+            <div id="cajon-dip-fed-inner" class="cajon-inner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
