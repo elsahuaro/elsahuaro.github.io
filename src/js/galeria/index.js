@@ -249,6 +249,15 @@ var galeria_data = [
   { src: '0247.jpg', distrito: 4, lugar: 'Vícam', fecha: '2021-03-24' },
   { src: '0248.jpg', distrito: 4, lugar: 'Vícam', fecha: '2021-03-24' },
   { src: '0249.jpg', distrito: 4, lugar: 'Vícam', fecha: '2021-03-24' },
+  { src: '0250.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-03-26' },
+  { src: '0251.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-03-26' },
+  { src: '0252.jpg', distrito: 4, lugar: 'Comisaría de Ortiz Guaymas', fecha: '2021-03-26' },
+  { src: '0253.jpg', distrito: 4, lugar: 'Comisaría de Ortiz Guaymas', fecha: '2021-03-26' },
+  { src: '0254.jpg', distrito: 4, lugar: 'Comisaría de Ortiz Guaymas', fecha: '2021-03-26' },
+  { src: '0255.jpg', distrito: 4, lugar: 'Comisaría de Ortiz Guaymas', fecha: '2021-03-26' },
+  { src: '0256.jpg', distrito: 7, lugar: 'Bacame Etchojoa', fecha: '2021-03-26' },
+  { src: '0257.jpg', distrito: 7, lugar: 'Bacame Etchojoa', fecha: '2021-03-26' },
+  { src: '0258.jpg', distrito: 7, lugar: 'Bacame Etchojoa', fecha: '2021-03-26' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ].reverse();
 
