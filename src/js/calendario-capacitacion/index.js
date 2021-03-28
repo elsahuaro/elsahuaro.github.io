@@ -546,6 +546,7 @@ cal_data = {
         { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5 presencial en Oaxaca y Guerrero en Hermosillo. 11:00 hrs." },
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en domicilio particular en Benito Juárez. 11:00 hrs." },
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Oficinas de Morena en Huatabampo. 11:00 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Salón de Morena en Guaymas. 11:00 hrs." },
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Pueblo Mayo en Navojoa. 16:00 hrs." },
         { "tipo": "M", "texto": "Capacitación Municipal de RC. 16:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 18:00 hrs." }
