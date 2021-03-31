@@ -303,7 +303,7 @@ const noDipFed = () => {
   elt = document.getElementById('dip-fed-tipo');
   elt.innerText = '';
   elt = document.getElementById('cajon-dip-fed-inner');
-  elt.innerText = 'La credencial del elector corresponde a una sección electoral fuera de la Circunscripción 1.';
+  elt.innerText = 'La credencial del elector corresponde a una sección electoral fuera del distrito electoral federal de la casilla especial, pero dentro de la Circunscripción 1.';
 }
 
 const siDipFed = () => {
