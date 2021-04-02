@@ -354,6 +354,15 @@ var galeria_data = [
   { src: '0353.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-31' },
   { src: '0354.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-03-31' },
   { src: '0355.jpg', distrito: 6, lugar: 'Capacitación Virtual', fecha: '2021-03-31' },
+  { src: '0356.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-04-01' },
+  { src: '0357.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-04-01' },
+  { src: '0358.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-04-01' },
+  { src: '0359.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-04-01' },
+  { src: '0360.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-04-01' },
+  { src: '0361.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-04-01' },
+  { src: '0362.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-04-01' },
+  { src: '0363.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-04-01' },
+  { src: '0364.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-04-01' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ].reverse();
 
