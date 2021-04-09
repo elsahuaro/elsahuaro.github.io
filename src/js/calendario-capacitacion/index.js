@@ -652,12 +652,16 @@ cal_data = {
       ],
       8: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2. 11:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 11:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 16:00 hrs." },
+        { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en domicilio particular en Cajeme. 16:00 hrs." },
         { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en domicilio particular en Cajeme. 17:00 hrs." },
         { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en domicilio particular en Cajeme. 17:30 hrs." },
+        { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6. 17:30 hrs." },
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Oficinas de Morena en Huatabampo. 18:00 hrs." },
         { "tipo": "M", "texto": "Capacitación Municipal de RC. 18:00 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:30 hrs." },
         { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en Oficinas ULS en Cajeme. 18:30 hrs." },
         { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5. 19:00 hrs." },
@@ -667,9 +671,11 @@ cal_data = {
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en domicilio particular en Navojoa. 10:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 11:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 16:00 hrs." },
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Oficinas de Morena en Altar. 16:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 18:00 hrs." },
         { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en domicilio particular en Cajeme. 18:00 hrs." },
         { "tipo": "M", "texto": "Capacitación Municipal de RC. 18:00 hrs." },
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en domicilio particular en Puerto Peñasco. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:30 hrs." },
       ],
@@ -682,6 +688,7 @@ cal_data = {
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." }
       ],
       11: [
+        { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5 presencial en Oaxaca y Guerrero en Hermosillo. 11:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 18:00 hrs." }
       ],
       12: [
