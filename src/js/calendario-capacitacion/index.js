@@ -728,6 +728,7 @@ cal_data = {
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en domicilio particular en Benito Juárez. 16:58 hrs." },
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Bacobampo en Etchojoa. 17:00 hrs." },
         { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en Comisaría de Esperanza en Cajeme. 17:30 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en domicilio particular en Guaymas. 17:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en domicilio particular en Puerto Peñasco. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:30 hrs." },
       ],
@@ -740,6 +741,7 @@ cal_data = {
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en domicilio particular en Puerto Peñasco. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:00 hrs." },
+        { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5. 19:00 hrs." },
       ],
       16: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs." },
@@ -748,20 +750,29 @@ cal_data = {
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 16:00 hrs." },
         { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en domicilio particular en Cajeme. 17:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 18:00 hrs." },
+        { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Masiaca en Navojoa. 18:00 hrs." },
+        { "tipo": "M", "texto": "Capacitación Municipal de RC. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:30 hrs." },
       ],
       17: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 10:00 hrs." },
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Comité Municipal Morena en Rosario. 10:42 hrs." },
+        { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5 presencial en domicilio particular en Hermosillo. 11:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 11:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 16:00 hrs." },
-        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
+        { "tipo": "M", "texto": "Capacitación Municipal de RC. 16:00 hrs." },
+        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Oaxaca y Guerrero en Hermosillo. 18:00 hrs." },
         { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en domicilio particular en Cajeme. 18:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
       ],
       18: [
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en San Pedro Nuevo en Etchojoa. 10:00 hrs." },
+        { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5 presencial en Oaxaca y Guerrero en Hermosillo. 11:00 hrs." },
+        { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5 presencial en la Victoria en Hermosillo. 14:00 hrs." },
         { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en Las Areneras en Cajeme. 16:00 hrs." },
+        { "tipo": "M", "texto": "Capacitación Municipal de RC. 16:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 18:00 hrs." },
       ],
       19: [
@@ -799,9 +810,11 @@ cal_data = {
       ],
       24: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 10:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 11:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 16:00 hrs." },
-        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." }
+        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
       ],
       25: [
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 18:00 hrs." }
@@ -844,9 +857,11 @@ cal_data = {
     4: {
       1: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 10:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 11:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 16:00 hrs." },
-        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." }
+        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
       ],
       2: [
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 18:00 hrs." }
@@ -886,9 +901,11 @@ cal_data = {
       ],
       8: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 10:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 11:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 16:00 hrs." },
-        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." }
+        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
       ],
       9: [
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 18:00 hrs." }
@@ -928,9 +945,11 @@ cal_data = {
       ],
       15: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 10:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 11:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 16:00 hrs." },
-        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." }
+        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
       ],
       16: [
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 18:00 hrs." }
@@ -970,9 +989,11 @@ cal_data = {
       ],
       22: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 10:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 11:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 16:00 hrs." },
-        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." }
+        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
       ],
       23: [
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 18:00 hrs." }
@@ -1013,9 +1034,11 @@ cal_data = {
       ],
       29: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 10:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 11:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 16:00 hrs." },
-        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." }
+        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
       ],
       30: [
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 18:00 hrs." }
@@ -1058,10 +1081,12 @@ cal_data = {
       ],
       5: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 10:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 11:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 16:00 hrs." },
-        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." }
+        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
       ],
     }
-  }
+}
 };
