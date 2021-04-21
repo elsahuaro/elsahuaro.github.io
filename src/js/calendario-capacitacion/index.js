@@ -802,6 +802,7 @@ cal_data = {
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:30 hrs." },
         { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial domicilio particular en Nogales. 18:30 hrs." },
+        { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5. 19:00 hrs." },
       ],
       21: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs." },
