@@ -27,22 +27,32 @@ input[type=submit] {
   font-weight: 700;
 }
 
-#error {
+.infobox {
   display: none;
   position: relative;
-  background: rgb(var(--pcolor-ll));
-  border: 2px solid rgb(var(--pcolor-l));
-  padding: 2rem;
+  padding: 1.75rem;
   margin: 10px 0;
   text-align: center;
+  width: 25rem;
+}
+
+.infobox > img {
+  position: absolute;
+  top: -0.6rem;
+  left: -1.2rem;
+  width: 3rem;
+}
+
+#error {
+  background: rgb(var(--pcolor-ll));
+  border: 2px solid rgb(var(--pcolor-l));
   color: rgb(var(--pcolor-dd));
 }
 
-#error > img {
-  position: absolute;
-  top: -0.9rem;
-  left: -1.2rem;
-  width: 3rem;
+#info {
+  background: rgb(var(--scolor-ll));
+  border: 2px solid rgb(var(--scolor-l));
+  color: rgb(var(--scolor-dd));
 }
 
 #resultado {
@@ -59,8 +69,16 @@ input[type=submit] {
   margin-bottom: 1rem;
 }
 
-@media all and (min-width:768px) { #secmap { height: 30rem; width: 30rem; } }
-@media all and (min-width:1366px) { #secmap { height: 35rem; width: 35rem; } }
+@media all and (min-width:768px) {
+  #secmap { height: 30rem; width: 30rem; }
+  #casillas { width: 30rem; }
+  .infobox { width: 30rem; }
+}
+@media all and (min-width:1366px) {
+  #secmap { height: 35rem; width: 35rem; }
+  #casillas { width: 35rem; }
+  .infobox { width: 35rem; }
+}
 
 .renglones {
   padding-bottom: 1rem;
@@ -95,4 +113,31 @@ input[type=submit] {
   font-weight: 900;
   color: rgb(var(--scolor-dd));
   border: none;
+}
+
+.tooltip {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #1e5199;
+  background-color: rgba(0, 0, 0, 0.0);
+  border: none;
+  box-shadow: none;
+}
+
+#casillas {
+  width: 25rem;
+}
+
+.casillas {
+  text-align: left;
+}
+
+.casilla {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.casilla-titulo {
+  text-align: center;
+  margin-bottom: 0.25rem;
 }

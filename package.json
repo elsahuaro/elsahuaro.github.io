@@ -1,7 +1,6 @@
 {
     "name": "electoral",
     "version": "2.0.0",
-    "dependencies": {},
     "devDependencies": {
         "@babel/cli": "^7.10.5",
         "@babel/core": "^7.11.4",
