@@ -838,6 +838,7 @@ cal_data = {
       ],
       23: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Yécora. 9:00 hrs." },
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en domicilio particular en Navojoa. 10:00 hrs." },
         { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Cumpas. 10:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 11:30 hrs." },
