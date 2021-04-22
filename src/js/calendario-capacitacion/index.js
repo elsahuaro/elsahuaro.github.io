@@ -830,7 +830,6 @@ cal_data = {
         { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Oficinas de Morena en Agua Prieta. 17:00 hrs." },
         { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en Plaza Constitución en Cajeme. 17:00 hrs." },
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Ejido Francisco Sarabia en Huatabampo. 17:00 hrs." },
-        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Divisaderos. 17:00 hrs." },
         { "tipo": "M", "texto": "Capacitación Municipal de RC. 18:00 hrs." },
         { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5 presencial en domicilio particular en Hermosillo. 18:00 hrs." },
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Instalaciones de Morena en Huatabampo. 18:00 hrs." },
@@ -840,7 +839,9 @@ cal_data = {
       23: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 9:00 hrs." },
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en domicilio particular en Navojoa. 10:00 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Cumpas. 10:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 11:30 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Tepache. 15:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 16:00 hrs." },
         { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Oficinas de Morena en Agua Prieta. 17:00 hrs." },
         { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en domicilio particular en Cajeme. 17:00 hrs." },
