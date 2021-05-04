@@ -959,6 +959,7 @@ cal_data = {
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:00 hrs." },
       ],
       2: [
+        { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en domicilio particular en Yavaros. 9:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Caborca. 10:00 hrs." },
         { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5 presencial en Guerrero y Oaxaca en Hermosillo. 11:00 hrs." },
         { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Oficinas de Morena en Agua Prieta. 11:00 hrs." },
@@ -967,10 +968,16 @@ cal_data = {
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 17:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Caborca. 17:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 17:00 hrs." },
+        { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en domicilio particular en Yavaros. 17:00 hrs." },
       ],
       3: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Caborca. 16:00 hrs." },
+        { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en Campo 5 en Cajeme. 16:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Delegación Luis B. Sanchez en San Luis Río Colorado. 18:00 hrs." },
+      ],
+      5: [
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 17:00 hrs." },
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 19:00 hrs." },
       ],
       6: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:00 hrs." },
