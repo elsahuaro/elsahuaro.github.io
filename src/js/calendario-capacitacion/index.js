@@ -1033,6 +1033,7 @@ cal_data = {
         { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en domicilio particular en Empalme. 19:30 hrs." },
       ],
       9: [
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en domicilio particular en Santa Cruz. 9:00 hrs." },
         { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5 presencial en Campo Carmen Dolores de la Costa de Hermosillo. 9:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Caborca. 10:00 hrs." },
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Localidad Yavaritos en Huatabampo. 10:00 hrs." },
