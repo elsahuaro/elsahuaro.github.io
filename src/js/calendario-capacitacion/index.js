@@ -1042,19 +1042,33 @@ cal_data = {
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Localidad Bachoco en Huatabampo. 13:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Caborca. 17:00 hrs." },
       ],
+      10: [
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Casa de Campaña Morena en Agua Prieta. 17:00 hrs." },
+      ],
+      11: [
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Cumpas. 14:00 hrs." },
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Ejido Siempre Viva en Caborca. 16:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Casa de Campaña Morena en Agua Prieta. 17:00 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Moctezuma. 18:00 hrs." },
+      ],
       12: [
         { "tipo": "M", "texto": "Capacitación Municipal de RC. 19:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Caborca. 17:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Casa de Campaña Morena en Agua Prieta. 17:00 hrs." },
       ],
       13: [
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Casa de Campaña Morena en Agua Prieta. 17:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:00 hrs." },
       ],
       14: [
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Casa de Campaña Morena en Agua Prieta. 17:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:30 hrs." },
       ],
       15: [
         { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 10:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Casa de Campaña Morena en Agua Prieta. 10:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Casa de Campaña Morena en Agua Prieta. 16:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
         { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:00 hrs." },
