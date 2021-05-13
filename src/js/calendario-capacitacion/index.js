@@ -1052,13 +1052,22 @@ cal_data = {
         { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Moctezuma. 18:00 hrs." },
       ],
       12: [
-        { "tipo": "M", "texto": "Capacitación Municipal de RC. 19:00 hrs." },
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 15:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Caborca. 17:00 hrs." },
         { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Casa de Campaña Morena en Agua Prieta. 17:00 hrs." },
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 17:00 hrs." },
+        { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en Comisaría de Esperanza en Cajeme. 17:30 hrs." },
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 19:00 hrs." },
+        { "tipo": "M", "texto": "Capacitación Municipal de RC. 19:00 hrs." },
       ],
       13: [
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Salón Niza del Hotel Fray Marcos de Niza en Nogales. 10:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Salón Principal del Hotel Fray Marcos de Niza en Nogales. 10:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Salón Niza del Hotel Fray Marcos de Niza en Nogales. 16:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Salón Principal del Hotel Fray Marcos de Niza en Nogales. 16:00 hrs." },
         { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Casa de Campaña Morena en Agua Prieta. 17:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en domicilio particular en Nogales. 19:00 hrs." },
       ],
       14: [
         { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Casa de Campaña Morena en Agua Prieta. 17:00 hrs." },
@@ -1072,6 +1081,9 @@ cal_data = {
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
         { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:00 hrs." },
+      ],
+      16: [
+        { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 17:00 hrs." },
       ],
       20: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:00 hrs." },
