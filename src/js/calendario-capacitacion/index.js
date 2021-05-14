@@ -1083,6 +1083,7 @@ cal_data = {
         { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en Local Bombilla en Cajeme. 17:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 18:00 hrs." },
         { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Plaza Versalles en Guaymas. 18:00 hrs." },
+        { "tipo": "M", "texto": "Capacitación Municipal de RC. 18:00 hrs." },
         { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5 presencial en domicilio particular en Hermosillo. 19:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:30 hrs." },
       ],
@@ -1091,6 +1092,7 @@ cal_data = {
         { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Casa de Campaña Morena en Agua Prieta. 10:00 hrs." },
         { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en domicilio particular en Guaymas. 11:00 hrs." },
         { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en Casa de Campaña Morena en Agua Prieta. 16:00 hrs." },
+        { "tipo": "M", "texto": "Capacitación Municipal de RC. 16:00 hrs." },
         { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Plaza Versalles en Guaymas. 17:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
         { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
@@ -1098,6 +1100,7 @@ cal_data = {
       ],
       16: [
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 17:00 hrs." },
+        { "tipo": "M", "texto": "Capacitación Municipal de RC. 19:00 hrs." },
       ],
       20: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:00 hrs." },
