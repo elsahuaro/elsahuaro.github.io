@@ -827,6 +827,15 @@ var galeria_data = [
   { src: '0827.jpg', distrito: 4, lugar: 'Guaymas', fecha: '2021-05-15' },
   { src: '0828.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-05-13' },
   { src: '0829.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-05-13' },
+  { src: '0830.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-05-15' },
+  { src: '0831.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-05-15' },
+  { src: '0832.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-05-15' },
+  { src: '0833.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-05-15' },
+  { src: '0834.jpg', distrito: 2, lugar: 'Nogales', fecha: '2021-05-15' },
+  { src: '0835.jpg', distrito: 2, lugar: 'Nogales', fecha: '2021-05-15' },
+  { src: '0836.jpg', distrito: 2, lugar: 'Nogales', fecha: '2021-05-14' },
+  { src: '0837.jpg', distrito: 2, lugar: 'Nogales', fecha: '2021-05-13' },
+  { src: '0838.jpg', distrito: 4, lugar: 'Guaymas', fecha: '2021-05-15' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ].reverse();
 
