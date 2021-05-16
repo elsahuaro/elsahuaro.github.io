@@ -1103,6 +1103,7 @@ cal_data = {
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:00 hrs." },
       ],
       16: [
+        { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Villa Juárez en Benito Juárez. 10:00 hrs." },
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en domicilio particular en Navojoa. 11:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 17:00 hrs." },
         { "tipo": "M", "texto": "Capacitación Municipal de RC. 19:00 hrs." },
