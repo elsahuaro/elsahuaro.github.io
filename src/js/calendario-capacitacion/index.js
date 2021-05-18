@@ -1108,8 +1108,17 @@ cal_data = {
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 17:00 hrs." },
         { "tipo": "M", "texto": "Capacitación Municipal de RC. 19:00 hrs." },
       ],
+      17: [
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en domicilio particular en Nogales. 10:00 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Las Guásimas en Guaymas. 16:00 hrs." },
+        { "tipo": "D7", "texto": "Capacitación de RG del Distrito 7 presencial en Mayojusalit en Etchojoa. 17:00 hrs." },
+      ],
       18: [
         { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en domicilio particular en Empalme. 16:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en domicilio particular en Nogales. 16:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en domicilio particular en Nogales. 18:00 hrs." },
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en domicilio particular en Altar. 18:00 hrs." },
+        { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5. 19:00 hrs." },
       ],
       20: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:00 hrs." },
@@ -1123,9 +1132,6 @@ cal_data = {
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
         { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:00 hrs." },
-      ],
-      24: [
-        { "tipo": "D1", "texto": "Capacitación de RG del Distrito 1. 19:30 hrs." }
       ],
       27: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:00 hrs." },
