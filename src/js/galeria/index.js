@@ -836,6 +836,14 @@ var galeria_data = [
   { src: '0836.jpg', distrito: 2, lugar: 'Nogales', fecha: '2021-05-14' },
   { src: '0837.jpg', distrito: 2, lugar: 'Nogales', fecha: '2021-05-13' },
   { src: '0838.jpg', distrito: 4, lugar: 'Guaymas', fecha: '2021-05-15' },
+  { src: '0839.jpg', distrito: 4, lugar: 'Guaymas', fecha: '2021-05-17' },
+  { src: '0840.jpg', distrito: 7, lugar: 'Mayojusalit Etchojoa', fecha: '2021-05-18' },
+  { src: '0841.jpg', distrito: 7, lugar: 'Mayojusalit Etchojoa', fecha: '2021-05-18' },
+  { src: '0842.jpg', distrito: 7, lugar: 'Mayojusalit Etchojoa', fecha: '2021-05-18' },
+  { src: '0843.jpg', distrito: 2, lugar: 'Esqueda', fecha: '2021-05-18' },
+  { src: '0844.jpg', distrito: 2, lugar: 'Esqueda', fecha: '2021-05-18' },
+  { src: '0845.jpg', distrito: 2, lugar: 'Esqueda', fecha: '2021-05-18' },
+  { src: '0846.jpg', distrito: 2, lugar: 'Esqueda', fecha: '2021-05-18' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ].reverse();
 
