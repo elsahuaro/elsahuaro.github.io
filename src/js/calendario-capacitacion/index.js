@@ -1116,6 +1116,8 @@ cal_data = {
       18: [
         { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en domicilio particular en Empalme. 16:00 hrs." },
         { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en domicilio particular en Nogales. 16:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en domicilio particular en Cananea. 16:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en domicilio particular en Cananea. 17:30 hrs." },
         { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 presencial en domicilio particular en Nogales. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en domicilio particular en Altar. 18:00 hrs." },
         { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5. 19:00 hrs." },
@@ -1125,6 +1127,7 @@ cal_data = {
       ],
       21: [
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 18:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RG de todos los Distritos. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:30 hrs." },
       ],
       22: [
