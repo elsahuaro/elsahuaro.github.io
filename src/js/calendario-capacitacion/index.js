@@ -1132,12 +1132,19 @@ cal_data = {
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:00 hrs." },
       ],
       21: [
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en domicilio particular en Empalme. 10:30 hrs." },
+        { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en domicilio particular en Huatabampo. 11:30 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en domicilio particular en Empalme. 13:00 hrs." },
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 16:00 hrs." },
+        { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Colonia Unión San Cristobal en Huatabampo. 17:00 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Local Morena en Banámichi. 17:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 18:00 hrs." },
         { "tipo": "G", "texto": "Capacitación de RG de todos los Distritos. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:30 hrs." },
       ],
       22: [
         { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 10:00 hrs." },
+        { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en Plaza Constitución en Cajeme. 16:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
         { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:00 hrs." },
@@ -1145,7 +1152,20 @@ cal_data = {
       23: [
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en domicilio particular en Hermosillo. 10:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 11:00 hrs." },
+        { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en Fraccionamiento Los Álamos en Cajeme. 11:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 17:00 hrs." },
+      ],
+      24: [
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 17:00 hrs." },
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 19:00 hrs." },
+      ],
+      25: [
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 17:00 hrs." },
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 19:00 hrs." },
+      ],
+      26: [
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 17:00 hrs." },
+        { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 19:00 hrs." },
       ],
       27: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:00 hrs." },
