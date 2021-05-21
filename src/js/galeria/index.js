@@ -844,6 +844,9 @@ var galeria_data = [
   { src: '0844.jpg', distrito: 2, lugar: 'Esqueda', fecha: '2021-05-18' },
   { src: '0845.jpg', distrito: 2, lugar: 'Esqueda', fecha: '2021-05-18' },
   { src: '0846.jpg', distrito: 2, lugar: 'Esqueda', fecha: '2021-05-18' },
+  { src: '0847.jpg', distrito: 1, lugar: 'Ejido Independencia San Luis Río Colorado', fecha: '2021-05-21' },
+  { src: '0848.jpg', distrito: 1, lugar: 'Ejido Independencia San Luis Río Colorado', fecha: '2021-05-21' },
+  { src: '0849.jpg', distrito: 1, lugar: 'Ejido Independencia San Luis Río Colorado', fecha: '2021-05-21' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ].reverse();
 
