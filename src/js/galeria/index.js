@@ -847,6 +847,17 @@ var galeria_data = [
   { src: '0847.jpg', distrito: 1, lugar: 'Ejido Independencia San Luis Río Colorado', fecha: '2021-05-21' },
   { src: '0848.jpg', distrito: 1, lugar: 'Ejido Independencia San Luis Río Colorado', fecha: '2021-05-21' },
   { src: '0849.jpg', distrito: 1, lugar: 'Ejido Independencia San Luis Río Colorado', fecha: '2021-05-21' },
+  { src: '0850.jpg', distrito: 7, lugar: 'Huatabampo', fecha: '2021-05-21' },
+  { src: '0851.jpg', distrito: 7, lugar: 'Huatabampo', fecha: '2021-05-21' },
+  { src: '0852.jpg', distrito: 7, lugar: 'Huatabampo', fecha: '2021-05-21' },
+  { src: '0853.jpg', distrito: 7, lugar: 'Huatabampo', fecha: '2021-05-21' },
+  { src: '0854.jpg', distrito: 7, lugar: 'Huatabampo', fecha: '2021-05-21' },
+  { src: '0855.jpg', distrito: 4, lugar: 'Banámichi', fecha: '2021-05-21' },
+  { src: '0856.jpg', distrito: 5, lugar: 'Hermosillo', fecha: '2021-05-20' },
+  { src: '0857.jpg', distrito: 5, lugar: 'Hermosillo', fecha: '2021-05-20' },
+  { src: '0858.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-05-22' },
+  { src: '0859.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-05-22' },
+  { src: '0860.jpg', distrito: 2, lugar: 'Agua Prieta', fecha: '2021-05-22' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ].reverse();
 
