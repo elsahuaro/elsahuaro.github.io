@@ -1153,11 +1153,16 @@ cal_data = {
         { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Local de Morena en Villa Pesqueira. 19:00 hrs." },
       ],
       23: [
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Comité de Morena en Empalme. 9:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en domicilio particular en Hermosillo. 10:00 hrs." },
         { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Villa Juárez en Benito Juárez. 10:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 11:00 hrs." },
         { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en Fraccionamiento Los Álamos en Cajeme. 11:00 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Poblado Morelos en Empalme. 11:30 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Ejido Rosales en Empalme. 14:30 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 17:00 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Ejido Mi Patria es Primero en Empalme. 17:00 hrs." },
+        { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en domicilio particular en Cajeme. 17:00 hrs." },
       ],
       24: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 17:00 hrs." },
@@ -1165,6 +1170,7 @@ cal_data = {
       ],
       25: [
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 17:00 hrs." },
+        { "tipo": "D2", "texto": "Capacitación de RC del Distrito 2 (Santa Cruz). 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 19:00 hrs." },
       ],
       26: [
