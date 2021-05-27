@@ -1165,7 +1165,10 @@ cal_data = {
         { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en domicilio particular en Cajeme. 17:00 hrs." },
       ],
       24: [
+        { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en domicilio particular en Huatabampo. 11:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 17:00 hrs." },
+        { "tipo": "D7", "texto": "Capacitación de RC del Distrito 7 presencial en Colonia Unión San Cristobal en Huatabampo. 17:00 hrs." },
+        { "tipo": "D4", "texto": "Capacitación de RC del Distrito 4 presencial en Oficinas de Campaña en Sahuaripa. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 19:00 hrs." },
       ],
       25: [
@@ -1178,6 +1181,8 @@ cal_data = {
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Casa Morena en Puerto Peñasco. 19:00 hrs." },
       ],
       27: [
+        { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6. 17:30 hrs." },
+        { "tipo": "D6", "texto": "Capacitación de RC del Distrito 6 presencial en Comisaría de Esperanza en Cajeme. 17:30 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:00 hrs." },
       ],
       28: [
@@ -1185,6 +1190,7 @@ cal_data = {
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:30 hrs." },
       ],
       29: [
+        { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5 presencial en domicilio particular en Hermosillo. 11:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
         { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:00 hrs." },

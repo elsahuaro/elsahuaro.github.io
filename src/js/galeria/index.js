@@ -889,6 +889,7 @@ var galeria_data = [
   { src: '0889.jpg', distrito: 5, lugar: 'Hermosillo', fecha: '2021-05-25' },
   { src: '0890.jpg', distrito: 4, lugar: 'Sahuaripa', fecha: '2021-05-24' },
   { src: '0891.jpg', distrito: 4, lugar: 'Sahuaripa', fecha: '2021-05-24' },
+  { src: '0892.jpg', distrito: 2, lugar: 'Santa Cruz', fecha: '2021-05-25' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ].reverse();
 
