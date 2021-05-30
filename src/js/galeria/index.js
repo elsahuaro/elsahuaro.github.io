@@ -913,6 +913,11 @@ var galeria_data = [
   { src: '0913.jpg', distrito: 5, lugar: 'Hermosillo', fecha: '2021-05-22' },
   { src: '0914.jpg', distrito: 5, lugar: 'Hermosillo', fecha: '2021-05-22' },
   { src: '0915.jpg', distrito: 5, lugar: 'Hermosillo', fecha: '2021-05-22' },
+  { src: '0916.jpg', distrito: 6, lugar: 'Esperanza', fecha: '2021-05-27' },
+  { src: '0917.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-05-26' },
+  { src: '0918.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-05-26' },
+  { src: '0919.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-05-28' },
+  { src: '0920.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-05-28' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ].reverse();
 

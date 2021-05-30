@@ -1192,6 +1192,7 @@ cal_data = {
       ],
       29: [
         { "tipo": "D5", "texto": "Capacitación de RC del Distrito 5 presencial en domicilio particular en Hermosillo. 11:00 hrs." },
+        { "tipo": "M", "texto": "Capacitación Municipal de RC. 12:00 hrs." },
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Guerrero y Oaxaca en Hermosillo. 18:00 hrs." },
         { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1 presencial en Av. Libertad en San Luis Río Colorado. 18:00 hrs." },
@@ -1199,14 +1200,25 @@ cal_data = {
       30: [
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3 presencial en Poblado Miguel Alemán. 18:00 hrs." }
       ],
+      31: [
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
+      ],
     },
     /* Junio */
     5: {
+      1: [
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
+      ],
+      2: [
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
+      ],
       3: [
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:00 hrs." },
       ],
       4: [
         { "tipo": "D3", "texto": "Capacitación de RC del Distrito 3. 18:00 hrs." },
+        { "tipo": "G", "texto": "Capacitación de RC de todos los Distritos. 18:00 hrs." },
         { "tipo": "D1", "texto": "Capacitación de RC del Distrito 1. 19:30 hrs." },
       ],
       5: [
