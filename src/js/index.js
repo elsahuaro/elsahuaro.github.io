@@ -50,3 +50,40 @@ if (!Object.entries) {
     return resArray;
   };
 }
+
+var diaDeLaJornada = new Date("2021-06-06T07:00:00").getTime();
+var timerParaJornada;
+function actualizarConteo() {
+  var now = new Date().getTime();
+  var delta = diaDeLaJornada - now;
+  var dias = Math.floor(delta / (1000 * 60 * 60 * 24));
+  var horas = Math.floor((delta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutos = Math.floor((delta % (1000 * 60 * 60)) / (1000 * 60));
+  var segundos = Math.floor((delta % (1000 * 60)) / 1000);
+  var conteo = document.getElementById("countdown");
+  if (!conteo) {
+    clearInterval(timerParaJornada);
+    return;
+  }
+  if (delta < 0) {
+    clearInterval(timerParaJornada);
+    dias = 0;
+    horas = 0;
+    minutos = 0;
+    segundos = 0;
+  }
+  conteo.innerHTML = "<span>" + dias + "</span> " + (dias == 1 ? "día" : "días") + " "
+                   + "<span>" + horas + "</span> " + (horas == 1 ? "hora" : "horas") + " "
+                   + "<span>" + minutos + "</span> " + (minutos == 1 ? "minuto" : "minutos") + " "
+                   + "<span>" + segundos + "</span> " + (segundos == 1 ? "segundo" : "segundos") + " ";
+}
+
+actualizarConteo();
+
+window.onload = function() {
+  actualizarConteo();
+  clearInterval(timerParaJornada);
+  timerParaJornada = setInterval(actualizarConteo, 1000);
+};
+
+

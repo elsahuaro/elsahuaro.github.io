@@ -918,6 +918,16 @@ var galeria_data = [
   { src: '0918.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-05-26' },
   { src: '0919.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-05-28' },
   { src: '0920.jpg', distrito: 6, lugar: 'Ciudad Obregón', fecha: '2021-05-28' },
+  { src: '0921.jpg', distrito: 7, lugar: 'Villa Juárez', fecha: '2021-05-30' },
+  { src: '0922.jpg', distrito: 7, lugar: 'Villa Juárez', fecha: '2021-05-30' },
+  { src: '0923.jpg', distrito: 7, lugar: 'Villa Juárez', fecha: '2021-05-30' },
+  { src: '0924.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-05-31' },
+  { src: '0925.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-05-31' },
+  { src: '0926.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-05-31' },
+  { src: '0927.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-05-31' },
+  { src: '0928.jpg', distrito: 3, lugar: 'Hermosillo', fecha: '2021-05-31' },
+  { src: '0929.jpg', distrito: null, lugar: 'Capacitación Virtual', fecha: '2021-05-31' },
+  { src: '0930.jpg', distrito: null, lugar: 'Capacitación Virtual', fecha: '2021-05-31' },
   // { src: '', distrito: , lugar: '', fecha: '' },
 ].reverse();
 
@@ -962,7 +972,10 @@ window.addEventListener("load", function() {
       newImage.classList.add('galeria__image');
       newImage.src = '/img/galeria/' + item['src'];
       newDiv.classList.add('galeria__descr');
-      newDiv.innerHTML = item.fecha + ' Distrito ' + item.distrito + ' en ' + item.lugar;
+      newDiv.innerHTML = item.fecha
+                       + (item.distrito ?
+                          (' Distrito ' + item.distrito + ' en ' + item.lugar) :
+                          (' Todos los distritos en ' + item.lugar));
       newItem.appendChild(newImage);
       newItem.appendChild(newDiv);
       gal.appendChild(newItem);

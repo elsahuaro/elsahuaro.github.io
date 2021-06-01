@@ -986,3 +986,62 @@ body {
     width: 75%;
   }
 }
+
+#banner {
+  font-size: 1.1rem;
+  border: 5px solid rgb(var(--pcolor));
+  padding: 1rem .5rem;
+  box-shadow: 0 0 0 rgba(var(--pcolor), 0.6);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(var(--pcolor), 0.6);
+    box-shadow: 0 0 0 0 rgba(var(--pcolor), 0.6);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(var(--pcolor), 0);
+      box-shadow: 0 0 0 1rem rgba(var(--pcolor), 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(var(--pcolor), 0);
+      box-shadow: 0 0 0 0 rgba(var(--pcolor), 0);
+  }
+}
+
+#banner > a {
+  color: rgb(var(--pcolor));
+  font-weight: bold;
+  animation: pumpum 1s infinite;
+}
+
+@keyframes pumpum {
+  0% {
+    color: rgb(var(--scolor-dd));
+  }
+  70% {
+    color: rgb(var(--pcolor));
+  }
+  100% {
+    color: rgb(var(--pcolor));
+  }
+}
+
+#banner .cta {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#countdown {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
+
+#countdown span {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: rgb(var(--pcolor));
+}
