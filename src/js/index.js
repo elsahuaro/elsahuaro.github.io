@@ -51,6 +51,7 @@ if (!Object.entries) {
   };
 }
 
+/*
 var diaDeLaJornada = new Date("2021-06-06T07:00:00").getTime();
 var timerParaJornada;
 function actualizarConteo() {
@@ -85,5 +86,4 @@ window.onload = function() {
   clearInterval(timerParaJornada);
   timerParaJornada = setInterval(actualizarConteo, 1000);
 };
-
-
+*/

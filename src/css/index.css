@@ -992,7 +992,7 @@ body {
   border: 5px solid rgb(var(--pcolor));
   padding: 1rem .5rem;
   box-shadow: 0 0 0 rgba(var(--pcolor), 0.6);
-  animation: pulse 1s infinite;
+  /* animation: pulse 1s infinite; */
 }
 
 @keyframes pulse {
@@ -1013,7 +1013,7 @@ body {
 #banner > a {
   color: rgb(var(--pcolor));
   font-weight: bold;
-  animation: pumpum 1s infinite;
+  /* animation: pumpum 1s infinite; */
 }
 
 @keyframes pumpum {
