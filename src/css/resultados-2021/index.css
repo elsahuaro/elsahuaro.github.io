@@ -130,3 +130,24 @@ html, body, #map {
     padding-right: 20px;
   }
 }
+
+.mesas {
+  margin-top: 1rem;
+}
+
+.mesas-row {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.mesas-row > div {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mesas-row > div > strong {
+  margin-right: 0.25rem;
+}

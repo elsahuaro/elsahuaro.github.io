@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYD13XKVZG"></script>
+    <script>
+     if (window.location.hostname == "localhost") {
+       console.log('deshabilitanto google analytics');
+       window['ga-disable-G-JYD13XKVZG'] = true;
+     }
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'G-JYD13XKVZG', {
+       cookie_domain: 'elsahuaro.github.io',
+       cookie_flags: 'SameSite=None;Secure'
+     });
+    </script>
+    <script>if(!(window.fetch&&Object.entries&&Object.keys&&Object.values&&window.Promise&&[].includes&&Object.assign&&window.Map)){document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=default%2Cfetch%2CObject.values%2CObject.keys%2CObject.entries"></scr'+'ipt>')}</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Consulta Popular 2021</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script type="text/javascript" src="/js/index.js"></script>
+    <link rel="stylesheet" href="/lib/leaflet.css">
+    <link rel="stylesheet" href="/lib/leaflet-sidebar.css" />
+    <link rel="stylesheet" href="/css/resultados-2021/index.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="/lib/leaflet.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="toptitle">
+      <a href="/"><img src="/img/defensa-elecciones-2021-alt.png" /></a>
+      <h1>Mesas Receptoras Consulta Popular</h1>
+      <a><img src="/img/defensa-elecciones-2021-alt.png" class="hide" /></a>
+    </div>
+    <div id="sidebar" class="leaflet-sidebar collapsed">
+      <div class="leaflet-sidebar-tabs">
+        <ul role="tablist">
+          <li><a href="#datos" role="tab"><i class="fa fa-table active"></i></a></li>
+        </ul>
+      </div>
+      <div class="leaflet-sidebar-content">
+        <div class="leaflet-sidebar-pane" id="datos">
+          <h1 class="leaflet-sidebar-header">
+            Resultados
+            <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+          </h1>
+
+          <div id="select-dipfed" class="select-group">
+            <label for="def-select">Distrito Electoral Federal:</label>
+            <select id="def-select" class="select" onchange="filtraDEF(event)">
+              <option value="todos" selected>Todos</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+          <div id="select-alpha" class="select-group">
+            <label for="alpha-select">Transparencia:</label>
+            <select id="alpha-select" class="select" onchange="cambiaAlpha(event)">
+              <option value="100" selected>100%</option>
+              <option value="90">90%</option>
+              <option value="80">80%</option>
+              <option value="70">70%</option>
+              <option value="60">60%</option>
+              <option value="50">50%</option>
+              <option value="40">40%</option>
+              <option value="30">30%</option>
+              <option value="20">20%</option>
+              <option value="10">10%</option>
+              <option value="0">0%</option>
+            </select>
+          </div>
+          <div id="select-tipo" class="select-group">
+            <label for="tipo-select">Tipo de mapa:</label>
+            <select id="tipo-select" class="select" onchange="filtraTipo(event)">
+              <option value="uts" selected>Unidades Territoriales</option>
+              <option value="tsecs">Secciones</option>
+            </select>
+          </div>
+          <div id="sec-table">
+          </div>
+        </div>
+
+        <div class="leaflet-sidebar-pane" id="messages">
+          <h1 class="leaflet-sidebar-header">Messages<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+    <script type="text/javascript" src="/lib/leaflet-sidebar.js"></script>
+    <script type="text/javascript" src="/js/consulta-popular/index.js"></script>
+  </body>
+</html>
