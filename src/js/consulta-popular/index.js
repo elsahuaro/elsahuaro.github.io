@@ -11,7 +11,7 @@ var otherSelected = false;
 
 var defFilter = 'todos';
 var tipo = 'uts';
-var alfa = 0.2;
+var alfa = 0.0;
 
 function initMap() {
   map = L.map('map');
@@ -76,7 +76,7 @@ window.addEventListener('load', function() {
             .then(json3 => {
               document.getElementById('def-select').value='todos';
               document.getElementById('tipo-select').value='uts';
-              document.getElementById('alpha-select').value='20';
+              document.getElementById('alpha-select').value='0';
               setupData(json, json2, json3);
               setupMap();
               setupBaseMap();
