@@ -11,7 +11,7 @@ var otherSelected = false;
 
 var defFilter = 'todos';
 var tipo = 'uts';
-var alfa = 1.0;
+var alfa = 0.2;
 
 function initMap() {
   map = L.map('map');
@@ -76,7 +76,7 @@ window.addEventListener('load', function() {
             .then(json3 => {
               document.getElementById('def-select').value='todos';
               document.getElementById('tipo-select').value='uts';
-              document.getElementById('alpha-select').value='100';
+              document.getElementById('alpha-select').value='20';
               setupData(json, json2, json3);
               setupMap();
               setupBaseMap();
@@ -116,8 +116,8 @@ function setupBaseMap() {
         fillColor: "#ff0078",
         color: "#000",
         weight: 1,
-        opacity: alfa,
-        fillOpacity: alfa,
+        opacity: 1.0, // alfa,
+        fillOpacity: 1.0, // alfa,
       });
     },
     filter: dispatchFilter(),
@@ -160,23 +160,31 @@ function dispatchFilter() {
   }
 }
 
+const onClickGeom = (feature, layer) => {
+  undoSelection();
+  selectedSec = feature.properties;
+  selectedLayer = layer;
+  doSelection();
+  var elm = document.getElementById('sec-table');
+  if (tipo == 'uts') {
+    elm.innerHTML = tableHTML_UTS(selectedSec);
+  } else {
+    elm.innerHTML = tableHTML(selectedSec);
+  }
+  sidebar.open('datos');
+}
+
+const clickHandler = (feature, layer) => {
+  return (event) => {
+        L.DomEvent.stop(event);
+        onClickGeom(feature, layer);
+  }
+}
+
 function callbackInstall() {
   return function(feature, layer) {
     layer.on({
-      click: function(event) {
-        L.DomEvent.stop(event);
-        undoSelection();
-        selectedSec = feature.properties;
-        selectedLayer = layer;
-        doSelection();
-        var elm = document.getElementById('sec-table');
-        if (tipo == 'uts') {
-          elm.innerHTML = tableHTML_UTS(selectedSec);
-        } else {
-          elm.innerHTML = tableHTML(selectedSec);
-        }
-        sidebar.open('datos');
-      },
+      click: clickHandler(feature, layer),
     })
   }
 }
@@ -187,7 +195,7 @@ function utsStyle(feature) {
   return {
     color: '#000000',
     weight: 1.0,
-    opacity: alfa,
+    opacity: 1.0, // alfa,
     fill: true,
     fillColor: def_colors[feature.properties['def']-1],
     fillOpacity: alfa,
@@ -203,7 +211,7 @@ function secStyle(feature) {
   return {
     color: '#000000',
     weight: 1.0,
-    opacity: alfa,
+    opacity: 1.0, // alfa,
     fill: true,
     fillColor: color,
     fillOpacity: alfa,
@@ -214,7 +222,7 @@ function plainStyle(feature) {
   return {
     color: '#000000',
     weight: 1.0,
-    opacity: alfa,
+    opacity: 1.0, // alfa,
     fill: true,
     fillColor: '#b5261e',
     fillOpacity: alfa,
@@ -361,4 +369,20 @@ function tableHTML_UTS(props) {
   }
 
   return txt;
+}
+
+function volarSeccion() {
+  var sec = Number(document.getElementById("vuelo").value);
+  for (var x of secLayer.getLayers()) {
+    if (x.feature.properties['sec'] != sec) {
+      continue;
+    }
+    onClickGeom(x.feature, x);
+    var bounds = x.getBounds();
+    if (bounds.isValid()) {
+      var offset = document.querySelector('.leaflet-sidebar-content').getBoundingClientRect().width;
+      map.flyToBounds(bounds, {paddingTopLeft: [offset,0]});
+    }
+    return;
+  }
 }
