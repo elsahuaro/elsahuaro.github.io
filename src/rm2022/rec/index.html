@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYD13XKVZG"></script>
+    <script>
+     if (window.location.hostname == "localhost") {
+       console.log('deshabilitanto google analytics');
+       window['ga-disable-G-JYD13XKVZG'] = true;
+     }
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'G-JYD13XKVZG', {
+       cookie_domain: 'elsahuaro.github.io',
+       cookie_flags: 'SameSite=None;Secure'
+     });
+    </script>
+    <script>if(!(window.fetch&&Object.entries&&Object.keys&&Object.values&&window.Promise&&[].includes&&Object.assign&&window.Map)){document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=default%2Cfetch%2CObject.values%2CObject.keys%2CObject.entries"></scr'+'ipt>')}</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorrido de Cargos - Revocación de Mandato 2022</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script type="text/javascript" src="/js/index.js"></script>
+    <link rel="stylesheet" href="/css/rm2022/rec/index.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="/lib/phaser.min.js"></script>
+  </head>
+  <body>
+    <div class="toptitle dark">
+      <a><img src="/img/defensa-elecciones-2021-alt.png" class="hide" /></a>
+      <h1>Recorrido de Cargos</h1>
+      <a><img src="/img/defensa-elecciones-2021-alt.png" class="hide" /></a>
+    </div>
+    <div id="recorrido-de-cargos">
+      <script type="text/javascript" src="/js/rm2022/rec/LoadingScene.js"></script>
+      <script type="text/javascript" src="/js/rm2022/rec/StartScene.js"></script>
+      <script type="text/javascript" src="/js/rm2022/rec/SelectMissingScene.js"></script>
+      <script type="text/javascript" src="/js/rm2022/rec/index.js"></script>
+    </div>
+  </body>
+</html>

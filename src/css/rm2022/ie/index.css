@@ -1,0 +1,147 @@
+#form-sec {
+  padding-top: 1rem;
+}
+
+.inputs {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type=text] {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-family: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  border: none;
+  border-bottom: 2px solid rgb(var(--scolor-d));
+  border-radius: 5%;
+  text-align: center;
+  width: 6rem;
+  background: rgba(0, 0, 0, 0.05);
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+input[type=submit] {
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.infobox {
+  display: none;
+  position: relative;
+  padding: 1.75rem;
+  margin: 10px 0;
+  text-align: center;
+  width: 25rem;
+}
+
+.infobox > img {
+  position: absolute;
+  top: -0.6rem;
+  left: -1.2rem;
+  width: 3rem;
+}
+
+#error {
+  background: rgb(var(--pcolor-ll));
+  border: 2px solid rgb(var(--pcolor-l));
+  color: rgb(var(--pcolor-dd));
+}
+
+#info {
+  background: rgb(var(--scolor-ll));
+  border: 2px solid rgb(var(--scolor-l));
+  color: rgb(var(--scolor-dd));
+}
+
+#resultado {
+  display: none;
+  flex: 0 0 auto;
+  margin: 10px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+#secmap {
+  height: 25rem;
+  width: 25rem;
+  margin-bottom: 1rem;
+}
+
+@media all and (min-width:768px) {
+  #secmap { height: 30rem; width: 30rem; }
+  #casillas { width: 30rem; }
+  .infobox { width: 30rem; }
+}
+@media all and (min-width:1366px) {
+  #secmap { height: 35rem; width: 35rem; }
+  #casillas { width: 35rem; }
+  .infobox { width: 35rem; }
+}
+
+.renglones {
+  padding-bottom: 1rem;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+@media all and (min-width:768px) { .renglones { width: 70%; } }
+@media all and (min-width:1366px) { .renglones { width: 70%; } }
+
+.renglon {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+.etiqueta {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 80%;
+  border-bottom: 2px solid rgb(var(--scolor-d));
+}
+
+.distrito {
+  font-family: 'Roboto Slab', serif;
+  font-size: 160%;
+  font-weight: 900;
+  color: rgb(var(--scolor-dd));
+  border: none;
+}
+
+.tooltip {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #1e5199;
+  background-color: rgba(0, 0, 0, 0.0);
+  border: none;
+  box-shadow: none;
+}
+
+#casillas {
+  width: 25rem;
+}
+
+.casillas {
+  text-align: left;
+}
+
+.casilla {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.casilla-titulo {
+  text-align: center;
+  margin-bottom: 0.25rem;
+}

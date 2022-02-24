@@ -866,6 +866,11 @@ body {
   justify-content: space-between;
 }
 
+.toptitle.dark {
+  background: rgb(var(--scolor-d));
+  border-bottom: 0.4rem solid rgb(var(--scolor-dd));
+}
+
 .toptitle > a > img {
   height: 2.5rem;
 }
@@ -886,12 +891,25 @@ body {
   padding: 0.5rem 1rem;
 }
 
+.button.dark {
+  background: rgb(var(--scolor-d));
+  
+}
+
 .button:hover {
   background: rgb(var(--acolor1-d));
 }
 
+.button.dark:hover {
+  background: rgb(var(--acolor2-d));
+}
+
 .button:focus {
   background: rgb(var(--acolor1-d));
+}
+
+.button.dark:focus {
+  background: rgb(var(--acolor2-d));
 }
 
 .select-group {
