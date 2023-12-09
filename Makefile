@@ -75,7 +75,7 @@ docs:
 	cp -r src/doc build/
 
 serve:
-	sbcl --load server.lisp
+	ros run -- --load server.lisp
 
 deploy:
 	git subtree push --prefix build origin gh-pages
