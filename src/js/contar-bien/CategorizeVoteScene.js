@@ -205,7 +205,8 @@ class CategorizeVoteScene extends Phaser.Scene {
   }
 
   castVote(vote) {
-    if (vote == stack_vote_son[this.vote]) {
+    let check = this.vote in stack_vote_son ? stack_vote_son[this.vote] : this.vote;
+    if (vote == check) {
       this.conteo[vote].correct = this.conteo[vote].correct + 1;
       for (var i = 0; i < votes.length; i++) {
         this.tapete[votes[i]].clearTint();
