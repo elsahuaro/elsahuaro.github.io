@@ -86,4 +86,11 @@ window.onload = function() {
   clearInterval(timerParaJornada);
   timerParaJornada = setInterval(actualizarConteo, 1000);
 };
-*/
+ */
+
+function hideToplevelOverlay() {
+    var ol = document.getElementById("infpol");
+    ol.style.display = "none";
+
+    document.body.style.overflow = "auto";
+}
