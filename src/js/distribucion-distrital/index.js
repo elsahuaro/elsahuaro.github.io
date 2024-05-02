@@ -1,18 +1,18 @@
 var info = [
-  { "lnominal": 295892, "secciones": 176, "urbanas": 136, "nourbanas": 40,
-    "municipios": 11, "dels": 3, "casillas": 509, "curbanas": 401, "cnourbanas": 108 },
-  { "lnominal": 347470, "secciones": 221, "urbanas": 186, "nourbanas": 35,
-    "municipios": 11, "dels": 4, "casillas": 595, "curbanas": 513, "cnourbanas": 82 },
-  { "lnominal": 323490, "secciones": 214, "urbanas": 201, "nourbanas": 13,
-    "municipios": 1, "dels": 5, "casillas": 536, "curbanas": 498, "cnourbanas": 38 },
-  { "lnominal": 289546, "secciones": 276, "urbanas": 133, "nourbanas": 143,
-    "municipios": 41, "dels": 4, "casillas": 551, "curbanas": 292, "cnourbanas": 259 },
-  { "lnominal": 307942, "secciones": 199, "urbanas": 182, "nourbanas": 17,
-    "municipios": 1, "dels": 5, "casillas": 522, "curbanas": 473, "cnourbanas": 49 },
-  { "lnominal": 320299, "secciones": 231, "urbanas": 199, "nourbanas": 32,
-    "municipios": 1, "dels": 3, "casillas": 559, "curbanas": 471, "cnourbanas": 88 },
-  { "lnominal": 271610, "secciones": 205, "urbanas": 90, "nourbanas": 115,
-    "municipios": 7, "dels": 3, "casillas": 480, "curbanas": 243, "cnourbanas": 237 }
+  { "lnominal": 321908, "secciones": 185, "urbanas": 145, "nourbanas": 40,
+    "municipios": 11, "dels": 3, "casbasicas": 185, "casconti": 328, "casextr": 17, "casesp": 6 },
+  { "lnominal": 374524, "secciones": 231, "urbanas": 196, "nourbanas": 35,
+    "municipios": 11, "dels": 4, "casbasicas": 231, "casconti": 370, "casextr": 12, "casesp": 6 },
+  { "lnominal": 332303, "secciones": 210, "urbanas": 199, "nourbanas": 11,
+    "municipios": 1, "dels": 5, "casbasicas": 210, "casconti": 320, "casextr": 5, "casesp": 2 },
+  { "lnominal": 303130, "secciones": 277, "urbanas": 133, "nourbanas": 144,
+    "municipios": 41, "dels": 4, "casbasicas": 277, "casconti": 265, "casextr": 18, "casesp": 3 },
+  { "lnominal": 348793, "secciones": 223, "urbanas": 204, "nourbanas": 19,
+    "municipios": 1, "dels": 5, "casbasicas": 223, "casconti": 316, "casextr": 36, "casesp": 4 },
+  { "lnominal": 330861, "secciones": 237, "urbanas": 205, "nourbanas": 32,
+    "municipios": 1, "dels": 3, "casbasicas": 237, "casconti": 324, "casextr": 12, "casesp": 4 },
+  { "lnominal": 279461, "secciones": 207, "urbanas": 92, "nourbanas": 115,
+    "municipios": 7, "dels": 3, "casbasicas": 207, "casconti": 264, "casextr": 14, "casesp": 3 }
 ];
 
 function infoSeleccion(i) {
@@ -23,8 +23,12 @@ function infoSeleccion(i) {
   var secciones = info[i]["secciones"];
   var urbanas = info[i]["urbanas"];
   var nourbanas = info[i]["nourbanas"];
-  var curbanas = info[i]["curbanas"];
-  var cnourbanas = info[i]["cnourbanas"];
+  var casbasicas = info[i]["casbasicas"];
+  var casconti = info[i]["casconti"];
+  var casextr = info[i]["casextr"];
+  var casesp = info[i]["casesp"];
+  // var curbanas = info[i]["curbanas"];
+  // var cnourbanas = info[i]["cnourbanas"];
   document.getElementById("distrito").innerHTML = (i+1);
   document.getElementById("dels").innerHTML =  dels.toLocaleString('es-MX');
   document.getElementById("municipios").innerHTML = municipios.toLocaleString('es-MX');
@@ -32,8 +36,12 @@ function infoSeleccion(i) {
   document.getElementById("secciones").innerHTML = secciones.toLocaleString('es-MX');
   document.getElementById("urbanas").innerHTML = urbanas.toLocaleString('es-MX');
   document.getElementById("nourbanas").innerHTML = nourbanas.toLocaleString('es-MX');
-  document.getElementById("curbanas").innerHTML = curbanas.toLocaleString('es-MX');
-  document.getElementById("cnourbanas").innerHTML = cnourbanas.toLocaleString('es-MX');
+    document.getElementById("casbasicas").innerHTML = casbasicas.toLocaleString('es-MX');
+    document.getElementById("casconti").innerHTML = casconti.toLocaleString('es-MX');
+    document.getElementById("casextr").innerHTML = casextr.toLocaleString('es-MX');
+    document.getElementById("casesp").innerHTML = casesp.toLocaleString('es-MX');
+  // document.getElementById("curbanas").innerHTML = curbanas.toLocaleString('es-MX');
+  // document.getElementById("cnourbanas").innerHTML = cnourbanas.toLocaleString('es-MX');
 }
 
 window.onload = function() {

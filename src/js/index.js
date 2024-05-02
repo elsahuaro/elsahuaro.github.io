@@ -51,8 +51,7 @@ if (!Object.entries) {
   };
 }
 
-/*
-var diaDeLaJornada = new Date("2021-06-06T07:00:00").getTime();
+var diaDeLaJornada = new Date("2024-06-02T07:30:00").getTime();
 var timerParaJornada;
 function actualizarConteo() {
   var now = new Date().getTime();
@@ -86,11 +85,4 @@ window.onload = function() {
   clearInterval(timerParaJornada);
   timerParaJornada = setInterval(actualizarConteo, 1000);
 };
- */
 
-function hideToplevelOverlay() {
-    var ol = document.getElementById("infpol");
-    ol.style.display = "none";
-
-    document.body.style.overflow = "auto";
-}

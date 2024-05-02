@@ -1120,9 +1120,6 @@ body {
     hyphens: auto;
     padding: .5rem 0 .5rem 0rem;
 }
- body {
-     overflow: hidden;
- }
 
 .warning {
     max-width: 700px;

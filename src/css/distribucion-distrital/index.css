@@ -40,7 +40,7 @@
   border-bottom: 2px solid rgb(var(--scolor));
 }
 
-#distrito, #dels, #municipios, #lnominal, #secciones, #urbanas, #nourbanas, #curbanas, #cnourbanas {
+#distrito, #dels, #municipios, #lnominal, #secciones, #urbanas, #nourbanas, #curbanas, #cnourbanas, #casbasicas, #casconti, #casextr, #casesp {
   font-family: 'Roboto Slab', serif;
   font-size: 160%;
   font-weight: 900;
